@@ -1,78 +1,75 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Us Page </title>
+    <!--    <link rel="stylesheet" href="reset.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style>
-        body{
-        font-family: 'Urbanist', sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Urbanist', sans-serif;
         }
     </style>
 </head>
-<body>
-<header>
-    <!-- Announcement -->
-    <div class="bg-[url('/bg-header.svg')] bg-top bg-no-repeat">
-        <div >
-            <p>
-                <span>✨</span>
-                Discover Your Dream Property with Estatein
-                <a href="#">Learn More</a>
-            </p>
 
-            <button type="button">
-                <img src="./close.svg" alt="">
-            </button>
+<body>
+<header class=" w-full h-[162px]">
+    <!-- feat: complete Announcement -->
+    <input type="checkbox" id="hide-announcement" class="peer hidden">
+    <div
+            class="peer-checked:hidden h-[63px] py-[18px]  bg-[#1A1A1A] bg-[url('/bg-header.svg')] bg-top bg-no-repeat relative flex justify-center items-center">
+        <div class="flex items-center gap-[10px] font-medium text-lg text-white">
+            <p><span>✨</span>Discover Your Dream Property with Estatein</p>
+            <a href="#" class=" underline">Learn More</a>
         </div>
+
+        <label for="hide-announcement"
+               class="absolute right-[32px] top-1/2 flex h-[32px] w-[32px] -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/10">
+            <img class="h-[12px] w-[12px]" src="./close.svg" alt="">
+        </label>
     </div>
 
     <!-- Navbar -->
-    <div>
-        <div>
-            <!-- Logo -->
-            <a href="#">
-                <img src="./logo.svg" alt="Estatein logo">
-                <span>Estatein</span>
-            </a>
+    <div class="h-[99px] flex items-center text-white bg-[#1A1A1A]  ">
+        <!-- Logo -->
+        <a href="#">
+            <img class="h-[48px]" src="./logo.svg" alt="Estatein logo">
+        </a>
 
-            <!-- Nav -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="properties.html">Properties</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
+        <!-- Nav -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
 
-            <!-- Mobile toggle -->
-            <button type="button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        <!-- Mobile toggle -->
+        <button type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
+
 </header>
 
 </body>
+
 </html>
