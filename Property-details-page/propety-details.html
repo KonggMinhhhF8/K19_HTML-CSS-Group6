@@ -9,47 +9,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Property Details Page</title>
 </head>
-<body class="bg-[#141414] text-white font-[Urbanist]">
-<header class="flex flex-col border-b border-[#262626]">
+<body class="font-[Urbanist] text-white bg-[#141414]">
+<header class="mb-30 flex flex-col border-b border-[#262626]">
     <!-- Thanh thông báo trên cùng (Top Banner) -->
-    <div class="bg-[#1A1A1A] flex px-40 py-4.5 items-center justify-center gap-2.5 self-stretch border-b border-[#262626] text-[18px] font-medium leading-[150%] relative">
-        <!-- Nội dung thông báo -->
-        <span>✨Discover Your Dream Property with Estatein</span>
-        <!-- Liên kết tìm hiểu thêm -->
-        <a class="underline " href="">Learn More</a>
-        <!-- Nút đóng thông báo -->
-        <button class="absolute w-6 h-6 bg-white/10 top-4.75 right-8 p-1 rounded-[75px]">
-            <img src="./icon/Icon.svg" alt="Close Icon">
-        </button>
-    </div>
+    <aside class="border-b border-[#262626] bg-[#1A1A1A]">
+        <div class="relative mx-auto flex w-full items-center justify-center gap-2.5 px-5 py-4.5 text-xs font-medium leading-[150%] md:max-w-7xl md:text-[18px]">
+            <!-- Nội dung thông báo -->
+            <span>✨Discover Your Dream Property with Estatein</span>
+            <!-- Liên kết tìm hiểu thêm -->
+            <a class="underline" href="">Learn More</a>
+            <!-- Nút đóng thông báo -->
+            <button class="absolute top-1/2 right-1 h-6 w-6 -translate-y-1/2 rounded-[75px] bg-white/10 p-1 md:right-5">
+                <img src="./icon/Icon.svg" alt="Close Icon">
+            </button>
+        </div>
+    </aside>
     <!-- Thanh điều hướng chính (Navigation Bar) -->
-    <nav class="flex bg-[#1A1A1A] py-5 px-40.5 items-center justify-between self-stretch text-[18px] font-medium leading-[150%]">
-        <!-- Logo thương hiệu: Gồm biểu tượng và tên thương hiệu -->
-        <div class="flex w-40 items-center justify-center gap-2">
-            <img src="./icon/Symbol.svg" alt="Estatein Logo">
-            <span class="text-2xl">Estatein</span>
+    <nav class="w-full bg-[#1A1A1A]">
+        <div class="mx-auto flex items-center justify-between self-stretch px-5 py-5 text-[18px] font-medium leading-[150%] md:max-w-7xl">
+            <!-- Logo thương hiệu: Gồm biểu tượng và tên thương hiệu -->
+            <div class="flex items-center justify-center gap-2">
+                <img class="w-7 md:w-12" src="./icon/Symbol.svg" alt="Estatein Logo">
+                <img class="w-15 md:w-25" src="./icon/Text.svg" alt="">
+            </div>
+            <!-- Menu điều hướng: Chứa các liên kết chính của trang web -->
+            <div class="menu hidden md:block">
+                <ul class="flex items-center gap-7.5">
+                    <!-- Các mục menu -->
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <!-- Mục Properties được làm nổi bật với border và background -->
+                    <li><a class="rounded-[10px] border border-[#262626] bg-[#141414] px-5 py-3" href="">Properties</a>
+                    </li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+            <div class="block md:hidden">
+                <img src="./icon/Icon-burger.svg" alt="Menu Icon">
+            </div>
+            <!-- Nút liên hệ (Contact US) -->
+            <a href=""
+               class="hidden rounded-[10px] border border-[#262626] py-4 px-6 md:block">Contact
+                US
+            </a>
         </div>
-        <!-- Menu điều hướng: Chứa các liên kết chính của trang web -->
-        <div class="menu">
-            <ul class="flex items-center gap-7.5 ">
-                <!-- Các mục menu -->
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <!-- Mục Properties được làm nổi bật với border và background -->
-                <li><a class="border border-[#262626] bg-[#141414] rounded-[10px] px-5 py-3" href="">Properties</a></li>
-                <li><a href="">Services</a></li>
-            </ul>
-        </div>
-        <!-- Nút liên hệ (Contact US) -->
-        <a href=""
-           class="py-4 px-6 rounded-[10px] border border-[#262626]">Contact
-            US
-        </a>
     </nav>
 </header>
-<!-- Nội dung chính của trang -->
 <main>
-
+    <section class="mx-auto max-w-7xl px-5">
+        <header class="mb-10 flex flex-col items-start gap-5 md:flex-row md:justify-between">
+            <div class="flex flex-col gap-2 md:flex-row md:items-center md:gap-5">
+                <h1 class="text-3xl font-semibold leading-[150%]">Seaside Serenity Villa</h1>
+                <div class="flex items-center gap-1 text-[#999999]">
+                    <img src="./icon/Icon%20location.svg" alt="Location">
+                    <span>Malibu, California</span>
+                </div>
+            </div>
+            <div class="flex flex-col items-start md:items-end">
+                <span class="text-sm text-[#999999]">Price</span>
+                <span class="text-2xl font-semibold">$1,250,000</span>
+            </div>
+        </header>
+    </section>
 </main>
 </body>
 </html>
