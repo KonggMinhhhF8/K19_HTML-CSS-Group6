@@ -5,9 +5,74 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Home Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-[var(--primary-color)]">
+
+    <!-- Sub-header -->
+    <input type="checkbox" id="top-banner" hidden>
+    <div class="top-banner-container flex justify-center gap-[10px] relative py-[18px] bg-[var(--secondary-color)] text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,padding] duration-400">
+        <p>✨Discover Your Dream Property with Estatein</p>
+        <a href="#" class="underline">Learn More</a>
+        <button class="absolute top-1/2 -translate-y-1/2 right-8"><label for="top-banner" class="cursor-pointer">
+            <img src="./assets/icon/close.svg" alt="" class="p-[10px] bg-white/10 inline-block rounded-full">
+        </label></button>
+        <img src="./assets/abstract-01.svg" alt="" class="absolute w-full h-full top-0 object-cover opacity-20 -z-5">
+    </div>
+
+    <!-- Header (Logo + Nav) -->
+    <header class="bg-[var(--secondary-color)] py-6 px-[162px] flex items-center justify-between border-t border-b border-[#262626]">
+        <img src="./assets/logo.svg" alt="Logo Estatein" width="160px">
+        <ul class="flex text-lg font-medium text-white gap-2">
+            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a></li>
+            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a></li>
+            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a></li>
+            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a></li>
+        </ul>
+        <button><a href="#" class="bg-[var(--primary-color)] py-[14px] px-6 text-white text-lg font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Service</a></button>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="flex gap-20">
+        <!-- Hero - Left Block -->
+        <div class="w-1/2 pl-[162px] py-[144px]">
+            <h1 class="font-semibold text-[60px] leading-[120%] text-white mb-6">Discover Your Dream <br> Property with Estatein </h1>
+            <p class="font-medium text-lg leading-[150%] text-[var(--text-grey)]">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+            <div class="flex gap-5 my-[60px] text-white font-medium text-lg leading-[150%]">
+                <button><a href="#" class="block py-[18px] px-6 border border-[var(--border-grey)] rounded-[10px]">Learn More</a></button>
+                <button><a href="#" class="block py-[18px] px-6 border border-[var(--border-grey)] rounded-[10px] bg-[var(--accent-color)]">Properties</a></button>
+            </div>
+
+            <div class="flex gap-5 justify-between">
+                <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                    <p class="text-white font-bold text-[40px] leading-[150%]">200+</p>
+                    <p class="text-white">Happy Customer</p>
+                </div>
+                <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                    <p class="text-white font-bold text-[40px] leading-[150%]">10k+</p>
+                    <p class="text-white">Properties For Clients</p>
+                </div>
+                <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                    <p class="text-white font-bold text-[40px] leading-[150%]">16+</p>
+                    <p class="text-white">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero - Right Block -->
+        <div class="w-1/2 relative bg-[var(--secondary-color)]">
+            <img src="./assets/three-buildings.png" alt="Three buildings - Estatein Property"
+            class="w-full h-full">
+            <a href="#">
+                <img src="./assets/discover-dream-btn.png" alt="Discover dream property button" width="175px" class="absolute -left-[96px] top-[144px]">
+            </a>
+        </div>
+    </div>
 
 </body>
 </html>
