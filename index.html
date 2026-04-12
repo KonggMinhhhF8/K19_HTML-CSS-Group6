@@ -16,18 +16,18 @@
 
     <!-- Sub-header -->
     <input type="checkbox" id="top-banner" hidden>
-    <div class="top-banner-container flex justify-center gap-[10px] relative py-[18px] bg-[var(--secondary-color)] text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,padding] duration-400">
+    <div class="top-banner-container flex justify-center gap-2.5 relative bg-[var(--secondary-color)] text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,padding] duration-400 pt-10 pb-5 xl:py-3.5 2xl:py-4.5">
+        <img src="assets/abstract-pattern-1.svg" alt="" class="absolute w-full h-full top-0 object-cover opacity-20 -z-5">
         <p>✨Discover Your Dream Property with Estatein</p>
         <a href="#" class="underline">Learn More</a>
-        <button class="absolute top-1/2 -translate-y-1/2 right-8"><label for="top-banner" class="cursor-pointer">
-            <img src="assets/icon/close-icon.svg" alt="" class="p-[10px] bg-white/10 inline-block rounded-full">
+        <button class="absolute top-10 xl:top-3.5 2xl:top-4.5 right-4 xl:right-8"><label for="top-banner" class="cursor-pointer">
+            <img src="assets/icon/close-icon.svg" alt="" class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
         </label></button>
-        <img src="./assets/abstract-01.svg" alt="" class="absolute w-full h-full top-0 object-cover opacity-20 -z-5">
     </div>
 
     <!-- Header (Logo + Nav) -->
     <header class="bg-[var(--secondary-color)] py-6 px-[162px] flex items-center justify-between border-t border-b border-[#262626]">
-        <img src="./assets/logo.svg" alt="Logo Estatein" width="160px">
+        <img src="./assets/Logo.png" alt="Logo Estatein" width="160px">
         <ul class="flex text-lg font-medium text-white gap-2">
             <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a></li>
             <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a></li>
@@ -102,7 +102,7 @@
 
     <!-- 3 columns layout -->
     <!-- Featured Properties -->
-    <section class="px-[162px] py-[150px]">
+    <section class="py-[150px] max-w-399 m-auto">
         <div class="relative flex justify-between items-end">
             <img src="./assets/abstract-star.svg" alt="" width="70px" class="absolute -top-8 -left-4">
             <div class="w-[70%]">
@@ -142,12 +142,12 @@
                     </div>
                 </div>
                 <!-- Price -->
-                <div class="mt-[30px] flex items-center justify-between">
+                <div class="mt-[30px] flex items-center justify-between gap-12.5">
                     <div class="flex flex-col gap-[2px]">
                         <p class="text-lg text-[var(--text-grey)] font-medium leading-[150%]">Price</p>
                         <p class="text-2xl text-white font-semibold leading-[150%]">$550,000</p>
                     </div>
-                    <button><a href="#!" class="py-[18px] px-14 bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
+                    <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
                 </div>
             </div>
 
@@ -182,7 +182,7 @@
                         <p class="text-lg text-[var(--text-grey)] font-medium leading-[150%]">Price</p>
                         <p class="text-2xl text-white font-semibold leading-[150%]">$550,000</p>
                     </div>
-                    <button><a href="#!" class="py-[18px] px-14 bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
+                    <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
                 </div>
             </div>
 
@@ -217,9 +217,10 @@
                         <p class="text-lg text-[var(--text-grey)] font-medium leading-[150%]">Price</p>
                         <p class="text-2xl text-white font-semibold leading-[150%]">$550,000</p>
                     </div>
-                    <button><a href="#!" class="py-[18px] px-14 bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
+                    <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
                 </div>
             </div>
+
         </div>
         <div class="mt-[30px] pt-5 w-full flex justify-between border-t border-[var(--border-grey)]">
             <p class="text-[var(--text-grey)] font-medium text-xl"><span class="text-white">01</span> of 60</p>
