@@ -56,7 +56,7 @@
     </nav>
 </header>
 <main class="max-w-7xl mx-auto px-5 md:px-10">
-    <article class="flex flex-col gap-12.5">
+    <article class="flex flex-col gap-7.5">
         <header class="flex flex-col md:flex-row md:justify-center md:items-center flex-1 gap-2.5 md:gap-5">
             <h1 class="text-xl md:text-3xl font-semibold leading-[150%]">Seaside Serenity Villa</h1>
             <div class="flex items-center sm:gap-1.5 mr-auto">
@@ -68,9 +68,8 @@
                 <span class="text-[18px] md:text-2xl font-semibold leading-[150%]">$1,250,000</span>
             </div>
         </header>
-        <figure class="flex flex-col items-start gap-5 p-5 md:p-7.5 border border-[#262626] bg-[#1A1A1A] rounded-xl w-full">
+        <figure class="flex flex-col items-start mb-7.5 gap-5 p-5 md:p-7.5 border border-[#262626] bg-[#1A1A1A] rounded-xl w-full">
             <div class="order-2 md:order-1 flex w-full gap-5 p-5 border border-[#262626] bg-[#141414] rounded-xl">
-                <!-- Mobile: 4 ảnh, mỗi ảnh 25% | Desktop: 9 ảnh tự chia đều -->
                 <button class="md:flex-1"><img class="w-full rounded-lg object-cover"
                                                src="./images/Image-8.png" alt="Thumb 1">
                 </button>
@@ -119,6 +118,67 @@
                 </button>
             </div>
         </figure>
+        <!--Property Details-->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-7.5">
+            <div class="flex flex-col p-5 lg:p-12.5 border border-[#262626] rounded-xl self-start">
+                <div class="flex flex-col gap-3.5">
+                    <h2 class="text-lg lg:text-2xl font-semibold leading-[150%] mb-3.5">Description</h2>
+                    <p class="text-sm lg:text-lg font-medium leading-[150%]">Discover your own piece of paradise with
+                        the Seaside Serenity Villa. T With an open floor plan,
+                        breathtaking ocean views from every room, and direct access to a pristine sandy beach, this
+                        property
+                        is the epitome of coastal living.</p>
+                </div>
+                <div class="grid grid-cols-2 lg:flex gap-5 pt-2 lg:gap-10 lg:pt-5">
+                    <div class="flex flex-col mb-2.5 border-r border-[#262626] lg:border-r lg:border-[#262626] pr-2 lg:pr-4">
+                        <div class="flex items-center gap-1.75">
+                            <img src="./icon/iconbed.svg" alt="icon bed">
+                            <span>Bedrooms</span>
+                        </div>
+                        <strong>04</strong>
+                    </div>
+                    <div class="flex flex-col mb-2.5 lg:border-r lg:border-[#262626] pr-2 lg:pr-4">
+                        <div class="flex items-center gap-1.75">
+                            <img src="./icon/iconbath.svg" alt="icon bath">
+                            <span>Bathrooms</span>
+                        </div>
+                        <strong>03</strong>
+                    </div>
+                    <div class="col-span-2 lg:col-span-1 flex flex-col mb-2.5 border-t border-[#262626] lg:border-t-0 pt-2 lg:pt-0">
+                        <div class="flex items-center gap-1.75">
+                            <img src="./icon/iconarea.svg" alt="icon area">
+                            <span>Area</span>
+                        </div>
+                        <strong>2,500 square Feet</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col p-5 lg:p-12.5 gap-12.5 border border-[#262626] rounded-xl">
+                <h2 class="text-2xl font-semibold leading-[150%]">Key Features and Amenities</h2>
+                <ul class="flex flex-col gap-7.5">
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                        <img src="./icon/Iconflash.svg" alt="iconflash">
+                        <span>Expansive oceanfront terrace for outdoor entertaining</span>
+                    </li>
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                        <img src="./icon/Iconflash.svg" alt="iconflash">
+                        <span>Gourmet kitchen with top-of-the-line appliances</span>
+                    </li>
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                        <img src="./icon/Iconflash.svg" alt="iconflash">
+                        <span>Private beach access for morning strolls and sunset views</span>
+                    </li>
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                        <img src="./icon/Iconflash.svg" alt="iconflash">
+                        <span>Master suite with a spa-inspired bathroom and ocean-facing balcony</span>
+                    </li>
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                        <img src="./icon/Iconflash.svg" alt="iconflash">
+                        <span>Private garage and ample storage space</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </article>
 </main>
 </body>
