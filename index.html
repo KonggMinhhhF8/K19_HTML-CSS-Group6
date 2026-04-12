@@ -16,225 +16,229 @@
 
     <!-- Sub-header -->
     <input type="checkbox" id="top-banner" hidden>
-    <div class="top-banner-container flex justify-center gap-2.5 relative bg-[var(--secondary-color)] text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,padding] duration-400 pt-10 pb-5 xl:py-3.5 2xl:py-4.5">
+    <div class="top-banner-container flex justify-center relative bg-[var(--secondary-color)] text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,padding] duration-400 pt-10 pb-5 xl:py-3.5 2xl:py-4.5">
         <img src="assets/abstract-pattern-1.svg" alt="" class="absolute w-full h-full top-0 object-cover opacity-20 -z-5">
-        <p>✨Discover Your Dream Property with Estatein</p>
-        <a href="#" class="underline">Learn More</a>
+        <p>✨Discover Your Dream Property with Estatein <a href="#" class="underline ml-2.5">Learn More</a></p>
         <button class="absolute top-10 xl:top-3.5 2xl:top-4.5 right-4 xl:right-8"><label for="top-banner" class="cursor-pointer">
             <img src="assets/icon/close-icon.svg" alt="" class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
         </label></button>
     </div>
 
     <!-- Header (Logo + Nav) -->
-    <header class="bg-[var(--secondary-color)] py-6 px-[162px] flex items-center justify-between border-t border-b border-[#262626]">
-        <img src="./assets/Logo.png" alt="Logo Estatein" width="160px">
-        <ul class="flex text-lg font-medium text-white gap-2">
-            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a></li>
-            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a></li>
-            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a></li>
-            <li><a href="#" class="py-[14px] px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a></li>
-        </ul>
-        <button><a href="#" class="bg-[var(--primary-color)] py-[14px] px-6 text-white text-lg font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a></button>
+    <header class="bg-[var(--secondary-color)] py-6 px-40.5 flex items-center justify-between border-t border-b border-[var(--border-grey)]">
+        <img src="./assets/Logo.png" alt="Logo Estatein" class="w-40">
+        <nav class="flex text-lg font-medium text-white gap-2">
+            <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
+            <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a>
+            <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
+            <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
+        </nav>
+        <button><a href="#" class="bg-[var(--primary-color)] py-3.5 px-6 text-white text-lg font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a></button>
     </header>
 
-    <!-- Hero Section -->
-    <section class="flex gap-20">
-        <!-- Hero - Left Block -->
-        <div class="w-1/2 pl-[162px] py-[144px]">
-            <h1 class="text-[60px] font-semibold leading-[120%] text-white mb-6">Discover Your Dream <br> Property with Estatein </h1>
-            <p class="font-medium text-lg leading-[150%] text-[var(--text-grey)]">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
-            <div class="flex gap-5 my-[60px] text-white font-medium text-lg leading-[150%]">
-                <button><a href="#" class="block py-[18px] px-6 border border-[var(--border-grey)] rounded-[10px]">Learn More</a></button>
-                <button><a href="#" class="block py-[18px] px-6 border border-[var(--border-grey)] rounded-[10px] bg-[var(--accent-color)]">Browse Properties</a></button>
-            </div>
 
-            <div class="flex gap-5 justify-between">
-                <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
-                    <p class="text-white font-bold text-[40px] leading-[150%]">200+</p>
-                    <p class="text-white">Happy Customer</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="flex gap-20">
+            <!-- Hero - Left Block -->
+            <div class="w-1/2 pl-40.5 py-36">
+                <h1 class="text-[60px] font-semibold leading-[120%] text-white mb-6">Discover Your Dream <br> Property with Estatein </h1>
+                <p class="font-medium text-lg text-[var(--text-grey)]">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+                <div class="flex gap-5 my-[60px] text-white font-medium text-lg">
+                    <button><a href="#" class="block py-4.5 px-6 border border-[var(--border-grey)] rounded-[10px]">Learn More</a></button>
+                    <button><a href="#" class="block py-4.5 px-6 border border-[var(--border-grey)] rounded-[10px] bg-[var(--accent-color)]">Browse Properties</a></button>
                 </div>
-                <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
-                    <p class="text-white font-bold text-[40px] leading-[150%]">10k+</p>
-                    <p class="text-white">Properties For Clients</p>
-                </div>
-                <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
-                    <p class="text-white font-bold text-[40px] leading-[150%]">16+</p>
-                    <p class="text-white">Years of Experience</p>
+
+                <div class="flex gap-5 justify-between">
+                    <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                        <p class="text-white font-bold text-[40px]">200+</p>
+                        <p class="text-white">Happy Customer</p>
+                    </div>
+                    <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                        <p class="text-white font-bold text-[40px]">10k+</p>
+                        <p class="text-white">Properties For Clients</p>
+                    </div>
+                    <div class="flex-1 py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                        <p class="text-white font-bold text-[40px]">16+</p>
+                        <p class="text-white">Years of Experience</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Hero - Right Block -->
-        <div class="w-1/2 relative bg-[var(--secondary-color)]">
-            <img src="./assets/three-buildings.png" alt="Three buildings - Estatein Property"
-            class="w-full h-full object-cover">
-            <a href="#">
-                <img src="./assets/discover-dream-btn.png" alt="Discover dream property button" width="175px" class="absolute -left-[96px] top-[144px]">
+            <!-- Hero - Right Block -->
+            <div class="w-1/2 relative bg-[var(--secondary-color)] bg-[linear-gradient(238.21deg,_#2A213F_8.76%,_rgba(25,25,25,0)_50.09%),url('./assets/abstract-pattern-2.svg')] bg-cover bg-center">
+<!--                <img src="./assets/abstract-pattern-2.svg" alt="" class="object-cover h-full">-->
+                <img src="./assets/three-buildings.png" alt="Three buildings - Estatein Property"
+                     class="max-w-full h-full object-cover absolute bottom-0 left-1/2 -translate-x-1/2 z-2">
+                <a href="#">
+                    <img src="./assets/discover-dream-btn.png" alt="Discover dream property button" width="175px" class="absolute -left-24 top-36">
+                </a>
+            </div>
+        </section>
+
+        <!-- USP Cards -->
+        <section class="p-5 flex gap-5 shadow-[0px_0px_0px_10px_#191919]">
+            <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+                <img src="./assets/icon/home-icon.svg" alt="" class="mb-5">
+                <p class="text-white text-xl font-semibold">Find Your Dream Home</p>
+                <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
             </a>
-        </div>
-    </section>
 
-    <!-- USP Cards -->
-    <section class="p-5 flex gap-5 shadow-[0px_0px_0px_10px_#191919]">
-        <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
-            <img src="./assets/icon/home-icon.svg" alt="" class="mb-5">
-            <p class="text-white text-xl font-semibold leading-[150%] ">Find Your Dream Home</p>
-            <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
-        </a>
+            <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+                <img src="./assets/icon/money-icon.svg" alt="" class="mb-5">
+                <p class="text-white text-xl font-semibold">Unlock Property Value</p>
+                <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
+            </a>
 
-        <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
-            <img src="./assets/icon/money-icon.svg" alt="" class="mb-5">
-            <p class="text-white text-xl font-semibold leading-[150%] ">Unlock Property Value</p>
-            <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
-        </a>
+            <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+                <img src="./assets/icon/building-icon.svg" alt="" class="mb-5">
+                <p class="text-white text-xl font-semibold">Effortless Property Management</p>
+                <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
+            </a>
 
-        <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
-            <img src="./assets/icon/building-icon.svg" alt="" class="mb-5">
-            <p class="text-white text-xl font-semibold leading-[150%] ">Effortless Property Management</p>
-            <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
-        </a>
+            <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+                <img src="./assets/icon/sunbright-icon.svg" alt="" class="mb-5">
+                <p class="text-white text-xl font-semibold">Smart Investments, Informed Decisions</p>
+                <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
+            </a>
+        </section>
 
-        <a href="#!" class="py-10 px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
-            <img src="./assets/icon/sunbright-icon.svg" alt="" class="mb-5">
-            <p class="text-white text-xl font-semibold leading-[150%] ">Smart Investments, Informed Decisions</p>
-            <img src="./assets/icon/arrow-upright.svg" alt="" width="34px" class="absolute top-5 right-5">
-        </a>
-    </section>
-
-    <!-- 3 columns layout -->
-    <!-- Featured Properties -->
-    <section class="py-[150px] max-w-399 m-auto">
-        <div class="relative flex justify-between items-end">
-            <img src="./assets/abstract-star.svg" alt="" width="70px" class="absolute -top-8 -left-4">
-            <div class="w-[70%]">
-                <h2 class="text-white text-[48px] font-semibold leading-[150%] mb-[14px]">Featured Properties</h2>
-                <p class="text-[var(--text-grey)] text-lg font-medium">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
-            </div>
-            <button class="block w-[30%] relative">
-                <a href="#" class="text-white text-lg font-medium leading-[150%] py-[18px] px-6 bg-[var(--secondary-color)] rounded-[10px]
+        <!-- 3 columns layout -->
+        <!-- Featured Properties -->
+        <section class="py-37.5 max-w-399 m-auto">
+            <div class="relative flex justify-between items-end">
+                <img src="./assets/abstract-star.svg" alt="" width="70px" class="absolute -top-8 -left-4">
+                <div class="w-[70%]">
+                    <h2 class="text-white text-[48px] font-semibold mb-3.5">Featured Properties</h2>
+                    <p class="text-[var(--text-grey)] text-lg font-medium">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+                </div>
+                <button class="block w-[30%] relative">
+                    <a href="#" class="text-white text-lg font-medium py-4.5 px-6 bg-[var(--secondary-color)] rounded-[10px]
                 border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View All Properties</a>
-            </button>
-        </div>
-
-        <div class="mt-20 flex gap-[30px]">
-            <!-- Card 1 -->
-            <div class="p-10 border border-[var(--border-grey)] rounded-xl">
-                <div class="h-[318px] rounded-[10px] overflow-hidden mb-[30px]">
-                    <img src="./assets/thumbs/Seaside%20Serenity%20Villa.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
-                </div>
-                <!-- Name + Desc -->
-                <h3 class="font-semibold text-white text-2xl leading-[150%] mb-[6px]">Seaside Serenity Villa</h3>
-                <p class="text-lg text-[var(--text-grey)] leading-[150%] mb-[30px]">
-                    A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#!" class="text-white underline">Read More</a>
-                </p>
-                <!-- Details -->
-                <div class="flex gap-[10px]">
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/bed-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">4-Bedroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/bath-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">3-Bathroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/property-types-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">Villa</span>
-                    </div>
-                </div>
-                <!-- Price -->
-                <div class="mt-[30px] flex items-center justify-between gap-12.5">
-                    <div class="flex flex-col gap-[2px]">
-                        <p class="text-lg text-[var(--text-grey)] font-medium leading-[150%]">Price</p>
-                        <p class="text-2xl text-white font-semibold leading-[150%]">$550,000</p>
-                    </div>
-                    <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
-                </div>
+                </button>
             </div>
 
-            <!-- Card 2 -->
-            <div class="p-10 border border-[var(--border-grey)] rounded-xl">
-                <div class="h-[318px] rounded-[10px] overflow-hidden mb-[30px]">
-                    <img src="./assets/thumbs/Metropolitan%20Haven.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
+            <div class="mt-20 flex gap-7.5">
+                <!-- Card 1 -->
+                <div class="p-10 border border-[var(--border-grey)] rounded-xl">
+                    <div class="h-79.5 rounded-[10px] overflow-hidden mb-7.5">
+                        <img src="./assets/thumbs/Seaside%20Serenity%20Villa.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Name + Desc -->
+                    <h3 class="font-semibold text-white text-2xl mb-1.5">Seaside Serenity Villa</h3>
+                    <p class="text-lg text-[var(--text-grey)] mb-7.5">
+                        A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#!" class="text-white underline">Read More</a>
+                    </p>
+                    <!-- Details -->
+                    <div class="flex gap-2.5">
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/bed-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">4-Bedroom</span>
+                        </div>
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/bath-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">3-Bathroom</span>
+                        </div>
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/property-types-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">Villa</span>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div class="mt-7.5 flex items-center justify-between gap-12.5">
+                        <div class="flex flex-col gap-0.5">
+                            <p class="text-lg text-[var(--text-grey)] font-medium leading-[150%]">Price</p>
+                            <p class="text-2xl text-white font-semibold leading-[150%]">$550,000</p>
+                        </div>
+                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
+                    </div>
                 </div>
-                <!-- Name + Desc -->
-                <h3 class="font-semibold text-white text-2xl leading-[150%] mb-[6px]">Metropolitan Haven</h3>
-                <p class="text-lg text-[var(--text-grey)] leading-[150%] mb-[30px]">
-                    A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="#!" class="text-white underline">Read More</a>
-                </p>
-                <!-- Details -->
-                <div class="flex gap-[10px]">
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/bed-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">2-Bedroom</span>
+
+                <!-- Card 2 -->
+                <div class="p-10 border border-[var(--border-grey)] rounded-xl">
+                    <div class="h-79.5 rounded-[10px] overflow-hidden mb-7.5">
+                        <img src="./assets/thumbs/Metropolitan%20Haven.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/bath-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">2-Bathroom</span>
+                    <!-- Name + Desc -->
+                    <h3 class="font-semibold text-white text-2xl mb-1.5">Metropolitan Haven</h3>
+                    <p class="text-lg text-[var(--text-grey)] mb-7.5">
+                        A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="#!" class="text-white underline">Read More</a>
+                    </p>
+                    <!-- Details -->
+                    <div class="flex gap-2.5">
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/bed-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">2-Bedroom</span>
+                        </div>
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/bath-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">2-Bathroom</span>
+                        </div>
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/property-types-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">Villa</span>
+                        </div>
                     </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/property-types-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">Villa</span>
+                    <!-- Price -->
+                    <div class="mt-7.5 flex items-center justify-between">
+                        <div class="flex flex-col gap-0.5">
+                            <p class="text-lg text-[var(--text-grey)] font-medium">Price</p>
+                            <p class="text-2xl text-white font-semibold">$550,000</p>
+                        </div>
+                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-4.5 px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
                     </div>
                 </div>
-                <!-- Price -->
-                <div class="mt-[30px] flex items-center justify-between">
-                    <div class="flex flex-col gap-[2px]">
-                        <p class="text-lg text-[var(--text-grey)] font-medium leading-[150%]">Price</p>
-                        <p class="text-2xl text-white font-semibold leading-[150%]">$550,000</p>
+
+                <!-- Card 3 -->
+                <div class="p-10 border border-[var(--border-grey)] rounded-xl">
+                    <div class="h-79.5 rounded-[10px] overflow-hidden mb-7.5">
+                        <img src="./assets/thumbs/Rustic%20Retreat%20Cottage.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
-                    <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
+                    <!-- Name + Desc -->
+                    <h3 class="font-semibold text-white text-2xl mb-1.5">Rustic Retreat Cottage</h3>
+                    <p class="text-lg text-[var(--text-grey)] mb-7.5">
+                        An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="#!" class="text-white underline">Read More</a>
+                    </p>
+                    <!-- Details -->
+                    <div class="flex gap-2.5">
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/bed-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">3-Bedroom</span>
+                        </div>
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/bath-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">3-Bathroom</span>
+                        </div>
+                        <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-3.5 flex gap-1">
+                            <img src="./assets/icon/property-types-icon.svg" alt="" width="24px">
+                            <span class="text-lg text-white inline-block">Villa</span>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div class="mt-7.5 flex items-center justify-between">
+                        <div class="flex flex-col gap-0.5">
+                            <p class="text-lg text-[var(--text-grey)] font-medium">Price</p>
+                            <p class="text-2xl text-white font-semibold">$550,000</p>
+                        </div>
+                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-4.5 px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-7.5 pt-5 w-full flex justify-between border-t border-[var(--border-grey)]">
+                <p class="text-[var(--text-grey)] font-medium text-xl"><span class="text-white">01</span> of 60</p>
+                <div class="flex gap-2.5">
+                    <div class="p-3.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-left.svg" alt="" width="30px" class="inline-block">
+                    </div>
+                    <div class="p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-right.svg" alt="" width="30px" class="inline-block">
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Card 3 -->
-            <div class="p-10 border border-[var(--border-grey)] rounded-xl">
-                <div class="h-[318px] rounded-[10px] overflow-hidden mb-[30px]">
-                    <img src="./assets/thumbs/Rustic%20Retreat%20Cottage.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
-                </div>
-                <!-- Name + Desc -->
-                <h3 class="font-semibold text-white text-2xl leading-[150%] mb-[6px]">Rustic Retreat Cottage</h3>
-                <p class="text-lg text-[var(--text-grey)] leading-[150%] mb-[30px]">
-                    An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="#!" class="text-white underline">Read More</a>
-                </p>
-                <!-- Details -->
-                <div class="flex gap-[10px]">
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/bed-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">3-Bedroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/bath-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">3-Bathroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-2 px-[14px] flex gap-1">
-                        <img src="./assets/icon/property-types-icon.svg" alt="" width="24px">
-                        <span class="text-lg text-white leading-[150%] inline-block">Villa</span>
-                    </div>
-                </div>
-                <!-- Price -->
-                <div class="mt-[30px] flex items-center justify-between">
-                    <div class="flex flex-col gap-[2px]">
-                        <p class="text-lg text-[var(--text-grey)] font-medium leading-[150%]">Price</p>
-                        <p class="text-2xl text-white font-semibold leading-[150%]">$550,000</p>
-                    </div>
-                    <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4  bg-[var(--accent-color)] text-white text-lg font-medium rounded-[10px] block">View Property Details</a></button>
-                </div>
-            </div>
 
-        </div>
-        <div class="mt-[30px] pt-5 w-full flex justify-between border-t border-[var(--border-grey)]">
-            <p class="text-[var(--text-grey)] font-medium text-xl"><span class="text-white">01</span> of 60</p>
-            <div class="flex gap-[10px]">
-                <div class="p-[14px] rounded-full border border-[var(--border-grey)]">
-                    <img src="./assets/icon/arrow-left.svg" alt="" width="30px" class="inline-block">
-                </div>
-                <div class="p-[14px] bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)]">
-                    <img src="./assets/icon/arrow-right.svg" alt="" width="30px" class="inline-block">
-                </div>
-            </div>
-        </div>
-
-    </section>
+    </main>
 
 
 
