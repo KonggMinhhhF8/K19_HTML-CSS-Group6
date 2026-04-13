@@ -18,104 +18,108 @@
     <header class="sticky top-0 z-1000">
         <!-- Top Banner -->
         <input type="checkbox" id="top-banner" hidden>
-        <div class="top-banner-container flex justify-center relative bg-[var(--secondary-color)] text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,visibility,padding] duration-400 pt-10 pb-5 xl:py-3.5 2xl:py-4.5">
+        <div class="top-banner-container flex justify-start xl:justify-center relative bg-[var(--secondary-color)] text-xs 2xl:text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,visibility,padding] duration-400 pt-10 pb-5 xl:py-3.5 2xl:py-4.5">
             <img src="assets/abstract-pattern-1.svg" alt="" class="absolute w-full h-full top-0 object-cover opacity-20 -z-5">
-            <p>✨Discover Your Dream Property with Estatein <a href="#" class="underline ml-2.5">Learn More</a></p>
-            <button class="absolute top-10 xl:top-3.5 2xl:top-4.5 right-4 xl:right-8"><label for="top-banner" class="cursor-pointer">
+            <p class="ml-4 xl:ml-0">✨Discover Your Dream Property with Estatein <a href="#" class="underline ml-1.5 xl:ml-2.5">Learn More</a></p>
+            <button class="absolute top-9 xl:top-3.5 2xl:top-4.5 right-4 xl:right-8"><label for="top-banner" class="cursor-pointer">
                 <img src="assets/icon/close-icon.svg" alt="" class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
             </label></button>
         </div>
+
         <!-- Main Menu -->
-        <div class="bg-[var(--secondary-color)] py-6 px-40.5 flex items-center justify-between border-t border-b border-[var(--border-grey)]">
-            <img src="./assets/Logo.png" alt="Logo Estatein" class="w-40">
-            <nav class="flex text-lg font-medium text-white gap-2">
-                <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
-                <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a>
-                <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
-                <a href="#" class="py-3.5 px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
+        <div class="bg-[var(--secondary-color)] py-5 px-4 xl:py-3.5 xl:px-20 2xl:py-6 2xl:px-40.5 flex items-center justify-between border-t border-b border-[var(--border-grey)]">
+            <input type="checkbox" id="menu-toggle" class="hidden"/>
+            <img src="./assets/Logo.png" alt="Logo Estatein" class="h-7 xl:h-8.5 2xl:h-12">
+            <nav class="hidden md:flex text-sm 2xl:text-lg font-medium text-white gap-2">
+                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
+                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a>
+                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
+                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
             </nav>
-            <button><a href="#" class="bg-[var(--primary-color)] py-3.5 px-6 text-white text-lg font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a></button>
+            <button><a href="#" class="hidden md:block bg-[var(--primary-color)] py-3.5 px-5 2xl:px-6 text-white xl:text-sm 2xl:text-lg font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a></button>
+            <button class="block md:hidden"><label for="menu-toggle"><img src="./assets/icon/hamburger-icon.svg" alt="" class="w-6"></label></button>
         </div>
     </header>
 
 
     <main class="max-w-[1920px] mx-auto p-4 xl:p-0">
         <!-- Hero Section -->
-        <section class="flex flex-col xl:gap-15 xl:flex-row 2xl:gap-20">
+        <section class="flex flex-col-reverse xl:gap-15 xl:flex-row 2xl:gap-20">
             <!-- Hero - Left Block -->
-            <div class="p-0 xl:pl-20 xl:py-24.5 w-1/2 2xl:pl-40.5 2xl:py-36">
-                <h1 class="text-[28px] xl:text-[46px] 2xl:text-[60px] font-semibold leading-[120%] text-white mb-6">Discover Your Dream <br> Property with Estatein </h1>
+            <div class="pt-14 p-0 xl:pl-20 xl:py-24.5 w-full xl:w-1/2 2xl:pl-40.5 2xl:py-36">
+                <h1 class="text-[28px] xl:text-[46px] 2xl:text-[60px] font-semibold leading-[120%] text-white mb-4 xl:mb-6">Discover Your Dream <br> Property with Estatein </h1>
                 <p class="font-medium text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)]">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
-                <div class="flex gap-5 xl:my-12.5 2xl:my-15 text-white font-medium text-sm 2xl:text-lg">
-                    <button><a href="#" class="block xl:py-3.5 xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.05)] transition-shadow duration-200">Learn More</a></button>
-                    <button><a href="#" class="block xl:py-3.5 xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">Browse Properties</a></button>
+                <div class="flex flex-col gap-4 xl:flex-row xl:gap-5 mt-5 xl:my-12.5 2xl:my-15 text-white font-medium text-sm 2xl:text-lg">
+                    <button><a href="#" class="block py-3.5 rounded-lg xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.05)] transition-shadow duration-200">Learn More</a></button>
+                    <button><a href="#" class="block py-3.5 rounded-lg xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">Browse Properties</a></button>
                 </div>
 
-                <div class="flex gap-5 justify-between">
-                    <div class="flex-1 xl:py-3.5 xl:px-5 2xl:py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                <div class="flex flex-wrap gap-3 xl:gap-5 justify-between mt-10">
+                    <div class="text-center w-[calc(50%-10px)] xl:flex-1 p-4 xl:py-3.5 xl:px-5 2xl:py-4 2xl:px-6 bg-[var(--secondary-color)] rounded-lg 2xl:rounded-[12px] border border-[var(--border-grey)]">
                         <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">200+</p>
                         <p class="text-white text-sm xl:text-base">Happy Customer</p>
                     </div>
-                    <div class="flex-1 xl:py-3.5 xl:px-5 2xl:py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                    <div class="text-center w-[calc(50%-10px)] xl:flex-1 p-4 xl:py-3.5 xl:px-5 2xl:py-4 2xl:px-6 bg-[var(--secondary-color)] rounded-lg 2xl:rounded-[12px] border border-[var(--border-grey)]">
                         <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">10k+</p>
                         <p class="text-white text-sm xl:text-base">Properties For Clients</p>
                     </div>
-                    <div class="flex-1 xl:py-3.5 xl:px-5 2xl:py-4 px-6 bg-[var(--secondary-color)] rounded-[12px] border border-[var(--border-grey)]">
+                    <div class="text-center flex-1 p-4 xl:py-3.5 xl:px-5 2xl:py-4 2xl:px-6 bg-[var(--secondary-color)] rounded-lg 2xl:rounded-[12px] border border-[var(--border-grey)]">
                         <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">16+</p>
                         <p class="text-white text-sm xl:text-base">Years of Experience</p>
                     </div>
                 </div>
             </div>
             <!-- Hero - Right Block -->
-            <div class="w-1/2 relative bg-[var(--secondary-color)] bg-[linear-gradient(238.21deg,_#2A213F_8.76%,_rgba(25,25,25,0)_50.09%),url('./assets/abstract-pattern-2.svg')] bg-cover bg-center">
+            <div class="w-full xl:w-1/2 relative rounded-xl xl:rounded-none bg-[var(--secondary-color)] bg-[linear-gradient(238.21deg,_#2A213F_8.76%,_rgba(25,25,25,0)_50.09%),url('./assets/abstract-pattern-2.svg')] bg-cover bg-center">
 <!--                <img src="./assets/abstract-pattern-2.svg" alt="" class="object-cover h-full">-->
                 <img src="./assets/three-buildings.png" alt="Three buildings - Estatein Property"
-                     class="max-w-full h-full object-cover xl:absolute bottom-0 left-1/2 -translate-x-1/2 z-2">
+                     class="max-w-full h-full object-cover xl:absolute bottom-0 left-0 xl:left-1/2 xl:-translate-x-1/2 z-2">
                 <a href="#!">
-                    <img src="./assets/discover-dream-btn.png" alt="Discover dream property button" class="absolute xl:top-23.75 xl:w-32.25 xl:-left-16 2xl:-left-24 2xl:top-36 2xl:w-43.75 z-10 hover:rotate-15 hover:scale-105 transition-transform duration-300">
+                    <img src="./assets/discover-dream-btn.png" alt="Discover dream property button" class="absolute w-29.25 left-4 -bottom-10.5 xl:top-23.75 xl:w-32.25 xl:-left-16 2xl:-left-24 2xl:top-36 2xl:w-43.75 z-10 hover:rotate-15 hover:scale-105 transition-transform duration-300">
                 </a>
             </div>
         </section>
 
-        <!-- USP Cards -->
-        <section class="p-5 flex gap-5 shadow-[0px_0px_0px_10px_#191919] text-center">
-            <a href="#!" class="relative py-4 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+        <!-- USP Cards Section -->
+        <section class="p-2.5 xl:p-5 grid grid-cols-2 xl:grid-cols-4 gap-2.5 xl:gap-5 shadow-[0px_0px_0px_10px_#191919] text-center">
+            <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
                 <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div> <!-- Overlay Gradient - Hover Effect -->
-                <img src="./assets/icon/home-icon.svg" alt="" class="mb-5 w-12 xl:w-15 2xl:w-20.5">
+                <img src="./assets/icon/home-icon.svg" alt="" class="mb-3.5 xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
                 <p class="text-white font-meidum text-sm xl:text-base 2xl:text-xl font-semibold">Find Your Dream Home</p>
                 <img src="./assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
             </a>
 
-            <a href="#!" class="relative py-4 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+            <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
                 <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div> <!-- Overlay Gradient - Hover Effect -->
-                <img src="./assets/icon/money-icon.svg" alt="" class="mb-5 w-12 xl:w-15 2xl:w-20.5">
+                <img src="./assets/icon/money-icon.svg" alt="" class="mb-3.5 xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
                 <p class="text-white font-meidum text-sm xl:text-base 2xl:text-xl font-semibold">Unlock Property Value</p>
                 <img src="./assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
             </a>
 
-            <a href="#!" class="relative py-4 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+            <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
                 <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div> <!-- Overlay Gradient - Hover Effect -->
-                <img src="./assets/icon/building-icon.svg" alt="" class="mb-5 w-12 xl:w-15 2xl:w-20.5">
+                <img src="./assets/icon/building-icon.svg" alt="" class="mb-3.5 xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
                 <p class="text-white font-meidum text-sm xl:text-base 2xl:text-xl font-semibold">Effortless Property Management</p>
                 <img src="./assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
             </a>
 
-            <a href="#!" class="relative py-4 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
+            <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
                 <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div> <!-- Overlay Gradient - Hover Effect -->
-                <img src="./assets/icon/sunbright-icon.svg" alt="" class="mb-5 w-12 xl:w-15 2xl:w-20.5">
+                <img src="./assets/icon/sunbright-icon.svg" alt="" class="mb-3.5 xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
                 <p class="text-white font-meidum text-sm xl:text-base 2xl:text-xl font-semibold">Smart Investments, Informed Decisions</p>
                 <img src="./assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
             </a>
         </section>
 
-        <!-- 3 columns layout -->
-        <!-- Featured Properties -->
-        <section class="py-37.5 xl:px-20 2xl:px-40.5 m-auto">
+
+        <!-- Featured Properties Section -->
+        <section class="py-20 xl:py-37.5 xl:px-20 2xl:px-40.5 m-auto">
             <div class="relative flex justify-between items-end">
-                <img src="./assets/abstract-star.svg" alt="" width="70px" class="absolute -top-8 -left-4">
-                <div class="w-[70%]">
-                    <h2 class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold mb-3.5">Featured Properties</h2>
-                    <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg font-medium">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+                <img src="./assets/abstract-star.svg" alt="" class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5">
+                <div class="w-full xl:w-[70%]">
+                    <h2 class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">Featured Properties</h2>
+                    <p class="hidden xl:block text-[var(--text-grey)] xl:text-base 2xl:text-lg font-medium">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+                    <p class="text-[var(--text-grey)] text-sm font-medium xl:hidden">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.</p>
                 </div>
                 <button class="hidden md:block w-[30%] relative">
                     <a href="#" class="text-white text-sm 2xl:text-lg font-medium py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
@@ -123,19 +127,19 @@
                 </button>
             </div>
 
-            <div class="mt-20 grid grid-cols-1 xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
+            <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
                 <!-- Card 1 -->
-                <div class="p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
-                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-7.5">
+                <div class="min-w-full snap-start xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
                         <img src="./assets/thumbs/Seaside%20Serenity%20Villa.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
                     <!-- Name + Desc -->
-                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5">Seaside Serenity Villa</h3>
-                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-7.5">
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Seaside Serenity Villa</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5">
                         A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#!" class="text-white underline">Read More</a>
                     </p>
                     <!-- Details -->
-                    <div class="flex xl:gap-1.5 2xl:gap-2.5">
+                    <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
                         <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
                             <img src="./assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
                             <span class="text-sm 2xl:text-lg text-white inline-block">4-Bedroom</span>
@@ -150,27 +154,27 @@
                         </div>
                     </div>
                     <!-- Price -->
-                    <div class="mt-7.5 flex items-center justify-between xl:gap-10 2xl:gap-12.5">
+                    <div class="mt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
                         <div class="flex flex-col gap-0.5">
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)] font-medium">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
                         </div>
-                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4 bg-[var(--accent-color)] text-white text-sm 2xl:text-lg font-medium rounded-[10px] block hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a></button>
+                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-3.5 px-5 xl:py-[18px] xl:px-4 bg-[var(--accent-color)] text-white text-sm 2xl:text-lg font-medium rounded-[10px] block hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a></button>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
-                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-7.5">
+                <div class="min-w-full snap-start xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
                         <img src="./assets/thumbs/Metropolitan%20Haven.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
                     <!-- Name + Desc -->
-                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5">Metropolitan Haven</h3>
-                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-7.5">
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Metropolitan Haven</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5">
                         A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="#!" class="text-white underline">Read More</a>
                     </p>
                     <!-- Details -->
-                    <div class="flex xl:gap-1.5 2xl:gap-2.5">
+                    <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
                         <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
                             <img src="./assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
                             <span class="text-sm 2xl:text-lg text-white inline-block">2-Bedroom</span>
@@ -185,27 +189,27 @@
                         </div>
                     </div>
                     <!-- Price -->
-                    <div class="mt-7.5 flex items-center justify-between xl:gap-10 2xl:gap-12.5">
+                    <div class="mt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
                         <div class="flex flex-col gap-0.5">
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)] font-medium">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
                         </div>
-                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4 bg-[var(--accent-color)] text-white text-sm 2xl:text-lg font-medium rounded-[10px] block hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a></button>
+                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-3.5 px-5 xl:py-[18px] xl:px-4 bg-[var(--accent-color)] text-white text-sm 2xl:text-lg font-medium rounded-[10px] block hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a></button>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
-                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-7.5">
+                <div class="min-w-full snap-start xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
                         <img src="./assets/thumbs/Rustic%20Retreat%20Cottage.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
                     <!-- Name + Desc -->
-                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5">Rustic Retreat Cottage</h3>
-                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-7.5">
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Rustic Retreat Cottage</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5">
                         An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="#!" class="text-white underline">Read More</a>
                     </p>
                     <!-- Details -->
-                    <div class="flex xl:gap-1.5 2xl:gap-2.5">
+                    <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
                         <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
                             <img src="./assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
                             <span class="text-sm 2xl:text-lg text-white inline-block">3-Bedroom</span>
@@ -220,12 +224,12 @@
                         </div>
                     </div>
                     <!-- Price -->
-                    <div class="mt-7.5 flex items-center justify-between xl:gap-10 2xl:gap-12.5">
+                    <div class="mt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
                         <div class="flex flex-col gap-0.5">
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)] font-medium">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
                         </div>
-                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-[18px] px-4 bg-[var(--accent-color)] text-white text-sm 2xl:text-lg font-medium rounded-[10px] block hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a></button>
+                        <button class="flex-1 max-w-69.75"><a href="#!" class="py-3.5 px-5 xl:py-[18px] xl:px-4 bg-[var(--accent-color)] text-white text-sm 2xl:text-lg font-medium rounded-[10px] block hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a></button>
                     </div>
                 </div>
 
@@ -261,8 +265,8 @@
                 </div>
             </div>
 
-
         </section>
+
 
 
     </main>
