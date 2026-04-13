@@ -16,22 +16,26 @@
 <body class="bg-[#141414] font-[Urbanist,sans-serif] leading-relaxed">
     <!-- ------------Header------------ -->
     <div
-        class="py-[18px] text-center text-white font-medium bg-[url(./access/images/banner.png)] text-[12px] md:text-sm xl:text-lg">
+        class="relative z-2 py-[18px] text-center text-white font-medium bg-[url(./access/images/banner.png)] text-[12px] md:text-sm xl:text-lg">
         ✨Discover
         Your Dream Property with Estatein
         <a href="#!" class="underline">Learn More</a>
     </div>
     <div
-        class="flex justify-between text-white items-center py-[20px] md:py-[14px] xl:py-[20px] border-t border-[#262626] px-4 md:px-6 xl:px-16 ">
-        <a href="#!" class="flex items-center">
+        class="flex justify-between relative text-white items-center py-[20px] md:py-[14px] xl:py-[20px] border-t border-[#262626] px-4 md:px-6 xl:px-16 ">
+        <a href="#!" class="flex items-center z-2">
             <img src="./access/images/logo.svg" alt="Estatein logo" class="size-[28px] md:size-[34px] xl:size-[48px]">
             <span class="ml-2 font-semibold text-base md:text-lg xl:text-xl">Estatein</span>
         </a>
-        <ul class="hidden md:flex items-center font-medium md:gap-x-[24px] xl:gap-x-[30px] md:text-sm xl:text-lg">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Properties</li>
-            <li>
+        <label class="peer hidden">
+            <input type="checkbox" id="menu-toggle">
+        </label>
+        <ul
+            class="absolute z-2 top-full right-[32px] w-[300px] md:w-fit py-4 md:py-0 md:p-0 opacity-0 pointer-events-none peer-has-checked:pointer-events-auto peer-has-checked:opacity-100 md:opacity-100 md:pointer-events-auto transition-opacity duration-300 shadow-2xl shadow-[#262626] md:shadow-none rounded-bl-2xl bg-[#141414] border-l border-b border-[#262626] md:border-none text-center md:static md:flex items-center font-medium md:gap-x-[24px] xl:gap-x-[30px] md:text-sm xl:text-lg">
+            <li class="p-4 md:p-0">Home</li>
+            <li class="p-4 md:p-0">About Us</li>
+            <li class="p-4 md:p-0">Properties</li>
+            <li class="p-4 md:p-0">
                 <a href="#!"
                     class="md:py-[12px] md:px-[20px] xl:py-[14px] xl:px-[24px] bg-[#141414] border border-[#262626] rounded-lg">Service</a>
             </li>
@@ -39,8 +43,12 @@
         <a href="#!"
             class=" md:py-[14px] md:px-[20px] xl:py-[16px] xl:px-[24px] bg-[#141414] border border-[#262626] rounded-lg hidden md:block">
             Contact Us</a>
-        <img src="./access/icons/menu-icon.svg" alt="menu-icon"
-            class="py-[7px] px-[3.5px] size-[28px] mr-[16px] block md:hidden">
+        <label for="menu-toggle" class="peer block md:hidden relative z-2">
+            <img src="./access/icons/menu-icon.svg" alt="menu-icon" class="py-[7px] px-[3.5px] size-[28px] mr-[16px] ">
+        </label>
+        <label for="menu-toggle"
+            class="peer fixed  !z-1 inset-0 bg-black/60 opacity-0 pointer-events-none peer-has-checked:pointer-events-auto peer-has-checked:opacity-100 transition-opacity duration-300"></label>
+
     </div>
     <!-- ------------Banner------------ -->
     <div
@@ -57,32 +65,39 @@
     <!-- ------------Card header------------ -->
     <div
         class="grid grid-cols-2 md:grid-cols-4 shadow-[0px_0px_0px_10px_#191919] bg-[#141414] border border-[#262626] gap-[10px] xl:gap-[20px] p-[10px] xl:p-[20px]">
-        <div class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A]">
+        <!-- card 1 -->
+        <div
+            class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
             <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
             <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl">Find Your Dream Home</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px]">
+                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
         </div>
-        <div class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A]">
+        <!-- card 2 -->
+        <div
+            class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
             <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
             <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl">Unlock Property Value</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px]">
+                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
         </div>
-        <div class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A]">
+        <!-- card 3 -->
+        <div
+            class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
             <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
             <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl text-center">Effortless Property
                 Management</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px]">
+                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
         </div>
+        <!-- card 4 -->
         <div
-            class="flex flex-col items-center justify-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A]">
+            class="flex flex-col items-center justify-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
             <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
             <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl text-center">Smart&nbsp;Investments,
                 Informed&nbsp;Decisions</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px]">
+                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
         </div>
     </div>
     <!-- ------------Content---------------- -->
@@ -107,11 +122,12 @@
                 <img src="./access/icons/star-icon.svg" alt=""
                     class="absolute left-[-15px] top-[-30px] xl:w-[68px] xl:h-[30px]">
             </div>
-            <!-- ------------Card Content------------ -->
+            <!-- ------------Card content------------ -->
             <div
                 class="grid grid-cols-1 md:grid-cols-3 gap-y-[20px] md:gap-[20px] xl:gap-[30px] mt-[40px] md:mt-[60px] xl:mt-[80px]">
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card content item 1------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -124,8 +140,9 @@
                         valuation
                         services.</span>
                 </div>
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card content item 2------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -138,8 +155,9 @@
                         valuation
                         services.</span>
                 </div>
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card content item 3------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -152,8 +170,9 @@
                         valuation
                         services.</span>
                 </div>
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card content item 4------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -166,14 +185,14 @@
                         valuation
                         services.</span>
                 </div>
-
+                <!-- ------------Card content item 5------------ -->
                 <div
                     class="bg-[#1A1A1A] bg-[url(./access/images/background-card.svg)] md:col-span-2 p-[50px] rounded-lg">
-                    <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex flex-col md:flex-row justify-between items-center ">
                         <span class="text-xl md:text-2xl xl:text-3xl text-white font-bold">Unlock the Value of
                             Your Property Today</span>
                         <a href="#!"
-                            class="min-w-fit w-full md:w-fit text-center my-[20px] md:my-0 bg-[#141414] px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] rounded-lg ">Learn
+                            class="min-w-fit w-full md:w-fit text-center my-[20px] md:my-0 bg-[#141414] hover:bg-[#141414]/90 hover:scale-105 px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] rounded-lg ">Learn
                             More</a>
                     </div>
                     <p class="text-[#999999] text-sm md:text-base xl:text-lg font-medium mt-0 md:mt-[40px] ">
@@ -212,8 +231,9 @@
             <!-- ------------Card Content------------ -->
             <div
                 class="grid grid-cols-1 md:grid-cols-3 gap-y-[20px] md:gap-[20px] xl:gap-[30px] mt-[40px] md:mt-[60px] xl:mt-[80px]">
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card Content item 1------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -226,8 +246,9 @@
                         valuation
                         services.</span>
                 </div>
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card Content item 2------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -240,8 +261,9 @@
                         valuation
                         services.</span>
                 </div>
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card Content item 3------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -254,8 +276,9 @@
                         valuation
                         services.</span>
                 </div>
-
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg">
+                <!-- ------------Card Content item 4------------ -->
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -268,14 +291,14 @@
                         valuation
                         services.</span>
                 </div>
-
+                <!-- ------------Card Content item 5------------ -->
                 <div
                     class="bg-[#1A1A1A] bg-[url(./access/images/background-card.svg)] md:col-span-2 p-[50px] rounded-lg">
                     <div class="flex flex-col md:flex-row justify-between items-center">
                         <span class="text-xl md:text-2xl xl:text-3xl text-white font-bold">Unlock the Value of
                             Your Property Today</span>
                         <a href="#!"
-                            class="min-w-fit w-full md:w-fit text-center my-[20px] md:my-0 bg-[#141414] px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] rounded-lg ">Learn
+                            class="min-w-fit w-full md:w-fit text-center my-[20px] md:my-0 bg-[#141414] hover:bg-[#141414]/90 hover:scale-105 px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] rounded-lg ">Learn
                             More</a>
                     </div>
                     <p class="text-[#999999] text-sm md:text-base xl:text-lg font-medium mt-0 md:mt-[40px] ">
@@ -321,7 +344,7 @@
 
                     </div>
                     <a href="#!"
-                        class="min-w-fit w-full block text-center bg-[#141414] px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] mt-[30px] rounded-lg ">Learn
+                        class="min-w-fit w-full block text-center bg-[#141414] hover:bg-[#141414]/90 hover:scale-105  px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] mt-[30px] rounded-lg ">Learn
                         More</a>
                 </div>
             </div>
@@ -329,7 +352,8 @@
             <div
                 class="flex-2 grid grid-cols-1 md:grid-cols-2 gap-y-[10px] md:gap-[10px] bg-[#1A1A1A] p-[10px] rounded-lg w-full">
 
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] ">
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -343,7 +367,8 @@
                         services.</span>
                 </div>
 
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] ">
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -357,7 +382,8 @@
                         services.</span>
                 </div>
 
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] ">
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -371,7 +397,8 @@
                         services.</span>
                 </div>
 
-                <div class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] ">
+                <div
+                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
                     <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
                         <img src="./access/icons/Icon Container.png" alt=""
                             class="size-[48px] md:size-[60px] xl:size-[82px]">
@@ -410,7 +437,7 @@
                 assistance.</p>
         </div>
         <a href="#!"
-            class="w-full md:w-fit mt-8 md:mt-0 text-center min-w-fit font-medium text-sm xl:text-lg py-4 px-6 bg-[#703BF7] rounded-lg text-white">Explore
+            class="w-full md:w-fit mt-8 md:mt-0 text-center min-w-fit font-medium text-sm xl:text-lg py-4 px-6 bg-[#703BF7] rounded-lg text-white hover:bg-[#703BF7]/90 hover:scale-105 ">Explore
             Properties</a>
     </div>
 
