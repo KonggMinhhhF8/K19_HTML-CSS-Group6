@@ -20,7 +20,7 @@
         <input type="checkbox" id="top-banner" hidden>
         <div class="top-banner-container flex justify-start xl:justify-center relative bg-[var(--secondary-color)] text-xs 2xl:text-lg font-medium text-white overflow-hidden z-1 transition-[height,opacity,visibility,padding] duration-400 pt-10 pb-5 xl:py-3.5 2xl:py-4.5">
             <img src="assets/abstract-pattern-1.svg" alt="" class="absolute w-full h-full top-0 object-cover opacity-20 -z-5">
-            <p class="ml-4 xl:ml-0">✨Discover Your Dream Property with Estatein <a href="#" class="underline ml-1.5 xl:ml-2.5">Learn More</a></p>
+            <p class="ml-4 xl:ml-0">✨Discover Your Dream Property with Estatein <a href="#!" class="underline ml-1.5 xl:ml-2.5">Learn More</a></p>
             <button class="absolute top-9 xl:top-3.5 2xl:top-4.5 right-4 xl:right-8"><label for="top-banner" class="cursor-pointer">
                 <img src="assets/icon/close-icon.svg" alt="" class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
             </label></button>
@@ -29,15 +29,20 @@
         <!-- Main Menu -->
         <div class="bg-[var(--secondary-color)] py-5 px-4 xl:py-3.5 xl:px-20 2xl:py-6 2xl:px-40.5 flex items-center justify-between border-t border-b border-[var(--border-grey)]">
             <input type="checkbox" id="menu-toggle" class="hidden"/>
+            <label for="menu-toggle" class="overlay opacity-0 invisible fixed inset-0 bg-black/100 transition-[opacity,visibility] duration-300 z-100"></label>
             <img src="./assets/Logo.png" alt="Logo Estatein" class="h-7 xl:h-8.5 2xl:h-12">
-            <nav class="hidden md:flex text-sm 2xl:text-lg font-medium text-white gap-2">
-                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
-                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a>
-                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
-                <a href="#" class="xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-[10px] hover:bg-[var(--primary-color)] border border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
+            <nav class="fixed xl:static top-0 right-0 bottom-0 min-w-[60vw] xl:w-auto translate-x-full xl:translate-x-0 opacity-0 xl:opacity-100 invisible xl:visible flex flex-col xl:flex-row gap-2 xl:items-center xl:justify-center bg-[var(--secondary-color)] xl:bg-transparent pt-20 xl:pt-0 px-8 xl:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm 2xl:text-lg font-medium text-white">
+                <button class="absolute top-8 right-6 xl:hidden"><label for="menu-toggle" class="cursor-pointer">
+                    <img src="assets/icon/close-icon.svg" alt="" class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
+                </label></button>
+                <a href="#!" class="py-3 xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-none xl:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] xl:border xl:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
+                <a href="#!" class="py-3 xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-none xl:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] xl:border xl:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a>
+                <a href="#!" class="py-3 xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-none xl:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] xl:border xl:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
+                <a href="#!" class="py-3 xl:py-3 xl:px-5 2xl:py-3.5 2xl:px-6 rounded-none xl:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] xl:border xl:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
+                <button><a href="#!" class="block md:hidden bg-[var(--accent-color)] p-2 text-white xl:text-sm font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a></button>
             </nav>
-            <button><a href="#" class="hidden md:block bg-[var(--primary-color)] py-3.5 px-5 2xl:px-6 text-white xl:text-sm 2xl:text-lg font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a></button>
-            <button class="block md:hidden"><label for="menu-toggle"><img src="./assets/icon/hamburger-icon.svg" alt="" class="w-6"></label></button>
+            <button><a href="#!" class="hidden xl:block bg-[var(--primary-color)] py-3.5 px-5 2xl:px-6 text-white xl:text-sm 2xl:text-lg font-medium rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a></button>
+            <button class="block xl:hidden"><label for="menu-toggle"><img src="./assets/icon/hamburger-icon.svg" alt="" class="w-6"></label></button>
         </div>
     </header>
 
@@ -50,16 +55,16 @@
                 <h1 class="text-[28px] xl:text-[46px] 2xl:text-[60px] font-semibold leading-[120%] text-white mb-4 xl:mb-6">Discover Your Dream <br> Property with Estatein </h1>
                 <p class="font-medium text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)]">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
                 <div class="flex flex-col gap-4 xl:flex-row xl:gap-5 mt-5 xl:my-12.5 2xl:my-15 text-white font-medium text-sm 2xl:text-lg">
-                    <button><a href="#" class="block py-3.5 rounded-lg xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.05)] transition-shadow duration-200">Learn More</a></button>
-                    <button><a href="#" class="block py-3.5 rounded-lg xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">Browse Properties</a></button>
+                    <button><a href="#!" class="block py-3.5 rounded-lg xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.05)] transition-shadow duration-200">Learn More</a></button>
+                    <button><a href="#!" class="block py-3.5 rounded-lg xl:px-5 2xl:py-4.5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">Browse Properties</a></button>
                 </div>
 
                 <div class="flex flex-wrap gap-3 xl:gap-5 justify-between mt-10">
-                    <div class="text-center w-[calc(50%-10px)] xl:flex-1 p-4 xl:py-3.5 xl:px-5 2xl:py-4 2xl:px-6 bg-[var(--secondary-color)] rounded-lg 2xl:rounded-[12px] border border-[var(--border-grey)]">
+                    <div class="text-center w-[calc(50%-6px)] xl:flex-1 p-4 xl:py-3.5 xl:px-5 2xl:py-4 2xl:px-6 bg-[var(--secondary-color)] rounded-lg 2xl:rounded-[12px] border border-[var(--border-grey)]">
                         <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">200+</p>
                         <p class="text-white text-sm xl:text-base">Happy Customer</p>
                     </div>
-                    <div class="text-center w-[calc(50%-10px)] xl:flex-1 p-4 xl:py-3.5 xl:px-5 2xl:py-4 2xl:px-6 bg-[var(--secondary-color)] rounded-lg 2xl:rounded-[12px] border border-[var(--border-grey)]">
+                    <div class="text-center w-[calc(50%-6px)] xl:flex-1 p-4 xl:py-3.5 xl:px-5 2xl:py-4 2xl:px-6 bg-[var(--secondary-color)] rounded-lg 2xl:rounded-[12px] border border-[var(--border-grey)]">
                         <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">10k+</p>
                         <p class="text-white text-sm xl:text-base">Properties For Clients</p>
                     </div>
@@ -71,7 +76,6 @@
             </div>
             <!-- Hero - Right Block -->
             <div class="w-full xl:w-1/2 relative rounded-xl xl:rounded-none bg-[var(--secondary-color)] bg-[linear-gradient(238.21deg,_#2A213F_8.76%,_rgba(25,25,25,0)_50.09%),url('./assets/abstract-pattern-2.svg')] bg-cover bg-center">
-<!--                <img src="./assets/abstract-pattern-2.svg" alt="" class="object-cover h-full">-->
                 <img src="./assets/three-buildings.png" alt="Three buildings - Estatein Property"
                      class="max-w-full h-full object-cover xl:absolute bottom-0 left-0 xl:left-1/2 xl:-translate-x-1/2 z-2">
                 <a href="#!">
@@ -81,7 +85,7 @@
         </section>
 
         <!-- USP Cards Section -->
-        <section class="p-2.5 xl:p-5 grid grid-cols-2 xl:grid-cols-4 gap-2.5 xl:gap-5 shadow-[0px_0px_0px_10px_#191919] text-center">
+        <section class="p-2.5 mt-10 rounded-xl xl:mt-0 xl:rounded-none xl:p-5 grid grid-cols-2 xl:grid-cols-4 gap-2.5 xl:gap-5 shadow-[0px_0px_0px_4px_#191919] xl:shadow-[0px_0px_0px_6px_#191919] 2xl:shadow-[0px_0px_0px_10px_#191919] text-center">
             <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] relative flex flex-col flex-1 items-center">
                 <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div> <!-- Overlay Gradient - Hover Effect -->
                 <img src="./assets/icon/home-icon.svg" alt="" class="mb-3.5 xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
@@ -113,7 +117,7 @@
 
 
         <!-- Featured Properties Section -->
-        <section class="py-20 xl:py-37.5 xl:px-20 2xl:px-40.5 m-auto">
+        <section class="pt-20 xl:pt-30 2xl:pt-37.5 xl:px-20 2xl:px-40.5 m-auto">
             <div class="relative flex justify-between items-end">
                 <img src="./assets/abstract-star.svg" alt="" class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5">
                 <div class="w-full xl:w-[70%]">
@@ -122,14 +126,14 @@
                     <p class="text-[var(--text-grey)] text-sm font-medium xl:hidden">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.</p>
                 </div>
                 <button class="hidden md:block w-[30%] relative">
-                    <a href="#" class="text-white text-sm 2xl:text-lg font-medium py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
+                    <a href="#!" class="text-white text-sm 2xl:text-lg font-medium py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
                 border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View All Properties</a>
                 </button>
             </div>
 
-            <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
+            <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
                 <!-- Card 1 -->
-                <div class="min-w-full snap-start xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
                     <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
                         <img src="./assets/thumbs/Seaside%20Serenity%20Villa.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
@@ -154,7 +158,7 @@
                         </div>
                     </div>
                     <!-- Price -->
-                    <div class="mt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
+                    <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
                         <div class="flex flex-col gap-0.5">
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)] font-medium">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
@@ -164,7 +168,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="min-w-full snap-start xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
                     <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
                         <img src="./assets/thumbs/Metropolitan%20Haven.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
@@ -189,7 +193,7 @@
                         </div>
                     </div>
                     <!-- Price -->
-                    <div class="mt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
+                    <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
                         <div class="flex flex-col gap-0.5">
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)] font-medium">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
@@ -199,7 +203,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="min-w-full snap-start xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
                     <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
                         <img src="./assets/thumbs/Rustic%20Retreat%20Cottage.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
                     </div>
@@ -224,7 +228,7 @@
                         </div>
                     </div>
                     <!-- Price -->
-                    <div class="mt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
+                    <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
                         <div class="flex flex-col gap-0.5">
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)] font-medium">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
@@ -251,7 +255,7 @@
             <!-- Pagination Mobile -->
             <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
                 <button class="block md:hidden">
-                    <a href="#" class="text-white text-sm font-medium py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
+                    <a href="#!" class="text-white text-sm font-medium py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
                 border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View All Properties</a>
                 </button>
                 <div class="flex items-center gap-2.5">
@@ -264,10 +268,223 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
 
+        <!-- Testimonials Section -->
+        <section class="pt-20 xl:pt-30 2xl:pt-37.5 xl:px-20 2xl:px-40.5 m-auto">
+            <div class="relative flex justify-between items-end">
+                <img src="./assets/abstract-star.svg" alt="" class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5">
+                <div class="w-full xl:w-[70%]">
+                    <h2 class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">What Our Clients Say</h2>
+                    <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg font-medium">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
+                </div>
+                <button class="hidden md:block w-[30%] relative">
+                    <a href="#!" class="text-white text-sm 2xl:text-lg font-medium py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View All Testimonials</a>
+                </button>
+            </div>
+
+            <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
+                <!-- Card 1 -->
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <!-- Rating  -->
+                    <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                    </div>
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">Exceptional Service</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white">
+                        Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!
+                    </p>
+                    <!-- Writer -->
+                    <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
+                        <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
+                            <img src="./assets/Wade%20Warren.png" alt="Wade Warren - Customer's Testimonial" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-white text-base xl:text-lg 2xl:text-xl">Wade Warren</p>
+                            <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, California</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <!-- Rating  -->
+                    <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                    </div>
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">Efficient and Reliable</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white">
+                        Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results. 
+                    </p>
+                    <!-- Writer -->
+                    <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
+                        <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
+                            <img src="./assets/Emelie%20Thomson.png" alt="Wade Warren - Customer's Testimonial" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-white text-base xl:text-lg 2xl:text-xl">Emelie Thomson</p>
+                            <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, Florida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <!-- Rating  -->
+                    <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                        <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]"><img src="./assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6"></span>
+                    </div>
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">Trusted Advisors</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white">
+                        The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!
+                    </p>
+                    <!-- Writer -->
+                    <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
+                        <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
+                            <img src="./assets/John%20Mans.png" alt="Wade Warren - Customer's Testimonial" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-white text-base xl:text-lg 2xl:text-xl">John Mans</p>
+                            <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, Nevada</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- Pagination Desktop-->
+            <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
+                <p class="text-[var(--text-grey)] font-medium text-xl"><span class="text-white">01</span> of 10</p>
+                <div class="flex gap-2.5">
+                    <div class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-left.svg" alt="" class="inline-block 6 2xl:w-7.5">
+                    </div>
+                    <div class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-right.svg" alt="" class="inline-block 6 2xl:w-7.5">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Mobile -->
+            <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
+                <button class="block md:hidden">
+                    <a href="#!" class="text-white text-sm font-medium py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View All Testimonials</a>
+                </button>
+                <div class="flex items-center gap-2.5">
+                    <div class="p-2.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
+                    </div>
+                    <p class="text-[var(--text-grey)] font-medium text-sm"><span class="text-white">01</span> of 10</p>
+                    <div class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ Section -->
+        <section class="pt-20 xl:pt-30 2xl:pt-37.5 xl:px-20 2xl:px-40.5 m-auto pb-20">
+            <div class="relative flex justify-between items-end">
+                <img src="./assets/abstract-star.svg" alt="" class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5">
+                <div class="w-full xl:w-[70%]">
+                    <h2 class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">Frequently Asked Questions</h2>
+                    <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg font-medium">Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.</p>
+                </div>
+                <button class="hidden md:block w-[30%] relative">
+                    <a href="#!" class="text-white text-sm 2xl:text-lg font-medium py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View All FAQ's</a>
+                </button>
+            </div>
+
+            <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid xl:grid-cols-3 gap-5 xl:gap-6 2xl:gap-7.5">
+                <!-- Card 1 -->
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">How do I search for properties on Estatein?</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white">
+                        Learn how to use our user-friendly search tools to find properties that match your criteria.
+                    </p>
+                    <div class="mt-auto">
+                        <button class="w-full xl:w-auto"><a href="#!" class="block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg font-medium rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.05)] transition-shadow duration-200">Read More</a></button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">What documents do I need to sell my property through Estatein?</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white">
+                        Find out about the necessary documentation for listing your property with us.
+                    </p>
+                    <div class="mt-auto">
+                        <button class="w-full xl:w-auto"><a href="#!" class="block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg font-medium rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.05)] transition-shadow duration-200">Read More</a></button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">How can I contact an Estatein agent? </h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white">
+                        Discover the different ways you can get in touch with our experienced agents.
+                    </p>
+                    <div class="mt-auto">
+                        <button class="w-full xl:w-auto"><a href="#!" class="block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg font-medium rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.05)] transition-shadow duration-200">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Desktop-->
+            <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
+                <p class="text-[var(--text-grey)] font-medium text-xl"><span class="text-white">01</span> of 10</p>
+                <div class="flex gap-2.5">
+                    <div class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-left.svg" alt="" class="inline-block 6 2xl:w-7.5">
+                    </div>
+                    <div class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-right.svg" alt="" class="inline-block 6 2xl:w-7.5">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Mobile -->
+            <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
+                <button class="block md:hidden">
+                    <a href="#!" class="text-white text-sm font-medium py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View All FAQ's</a>
+                </button>
+                <div class="flex items-center gap-2.5">
+                    <div class="p-2.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
+                    </div>
+                    <p class="text-[var(--text-grey)] font-medium text-sm"><span class="text-white">01</span> of 10</p>
+                    <div class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)]">
+                        <img src="./assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
