@@ -9,41 +9,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./access/css/style.css">
     <title>Document</title>
 
 </head>
 
-<body class="bg-[#141414] font-[Urbanist,sans-serif] leading-relaxed">
+<body class="bg-[var(--primary-color)] font-[Urbanist,sans-serif] leading-relaxed select-none">
     <!-- ------------Header------------ -->
     <div
-        class="relative z-2 py-[18px] text-center text-white font-medium bg-[url(./access/images/banner.png)] text-[12px] md:text-sm xl:text-lg">
+        class="select-none relative z-2 py-[18px] text-center text-white font-medium bg-[url(./access/images/banner.png)] text-[12px] lg:text-sm 2xl:text-lg">
         ✨Discover
         Your Dream Property with Estatein
         <a href="#!" class="underline">Learn More</a>
     </div>
     <div
-        class="flex justify-between relative text-white items-center py-[20px] md:py-[14px] xl:py-[20px] border-t border-[#262626] px-4 md:px-6 xl:px-16 ">
+        class="flex justify-between relative text-white items-center py-[20px] lg:py-[14px] 2xl:py-[20px] border-t border-[var(--border-color)] px-4 lg:px-6 2xl:px-16 ">
         <a href="#!" class="flex items-center z-2">
-            <img src="./access/images/logo.svg" alt="Estatein logo" class="size-[28px] md:size-[34px] xl:size-[48px]">
-            <span class="ml-2 font-semibold text-base md:text-lg xl:text-xl">Estatein</span>
+            <img src="./access/images/logo.svg" alt="Estatein logo" class="size-[28px] lg:size-[34px] 2xl:size-[48px]">
+            <span class="ml-2 font-semibold text-base lg:text-lg 2xl:text-xl">Estatein</span>
         </a>
         <label class="peer hidden">
             <input type="checkbox" id="menu-toggle">
         </label>
         <ul
-            class="absolute z-2 top-full right-[32px] w-[300px] md:w-fit py-4 md:py-0 md:p-0 opacity-0 pointer-events-none peer-has-checked:pointer-events-auto peer-has-checked:opacity-100 md:opacity-100 md:pointer-events-auto transition-opacity duration-300 shadow-2xl shadow-[#262626] md:shadow-none rounded-bl-2xl bg-[#141414] border-l border-b border-[#262626] md:border-none text-center md:static md:flex items-center font-medium md:gap-x-[24px] xl:gap-x-[30px] md:text-sm xl:text-lg">
-            <li class="p-4 md:p-0">Home</li>
-            <li class="p-4 md:p-0">About Us</li>
-            <li class="p-4 md:p-0">Properties</li>
-            <li class="p-4 md:p-0">
+            class="absolute z-2 top-full right-[32px] w-[300px] lg:w-fit py-4 lg:py-0 lg:p-0 opacity-0 pointer-events-none peer-has-checked:pointer-events-auto peer-has-checked:opacity-100 lg:opacity-100 lg:pointer-events-auto transition-opacity duration-300 shadow-2xl shadow-[#262626] lg:shadow-none rounded-bl-2xl bg-[var(--primary-color)] border-l border-b border-[var(--border-color)] lg:border-none text-center lg:static lg:flex items-center font-medium lg:gap-x-[24px] 2xl:gap-x-[30px] lg:text-sm 2xl:text-lg">
+            <li class="p-4 lg:p-0">Home</li>
+            <li class="p-4 lg:p-0">About Us</li>
+            <li class="p-4 lg:p-0">Properties</li>
+            <li class="p-4 lg:p-0">
                 <a href="#!"
-                    class="md:py-[12px] md:px-[20px] xl:py-[14px] xl:px-[24px] bg-[#141414] border border-[#262626] rounded-lg">Service</a>
+                    class="lg:py-[12px] lg:px-[20px] 2xl:py-[14px] 2xl:px-[24px] bg-[var(--primary-color)] border border-[var(--border-color)] rounded-lg">Service</a>
             </li>
         </ul>
         <a href="#!"
-            class=" md:py-[14px] md:px-[20px] xl:py-[16px] xl:px-[24px] bg-[#141414] border border-[#262626] rounded-lg hidden md:block">
+            class=" lg:py-[14px] lg:px-[20px] 2xl:py-[16px] 2xl:px-[24px] bg-[var(--primary-color)] border border-[var(--border-color)] rounded-lg hidden lg:block">
             Contact Us</a>
-        <label for="menu-toggle" class="peer block md:hidden relative z-2">
+        <label for="menu-toggle" class="peer block lg:hidden relative z-2">
             <img src="./access/icons/menu-icon.svg" alt="menu-icon" class="py-[7px] px-[3.5px] size-[28px] mr-[16px] ">
         </label>
         <label for="menu-toggle"
@@ -52,10 +53,12 @@
     </div>
     <!-- ------------Banner------------ -->
     <div
-        class="flex flex-col justify-center space-y-4 md:space-y-6 bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] px-4 md:px-6 xl:px-16 h-[278px] md:h-[315px] xl:h-[390px] border border-[#262626">
-        <span class="text-3xl md:text-4xl xl:text-5xl text-white font-semibold">Elevate Your Real Estate
+        class="flex flex-col justify-center space-y-4 lg:space-y-6 bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] px-4 lg:px-6 2xl:px-16 h-[278px] lg:h-[315px] 2xl:h-[390px] border border-[#262626">
+        <span class="text-3xl lg:text-4xl 2xl:text-5xl text-white font-semibold">Elevate Your Real Estate
             Experience</span>
-        <span class="text-sm md:text-base xl:text-lg font-medium text-[#999999] md:max-w-5xl xl:max-w-7xl">Welcome to
+        <span
+            class="text-sm lg:text-base 2xl:text-lg font-medium text-[var(--text-color)] lg:max-w-5xl 2xl:max-w-7xl">Welcome
+            to
             Estatein, where
             your real estate
             aspirations
@@ -64,138 +67,122 @@
     </div>
     <!-- ------------Card header------------ -->
     <div
-        class="grid grid-cols-2 md:grid-cols-4 shadow-[0px_0px_0px_10px_#191919] bg-[#141414] border border-[#262626] gap-[10px] xl:gap-[20px] p-[10px] xl:p-[20px]">
+        class="grid grid-cols-2 lg:grid-cols-4 shadow-[0px_0px_0px_10px_#191919] bg-[var(--primary-color)] border border-[var(--border-color)] gap-[10px] 2xl:gap-[20px] p-[10px] 2xl:p-[20px]">
         <!-- card 1 -->
         <div
-            class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-            <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
-            <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl">Find Your Dream Home</span>
+            class="flex flex-col items-center border border-[var(--border-color)] rounded-lg py-[40px] relative bg-[var(--second-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition transition">
+            <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+            <span class="text-white mt-[20px] text-sm lg:text-base 2xl:text-xl">Find Your Dream Home</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
+                class="absolute right-[20px] top-[20px] size-[16.25px] 2xl:size-[21.25px] box-content p-[4.87] 2xl:p-[6.38px] hover:scale-105">
         </div>
         <!-- card 2 -->
         <div
-            class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-            <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
-            <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl">Unlock Property Value</span>
+            class="flex flex-col items-center border border-[var(--border-color)] rounded-lg py-[40px] relative bg-[var(--second-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+            <img src="./access/icons/cam-icon.svg" alt="" class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+            <span class="text-white mt-[20px] text-sm lg:text-base 2xl:text-xl">Unlock Property Value</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
+                class="absolute right-[20px] top-[20px] size-[16.25px] 2xl:size-[21.25px] box-content p-[4.87] 2xl:p-[6.38px] hover:scale-105">
         </div>
         <!-- card 3 -->
         <div
-            class="flex flex-col items-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-            <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
-            <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl text-center">Effortless Property
+            class="flex flex-col items-center border border-[var(--border-color)] rounded-lg py-[40px] relative bg-[var(--second-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+            <img src="./access/icons/town-icon.svg" alt="" class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+            <span class="text-white mt-[20px] text-sm lg:text-base 2xl:text-xl text-center">Effortless Property
                 Management</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
+                class="absolute right-[20px] top-[20px] size-[16.25px] 2xl:size-[21.25px] box-content p-[4.87] 2xl:p-[6.38px] hover:scale-105">
         </div>
         <!-- card 4 -->
         <div
-            class="flex flex-col items-center justify-center border border-[#262626] rounded-lg py-[40px] relative bg-[#1A1A1A] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-            <img src="./access/icons/Icon Container.png" alt="" class="size-[48px] md:size-[60px] xl:size-[82px]">
-            <span class="text-white mt-[20px] text-sm md:text-base xl:text-xl text-center">Smart&nbsp;Investments,
+            class="flex flex-col items-center justify-center border border-[var(--border-color)] rounded-lg py-[40px] relative bg-[var(--second-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+            <img src="./access/icons/sun-icon.svg" alt="" class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+            <span class="text-white mt-[20px] text-sm lg:text-base 2xl:text-xl text-center">Smart&nbsp;Investments,
                 Informed&nbsp;Decisions</span>
             <img src="./access/icons/arrow-icon.svg" alt=""
-                class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[4.87] xl:p-[6.38px] hover:scale-105">
+                class="absolute right-[20px] top-[20px] size-[16.25px] 2xl:size-[21.25px] box-content p-[4.87] 2xl:p-[6.38px] hover:scale-105">
         </div>
     </div>
     <!-- ------------Content---------------- -->
-    <div class="px-4 md:px-6 xl:px-16 ">
+    <div class="px-4 lg:px-6 2xl:px-16 ">
         <!-- ------------Content 1------------ -->
-        <div class="pt-[80px] md:pt-[120px] xl:pt-[150px]">
+        <div class="pt-[80px] lg:pt-[120px] 2xl:pt-[150px]">
             <!-- ------------Title------------ -->
             <div class="relative flex flex-col">
-                <span class="text-white text-3xl md:text-4xl xl: font-semibold">Unlock Property
+                <span class="text-white text-3xl lg:text-4xl 2xl: font-semibold mb-4">Unlock Property
                     Value</span>
-                <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg max-w-[1296px]">Selling
-                    your property
-                    should be a
-                    rewarding
-                    experience, and
-                    at Estatein, we make
-                    sure it is. Our
-                    Property
-                    Selling Service is designed to maximize the value of your property, ensuring you get the best deal
-                    possible.
-                    Explore the categories below to see how we can help you at every step of your selling journey</span>
+                <span
+                    class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg max-w-[1296px]">Selling
+                    your property should be a rewarding experience, and at Estatein, we make sure it is.</span>
                 <img src="./access/icons/star-icon.svg" alt=""
-                    class="absolute left-[-15px] top-[-30px] xl:w-[68px] xl:h-[30px]">
+                    class="absolute left-[-15px] top-[-35px] 2xl:w-[68px] 2xl:h-[30px]">
             </div>
             <!-- ------------Card content------------ -->
             <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-y-[20px] md:gap-[20px] xl:gap-[30px] mt-[40px] md:mt-[60px] xl:mt-[80px]">
+                class="grid grid-cols-1 lg:grid-cols-3 gap-y-[20px] lg:gap-[20px] 2xl:gap-[30px] mt-[40px] lg:mt-[60px] 2xl:mt-[80px]">
                 <!-- ------------Card content item 1------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/valuation-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Valuation Mastery</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Discover the
+                        true
+                        worth of
+                        your property with our expert valuation services.</span>
                 </div>
                 <!-- ------------Card content item 2------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/chart-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Strategic
+                            Marketing</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Selling a
+                        property requires
+                        more than just a listing; it demands a strategic marketing approach.</span>
                 </div>
                 <!-- ------------Card content item 3------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/coin-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Negotiation
+                            Wizardry</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Negotiating the
+                        best deal
+                        is an art, and our negotiation experts are masters of it.</span>
                 </div>
                 <!-- ------------Card content item 4------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/closing-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Closing Success</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">A successful
+                        sale
+                        is not
+                        complete until the closing. We guide you through the intricate closing process.</span>
                 </div>
                 <!-- ------------Card content item 5------------ -->
                 <div
-                    class="bg-[#1A1A1A] bg-[url(./access/images/background-card.svg)] md:col-span-2 p-[50px] rounded-lg">
-                    <div class="flex flex-col md:flex-row justify-between items-center ">
-                        <span class="text-xl md:text-2xl xl:text-3xl text-white font-bold">Unlock the Value of
+                    class="bg-[var(--second-color)] bg-[url(./access/images/background-card.svg)] lg:col-span-2 p-[50px] rounded-lg">
+                    <div class="flex flex-col lg:flex-row justify-between items-center ">
+                        <span class="text-xl lg:text-2xl 2xl:text-3xl text-white font-bold">Unlock the Value of
                             Your Property Today</span>
                         <a href="#!"
-                            class="min-w-fit w-full md:w-fit text-center my-[20px] md:my-0 bg-[#141414] hover:bg-[#141414]/90 hover:scale-105 px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] rounded-lg ">Learn
+                            class="min-w-fit w-full lg:w-fit text-center my-[20px] lg:my-0 bg-[var(--primary-color)] hover:bg-[var(--primary-color)]/90 hover:scale-105 transition px-[24px] py-[18px] text-white  text-sm 2xl:text-lg border border-[var(--border-color)] rounded-lg ">Learn
                             More</a>
                     </div>
-                    <p class="text-[#999999] text-sm md:text-base xl:text-lg font-medium mt-0 md:mt-[40px] ">
+                    <p class="text-[var(--text-color)] text-sm lg:text-base 2xl:text-lg font-medium mt-0 lg:mt-[40px] ">
                         Ready
                         to unlock the true value of
                         your
@@ -209,220 +196,191 @@
         </div>
 
         <!-- ------------Content 2------------ -->
-        <div class="pt-[80px] md:pt-[120px] xl:pt-[150px]">
+        <div class="pt-[80px] lg:pt-[120px] 2xl:pt-[150px]">
             <!-- ------------Title------------ -->
             <div class="relative flex flex-col">
-                <span class="text-white text-3xl md:text-4xl xl: font-semibold">Unlock Property
-                    Value</span>
-                <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg max-w-[1296px]">Selling
-                    your property
-                    should be a
-                    rewarding
-                    experience, and
-                    at Estatein, we make
-                    sure it is. Our
-                    Property
-                    Selling Service is designed to maximize the value of your property, ensuring you get the best deal
-                    possible.
-                    Explore the categories below to see how we can help you at every step of your selling journey</span>
+                <span class="text-white text-3xl lg:text-4xl 2xl: font-semibold  mb-4">Effortless Property
+                    Management</span>
+                <span
+                    class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg max-w-[1296px]">Owning
+                    a
+                    property should be a pleasure, not a hassle. Estatein's Property Management Service takes the stress
+                    out of property ownership, offering comprehensive solutions tailored to your needs. Explore the
+                    categories below to see how we can make property management effortless for you</span>
                 <img src="./access/icons/star-icon.svg" alt=""
-                    class="absolute left-[-15px] top-[-30px] xl:w-[68px] xl:h-[30px]">
+                    class="absolute left-[-15px] top-[-35px] 2xl:w-[68px] 2xl:h-[30px]">
             </div>
             <!-- ------------Card Content------------ -->
             <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-y-[20px] md:gap-[20px] xl:gap-[30px] mt-[40px] md:mt-[60px] xl:mt-[80px]">
+                class="grid grid-cols-1 lg:grid-cols-3 gap-y-[20px] lg:gap-[20px] 2xl:gap-[30px] mt-[40px] lg:mt-[60px] 2xl:mt-[80px]">
                 <!-- ------------Card Content item 1------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/tenant-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Tenant Harmony</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Our Tenant
+                        Management
+                        services ensure that your tenants have a smooth and reducing vacancies.</span>
                 </div>
                 <!-- ------------Card Content item 2------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/maintenance.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Maintenance Ease</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Say goodbye to
+                        property
+                        maintenance headaches. We handle all aspects of property upkeep.</span>
                 </div>
                 <!-- ------------Card Content item 3------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/financial-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Financial Peace of
+                            Mind</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Managing
+                        property
+                        finances
+                        can be complex. Our financial experts take care of rent collection</span>
                 </div>
                 <!-- ------------Card Content item 4------------ -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/sun-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Legal Guardian</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Stay compliant
+                        with
+                        property laws and regulations effortlessly.</span>
                 </div>
                 <!-- ------------Card Content item 5------------ -->
                 <div
-                    class="bg-[#1A1A1A] bg-[url(./access/images/background-card.svg)] md:col-span-2 p-[50px] rounded-lg">
-                    <div class="flex flex-col md:flex-row justify-between items-center">
-                        <span class="text-xl md:text-2xl xl:text-3xl text-white font-bold">Unlock the Value of
-                            Your Property Today</span>
+                    class="bg-[var(--second-color)] bg-[url(./access/images/background-card.svg)] lg:col-span-2 p-[50px] rounded-lg">
+                    <div class="flex flex-col lg:flex-row justify-between">
+                        <span class="text-xl lg:text-2xl 2xl:text-3xl text-white font-bold">Experience Effortless
+                            Property Management</span>
                         <a href="#!"
-                            class="min-w-fit w-full md:w-fit text-center my-[20px] md:my-0 bg-[#141414] hover:bg-[#141414]/90 hover:scale-105 px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] rounded-lg ">Learn
+                            class="min-w-fit w-full lg:w-fit text-center my-[20px] lg:my-0 bg-[var(--primary-color)] hover:bg-[var(--primary-color)]/90 hover:scale-105 transition px-[24px] py-[18px] text-white  text-sm 2xl:text-lg border border-[var(--border-color)] rounded-lg ">Learn
                             More</a>
                     </div>
-                    <p class="text-[#999999] text-sm md:text-base xl:text-lg font-medium mt-0 md:mt-[40px] ">
-                        Ready
-                        to unlock the true value of
-                        your
-                        property?
-                        Explore our
-                        Property
-                        Selling Service categories
-                        and let us help you achieve the best deal possible for your valuable asset.</span>
+                    <p class="text-[var(--text-color)] text-sm lg:text-base 2xl:text-lg font-medium mt-0 lg:mt-[40px] ">
+                        Ready to experience hassle-free property management? Explore our Property Management Service
+                        categories and let us handle the complexities while you enjoy the benefits of property
+                        ownership.</span>
                 </div>
             </div>
         </div>
 
         <!-- ------------Content 3------------ -->
-        <div class="flex flex-col md:flex-row items-center pt-[80px] md:pt-[120px] xl:pt-[150px] gap-x-[30px]">
+        <div class="flex flex-col lg:flex-row items-center pt-[80px] lg:pt-[120px] 2xl:pt-[150px] gap-x-[30px]">
             <!-- left -->
-            <div class="flex-1 mb-[30px] flex flex-col gap-[50px]">
+            <div class="flex-1 mb-[30px] lg:mb-0 flex flex-col gap-[50px]">
                 <div class="relative flex flex-col">
-                    <span class="text-white text-3xl md:text-4xl xl: font-semibold">Smart Investments,
+                    <span class="text-white text-3xl lg:text-4xl 2xl: font-semibold  mb-4">Smart Investments,
                         Informed Decisions</span>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg max-w-[1296px]">Building
+                    <span
+                        class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg max-w-[1296px]">Building
                         a real estate portfolio requires a strategic approach. Estatein's Investment Advisory Service
                         empowers you to make smart investments and informed decisions.</span>
                     <img src="./access/icons/star-icon.svg" alt=""
-                        class="absolute left-[-15px] top-[-30px] xl:w-[68px] xl:h-[30px]">
+                        class="absolute left-[-15px] top-[-35px] 2xl:w-[68px] 2xl:h-[30px]">
                 </div>
-                <div class="bg-[#1A1A1A] bg-[url(./access/images/background-card.svg)] p-[50px] rounded-lg ">
-                    <div class="flex flex-col justify-between items-center">
-                        <span class="text-xl md:text-2xl xl:text-3xl text-white font-bold">Unlock Your
-                            Investment
+                <div
+                    class="bg-[var(--second-color)] bg-[url(./access/images/background-card.svg)] p-[50px] rounded-lg ">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-xl lg:text-2xl 2xl:text-3xl text-white font-bold  mb-6">Unlock Your Investment
                             Potential</span>
-                        <p class="text-[#999999] text-sm md:text-base xl:text-lg font-medium">
-                            Ready
-                            to unlock the true value of
-                            your
-                            property?
-                            Explore our
-                            Property
-                            Selling Service categories
-                            and let us help you achieve the best deal possible for your valuable asset.</span>
+                        <p class="text-[var(--text-color)] text-sm lg:text-base 2xl:text-lg font-medium">
+                            Explore our Property Management Service categories and let us handle the complexities while
+                            you enjoy the benefits of property ownership.</span>
 
                     </div>
                     <a href="#!"
-                        class="min-w-fit w-full block text-center bg-[#141414] hover:bg-[#141414]/90 hover:scale-105  px-[24px] py-[18px] text-white  text-sm xl:text-lg border border-[#262626] mt-[30px] rounded-lg ">Learn
+                        class="min-w-fit w-full block text-center bg-[var(--primary-color)] hover:bg-[var(--primary-color)]/90 hover:scale-105 transition  px-[24px] py-[18px] text-white  text-sm 2xl:text-lg border border-[var(--border-color)] mt-[30px] rounded-lg ">Learn
                         More</a>
                 </div>
             </div>
             <!-- right -->
             <div
-                class="flex-2 grid grid-cols-1 md:grid-cols-2 gap-y-[10px] md:gap-[10px] bg-[#1A1A1A] p-[10px] rounded-lg w-full">
-
+                class="flex-2 grid grid-cols-1 lg:grid-cols-2 gap-y-[10px] lg:gap-[10px] bg-[var(--second-color)] p-[10px] rounded-lg w-full">
+                <!-- card 1 -->
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/valuation-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Market Insight</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Stay ahead of
+                        market trends
+                        with our expert Market Analysis. We provide in-depth insights into real estate market
+                        conditions</span>
+                </div>
+                <!-- card 2 -->
+                <div
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/roi-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">ROI Assessment</span>
+                    </div>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Make investment
+                        decisions
+                        with confidence. Our ROI Assessment services evaluate the potential returns on your
+                        investments</span>
+                </div>
+                <!-- card 3 -->
+                <div
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/custom-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Customized
+                            Strategies</span>
+                    </div>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Every investor
+                        is
+                        unique,
+                        and so are their goals. We develop Customized Investment Strategies tailored to your specific
+                        needs</span>
                 </div>
 
                 <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
+                    class="border border-[var(--border-color)] p-[24px] lg:p-[40px] 2xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
+                    <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] 2xl:mb-[30px]">
+                        <img src="./access/icons/sun-icon.svg" alt=""
+                            class="size-[48px] lg:size-[60px] 2xl:size-[82px]">
+                        <span class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-white">Diversification
                             Mastery</span>
                     </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
-                </div>
-
-                <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
-                    </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
-                </div>
-
-                <div
-                    class="border border-[#262626] p-[24px] md:p-[40px] xl:p-[50px] rounded-lg bg-[#141414] hover:scale-105 hover:shadow-lg shadow-[#262626]">
-                    <div class="flex gap-x-[20px] items-center mb-[16px] md:mb-[20px] xl:mb-[30px]">
-                        <img src="./access/icons/Icon Container.png" alt=""
-                            class="size-[48px] md:size-[60px] xl:size-[82px]">
-                        <span class="text-lg md:text-xl xl:text-2xl font-semibold text-white">Valuation
-                            Mastery</span>
-                    </div>
-                    <span class="text-[#999999] font-medium text-sm md:text-base xl:text-lg">Discover the true
-                        worth of your property with our
-                        expert
-                        valuation
-                        services.</span>
+                    <span class="text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg">Diversify your
+                        real estate
+                        portfolio effectively. Our experts guide you in spreading your investments across various
+                        property types and locations</span>
                 </div>
             </div>
         </div>
     </div>
     <!-- Banner CTA-->
-    <div class="flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-6 xl:px-16  mt-20 md:mt-32 xl:mt-36 border-y border-[#262626] py-6 md:py-[60px] xl:py-[100px]
+    <div class="flex flex-col lg:flex-row justify-center lg:justify-between lg:items-center px-4 lg:px-6 2xl:px-16  mt-20 lg:mt-32 2xl:mt-36 border-y border-[var(--border-color)] py-6 lg:py-[60px] 2xl:py-[100px]
     bg-[url('./access/images/left.svg'),url('./access/images/right.svg')]
     bg-no-repeat
     bg-[position:left,right]
     ">
         <div class="text-white">
-            <p class="text-3xl md:text-4xl xl:text-5xl  font-semibold">Start Your Real Estate Journey Today</p>
-            <p class="max-w-2xl md:max-w-3xl xl:max-w-5xl text-[#999999] font-medium text-sm md:text-base xl:text-lg ">
+            <p class="text-3xl lg:text-4xl 2xl:text-5xl  font-semibold mb-4">Start Your Real Estate Journey Today</p>
+            <p
+                class="max-w-2xl lg:max-w-3xl 2xl:max-w-5xl text-[var(--text-color)] font-medium text-sm lg:text-base 2xl:text-lg ">
                 Your
                 dream property is
                 just a click away. Whether you're
@@ -437,23 +395,23 @@
                 assistance.</p>
         </div>
         <a href="#!"
-            class="w-full md:w-fit mt-8 md:mt-0 text-center min-w-fit font-medium text-sm xl:text-lg py-4 px-6 bg-[#703BF7] rounded-lg text-white hover:bg-[#703BF7]/90 hover:scale-105 ">Explore
+            class="w-full lg:w-fit mt-8 lg:mt-0 text-center min-w-fit font-medium text-sm 2xl:text-lg py-4 px-6 bg-[#703BF7] rounded-lg text-white hover:bg-[#703BF7]/90 hover:scale-105 transition">Explore
             Properties</a>
     </div>
 
     <!-- -----------footer----------- -->
-    <div class="flex flex-col md:flex-row px-4 md:px-6 xl:px-16 py-12 md:py-20 xl:py-24">
+    <div class="flex flex-col lg:flex-row px-4 lg:px-6 2xl:px-16 py-12 lg:py-20 2xl:py-24">
         <!-- left -->
-        <div class="flex flex-col gap-y-5 md:gap-y-6 xl:gap-y-7">
+        <div class="flex flex-col gap-y-5 lg:gap-y-6 2xl:gap-y-7">
             <a href="#!" class="flex items-center">
                 <img src="./access/images/logo.svg" alt="Estatein logo"
-                    class="size-[28px] md:size-[34px] xl:size-[48px]">
-                <span class="ml-2 font-semibold text-base md:text-lg xl:text-xl text-white">Estatein</span>
+                    class="size-[28px] lg:size-[34px] 2xl:size-[48px]">
+                <span class="ml-2 font-semibold text-base lg:text-lg 2xl:text-xl text-white">Estatein</span>
             </a>
             <label for="email"
-                class="flex border w-full border-[#262626] items-center px-12 py-4 md:w-fit relative rounded-lg">
+                class="flex border w-full border-[var(--border-color)] items-center px-12 py-4 lg:w-fit relative rounded-lg">
                 <input type=" text" id="email" placeholder="Enter Your Email"
-                    class="text-white text-sm xl:text-lg font-medim border-none outline-none">
+                    class="text-white text-sm 2xl:text-lg font-medim border-none outline-none">
                 <img src="./access/icons/email-icon.svg" alt="" class="size-4 absolute top-1/2 -translate-y-1/2 left-4">
                 <button>
                     <img src="./access/icons/send-icon.svg" alt=""
@@ -465,9 +423,9 @@
         </div>
         <!-- right -->
         <div
-            class="grid grid-cols-2 md:grid-cols-5 md:ml-32 gap-y-12 gap-x-10 md:gap-x-12 text-white text-sm md:text-base xl:text-lg mt-12 md:mt-0">
-            <ul class="space-y-2 p-5 md:p-0 border-b md:border-none border-[#262626]">
-                <li class="text-[#999999] text-base md:text-lg xl:text-xl">Home</li>
+            class="grid grid-cols-2 lg:grid-cols-5 lg:ml-32 gap-y-12 gap-x-10 lg:gap-x-12 text-white text-sm lg:text-base 2xl:text-lg mt-12 lg:mt-0">
+            <ul class="space-y-2 p-5 lg:p-0 border-b lg:border-none border-[var(--border-color)]">
+                <li class="text-[var(--text-color)] text-base lg:text-lg 2xl:text-xl">Home</li>
                 <li><a href="#!">Hero Section</a></li>
                 <li><a href="#!">Features</a></li>
                 <li><a href="#!">Properties</a></li>
@@ -475,8 +433,8 @@
                 <li><a href="#!">FAQ’s</a></li>
             </ul>
 
-            <ul class="space-y-2 p-5 md:p-0 border-l border-b md:border-none border-[#262626]">
-                <li class="text-[#999999]">About Us</li>
+            <ul class="space-y-2 p-5 lg:p-0 border-l border-b lg:border-none border-[var(--border-color)]">
+                <li class="text-[var(--text-color)]">About Us</li>
                 <li><a href="#!">Our Story</a></li>
                 <li><a href="#!">Our Works</a></li>
                 <li><a href="#!">How It Works</a></li>
@@ -484,14 +442,14 @@
                 <li><a href="#!">Our Clients</a></li>
             </ul>
 
-            <ul class="space-y-2 p-5 md:p-0 border-b md:border-none border-[#262626]">
-                <li class="text-[#999999]">Properties</li>
+            <ul class="space-y-2 p-5 lg:p-0 border-b lg:border-none border-[var(--border-color)]">
+                <li class="text-[var(--text-color)]">Properties</li>
                 <li><a href="#!">Portfolio</a></li>
                 <li><a href="#!">Categories</a></li>
             </ul>
 
-            <ul class="space-y-2 row-span-2 border-l border-b md:border-none border-[#262626] p-5 md:p-0">
-                <li class="text-[#999999]">Services</li>
+            <ul class="space-y-2 row-span-2 border-l border-b lg:border-none border-[var(--border-color)] p-5 lg:p-0">
+                <li class="text-[var(--text-color)]">Services</li>
                 <li><a href="#!">Valuation Mastery</a></li>
                 <li><a href="#!">Strategic Marketing</a></li>
                 <li><a href="#!">Negotiation Wizardry</a></li>
@@ -499,8 +457,8 @@
                 <li><a href="#!">Property Management</a></li>
             </ul>
 
-            <ul class="space-y-2 p-5 md:p-0 border-b md:border-none border-[#262626]">
-                <li class="text-[#999999]">Contact Us</li>
+            <ul class="space-y-2 p-5 lg:p-0 border-b lg:border-none border-[var(--border-color)]">
+                <li class="text-[var(--text-color)]">Contact Us</li>
                 <li><a href="#!">Contact Form</a></li>
                 <li><a href="#!">Our Offices</a></li>
             </ul>
@@ -508,16 +466,17 @@
 
     </div>
     <!-- Copyright Bar -->
-    <div class="flex flex-col md:flex-row items-center justify-between px-4 md:px-6 xl:px-16 py-10 bg-[#1A1A1A]">
-        <div class="flex  flex-col md:flex-row gap-x-9 items-center text-sm xl:text-lg text-white order-2 md:order-1">
-            <span class="mb-2 md:mb-0">@2023 Estatein. All Rights Reserved.</span>
+    <div
+        class="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-6 2xl:px-16 py-6 lg:py-4 bg-[var(--second-color)]">
+        <div class="flex  flex-col lg:flex-row gap-x-9 items-center text-sm 2xl:text-lg text-white order-2 lg:order-1">
+            <span class="mb-2 lg:mb-0">@2023 Estatein. All Rights Reserved.</span>
             <span>Terms & Conditions</span>
         </div>
-        <div class="flex gap-x-3 order-1 md:order-2 mb-5 md:mb-0">
-            <img src="./access/icons/facebook-icon.svg" alt="" class="size size-14 md:size-10 xl:size-12">
-            <img src="./access/icons/in-icon.svg" alt="" class="size-12">
-            <img src="./access/icons/twitter-icon.svg" alt="" class="size-12">
-            <img src="./access/icons/youtobe-icon.svg" alt="" class="size-12">
+        <div class="flex gap-x-3 order-1 lg:order-2 mb-5 lg:mb-0">
+            <img src="./access/icons/facebook-icon.svg" alt="" class="size-14 lg:size-10 2xl:size-12">
+            <img src="./access/icons/in-icon.svg" alt="" class="size-14 lg:size-10 2xl:size-12">
+            <img src="./access/icons/twitter-icon.svg" alt="" class="size-14 lg:size-10 2xl:size-12">
+            <img src="./access/icons/youtobe-icon.svg" alt="" class="size-14 lg:size-10 2xl:size-12">
         </div>
     </div>
 </body>
