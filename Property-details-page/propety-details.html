@@ -268,7 +268,7 @@
             </div>
         </section>
 
-        <!-- PHẦN CHI TIẾT GIÁ CẢ (Pricing Details Section) -->
+        <!-- PHẦN CHI TIẾT GIÁ CẢ (Pricing Details Section) - Hiển thị Listing Price và các chi phí liên quan -->
         <section class="flex flex-col gap-5 md:gap-6">
             <!-- Tiêu đề và phần giới thiệu chính sách giá -->
             <div class="flex flex-col gap-1 md:gap-2 mb-10 md:mb-20">
@@ -306,8 +306,9 @@
                     <span class="text-[#999999]">Listing Price</span>
                     <strong class="text-3xl md:text-4xl font-bold">$1,250,000</strong>
                 </div>
+                <!-- Khối nội dung chi tiết về giá và các khoản phí -->
                 <div class="flex flex-col gap-10 md:gap-12">
-                    <!-- Các khoản phí bổ sung (Additional Fees) -->
+                    <!-- Các khoản phí bổ sung khi giao dịch (Additional Fees) -->
                     <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
                         <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
                             <h2 class="text-xl md:text-2xl font-semibold">Additional Fees</h2>
@@ -366,7 +367,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Chi phí hàng tháng (Monthly Costs) -->
+                    <!-- Các khoản phí hàng tháng (Monthly Costs) -->
                     <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
                         <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
                             <h2 class="text-xl md:text-2xl font-semibold">Monthly Costs</h2>
@@ -394,7 +395,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Tổng chi phí ban đầu (Total Initial Costs) -->
+                    <!-- Tổng chi phí đầu tư ban đầu (Total Initial Costs) -->
                     <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
                         <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
                             <h2 class="text-xl md:text-2xl font-semibold">Total Initial Costs</h2>
@@ -438,7 +439,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Chi phí chi tiêu hàng tháng (Monthly Expenses) -->
+                    <!-- Chi tiết các khoản chi tiêu hàng tháng (Monthly Expenses) -->
                     <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
                         <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
                             <h2 class="text-xl md:text-2xl font-semibold">Monthly Expenses</h2>
@@ -504,7 +505,7 @@
                     <a class="text-base font-medium leading-[150%] hover:text-[#703BF7]" href="">View All FAQ’s</a>
                 </div>
             </div>
-            <!-- Danh sách các thẻ FAQ -->
+            <!-- Danh sách các thẻ FAQ (Frequently Asked Questions) -->
             <div class="flex flex-col gap-7">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mt-10">
                     <!-- Thẻ FAQ 1 -->
@@ -545,7 +546,7 @@
                             More</a>
                     </div>
                 </div>
-                <!-- Phân trang và điều hướng FAQ (Desktop) -->
+                <!-- Phân trang và điều hướng FAQ (Giao diện Desktop) -->
                 <div class="hidden md:flex flex-col gap-5 md:flex-row md:justify-between md:items-center border-t border-[#262626] pt-5">
                     <div>
                         <span class="text-lg font-medium leading-[150%]">01</span>
@@ -560,7 +561,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- Phân trang và điều hướng FAQ (Mobile) -->
+                <!-- Phân trang và điều hướng FAQ (Giao diện Mobile) -->
                 <div class="md:hidden flex flex-col gap-5">
                     <div class="flex justify-between items-center">
                         <div class="mt-auto px-4 py-2 bg-[#1A1A1A] border border-[#262626] rounded-lg w-fit cursor-pointer">
@@ -581,6 +582,28 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- PHẦN KÊU GỌI HÀNH ĐỘNG (Call to Action Section) -->
+        <section>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-10 md:gap-30 px-5 py-10 md:px-15 md:py-25 border-b border-t border-[#262626]">
+                <!-- Nội dung giới thiệu CTA -->
+                <div class="flex flex-col gap-2 max-w-full md:max-w-[70%]">
+                    <h2 class="text-3xl md:text-4xl font-semibold leading-[150%]">Start Your Real Estate Journey
+                        Today</h2>
+                    <p class="text-sm md:text-base font-normal md:font-medium leading-[150%] text-[#999]">Your dream
+                        property is just a click away. Whether you're looking for a new home, a strategic
+                        investment, or expert real estate advice, Estatein is here to assist you every step of the way.
+                        Take
+                        the first step towards your real estate goals and explore our available properties or get in
+                        touch
+                        with our team for personalized assistance.</p>
+                </div>
+                <!-- Nút chuyển hướng hành động -->
+                <a class="w-full md:w-fit self-center md:self-auto px-5 py-3.5 bg-[#703BF7] rounded-lg whitespace-nowrap hover:bg-[#5e2ed4] text-center transition-all" href="#">
+                    Explore Properties
+                </a>
             </div>
         </section>
     </article>
