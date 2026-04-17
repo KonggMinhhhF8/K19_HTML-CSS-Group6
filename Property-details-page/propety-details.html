@@ -58,15 +58,17 @@
 <main class="max-w-400 mx-auto px-5 md:px-10">
     <article class="flex flex-col gap-7.5">
         <!-- TIÊU ĐỀ BẤT ĐỘNG SẢN VÀ GIÁ (Title & Price Section) -->
-        <header class="flex flex-col md:flex-row md:justify-center md:items-center flex-1 gap-2.5 md:gap-5">
-            <h1 class="text-xl md:text-3xl font-semibold leading-[150%]">Seaside Serenity Villa</h1>
-            <!-- Thông tin địa điểm -->
-            <div class="flex items-center sm:gap-1.5 mr-auto">
-                <img src="./icon/Icon location.svg" alt="Location">
-                <span class="text-sm md:text-[18px]">Malibu, California</span>
+        <header class="flex flex-row items-center md:justify-between gap-2.5 md:gap-5">
+            <div class="flex flex-col md:flex-row items-center gap-1.5">
+                <h1 class="text-xl md:text-3xl font-semibold leading-[150%]">Seaside Serenity Villa</h1>
+                <!-- Thông tin địa điểm -->
+                <div class="flex items-center gap-1 md:gap-1.5 mr-auto rounded-lg bg-[#1A1A1A] px-3 py-1 w-fit">
+                    <img src="./icon/Icon location.svg" alt="Location">
+                    <span class="text-sm md:text-[18px]">Malibu, California</span>
+                </div>
             </div>
             <!-- Thông tin giá bán -->
-            <div class="flex flex-col gap-0.5">
+            <div class="flex flex-row items-center md:items-start md:flex-col gap-0.5 mt-auto md:mt-0">
                 <span class="text-sm md:text-lg text-[#999999]">Price</span>
                 <span class="text-[18px] md:text-2xl font-semibold leading-[150%]">$1,250,000</span>
             </div>
@@ -586,29 +588,29 @@
         </section>
 
         <!-- PHẦN KÊU GỌI HÀNH ĐỘNG (Call to Action Section) -->
-        <section>
-            <div class="flex flex-col xl:flex-row md:justify-between md:items-center gap-10 md:gap-30 px-5 py-10 md:px-15 md:py-18 border-b border-t border-[#262626] bg-[url('./images/abstract-design-left.svg')] bg-position-[bottom_left] xl:bg-[url('./images/abstract-design-left.svg'),url('./images/abstract-design-right.svg')] bg-no-repeat xl:bg-position-[top_left,top_right]">
-                <div class="flex flex-col gap-2 max-w-full md:max-w-[70%]">
-                    <h2 class="text-3xl md:text-4xl font-semibold leading-[150%]">Start Your Real Estate Journey
-                        Today</h2>
-                    <p class="text-sm md:text-base font-normal md:font-medium leading-[150%] text-[#999]">Your dream
-                        property is just a click away. Whether you're looking for a new home, a strategic
-                        investment, or expert real estate advice, Estatein is here to assist you every step of the way.
-                        Take
-                        the first step towards your real estate goals and explore our available properties or get in
-                        touch
-                        with our team for personalized assistance.</p>
-                </div>
-                <a class="w-full md:w-fit self-center md:self-auto px-5 py-3.5 bg-[#703BF7] rounded-lg whitespace-nowrap hover:bg-[#5e2ed4] text-center transition-all"
-                   href="#">
-                    Explore Properties
-                </a>
-            </div>
-        </section>
     </article>
 </main>
 <footer class="w-full">
-    <div class="px-5 md:px-10 py-10">
+    <section class="mx-auto my-10 md:my-20">
+        <div class="flex flex-col xl:flex-row md:justify-between md:items-center gap-10 md:gap-30 px-5 py-10 md:px-20 md:py-18 border-b border-t border-[#262626] bg-[url('./images/abstract-design-left.svg')] bg-position-[bottom_left] xl:bg-[url('./images/abstract-design-left.svg'),url('./images/abstract-design-right.svg')] bg-no-repeat xl:bg-position-[top_left,top_right]">
+            <div class="flex flex-col gap-2 max-w-full md:max-w-[70%]">
+                <h2 class="text-3xl md:text-4xl font-semibold leading-[150%]">Start Your Real Estate Journey
+                    Today</h2>
+                <p class="text-sm md:text-base font-normal md:font-medium leading-[150%] text-[#999]">Your dream
+                    property is just a click away. Whether you're looking for a new home, a strategic
+                    investment, or expert real estate advice, Estatein is here to assist you every step of the way.
+                    Take
+                    the first step towards your real estate goals and explore our available properties or get in
+                    touch
+                    with our team for personalized assistance.</p>
+            </div>
+            <a class="w-full md:w-fit self-center md:self-auto px-5 py-3.5 bg-[#703BF7] rounded-lg whitespace-nowrap hover:bg-[#5e2ed4] text-center transition-all"
+               href="#">
+                Explore Properties
+            </a>
+        </div>
+    </section>
+    <div class="max-w-400 mx-auto px-5 md:px-10">
         <div class="flex flex-col md:flex-row justify-between gap-15 max-w-400 mx-auto">
             <div class="flex flex-col gap-10">
                 <div class="flex flex-col gap-5">
@@ -682,22 +684,26 @@
         </div>
     </div>
     <div class="bg-[#1A1A1A] border-t border-[#262626] mt-10">
-        <div class="flex items-center justify-between py-10 px-10 md:px-10">
-            <div class="flex items-center gap-8">
+        <div class="flex flex-col md:flex-row items-center md:justify-between py-10 px-10 md:px-10 gap-8 md:gap-0">
+            <div class="flex flex-col md:flex-row items-center gap-2 md:gap-8 order-2 md:order-1">
                 <span>@2023 Estatein. All Rights Reserved.</span>
                 <a href="#">Terms & Conditions</a>
             </div>
-            <div class="flex items-center gap-5">
-                <a href="#">
+            <div class="flex items-center gap-5 order-1 md:order-2">
+                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
+                        href="#">
                     <img src="./icon-internet/Icon-3.svg" alt="">
                 </a>
-                <a href="#">
+                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
+                        href="#">
                     <img src="./icon-internet/Icon-2.svg" alt="">
                 </a>
-                <a href="#">
+                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
+                        href="#">
                     <img src="./icon-internet/Icon-1.svg" alt="">
                 </a>
-                <a href="#">
+                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
+                        href="#">
                     <img src="./icon-internet/Icon.svg" alt="">
                 </a>
             </div>
