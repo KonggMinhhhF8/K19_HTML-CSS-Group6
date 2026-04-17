@@ -66,7 +66,7 @@
     </nav>
 
     <!-- Menu di động khi được mở (Mobile Menu) -->
-    <div class="max-h-0 bg-[#1A1A1A] border-t border-[#262626] opacity-0 transition-all duration-500 ease-in-out overflow-hidden -translate-y-2 md:hidden max-md:peer-checked:max-h-125 max-md:peer-checked:opacity-100 max-md:peer-checked:translate-y-0">
+    <div class="max-h-0 bg-[#1A1A1A] border-t border-[#262626] opacity-0 transition-all duration-400 ease-in-out overflow-hidden -translate-y-2 md:hidden max-md:peer-checked:max-h-125 max-md:peer-checked:opacity-100 max-md:peer-checked:translate-y-0">
         <div class="flex flex-col gap-5 px-5 py-6">
             <ul class="flex flex-col gap-1 font-medium text-[18px] leading-[150%]">
                 <li>
@@ -122,8 +122,10 @@
 
             <!-- Danh sách ảnh thu nhỏ (Thumbnails) -->
             <div class="flex gap-5 order-2 w-full p-5 bg-[#141414] border-[#262626] rounded-xl border md:order-1">
-                <button class="md:flex-1"><img class="w-full rounded-lg object-cover"
-                                               src="./images/Image-8.png" alt="Thumb 1">
+                <button class="md:flex-1 group cursor-pointer overflow-hidden rounded-lg
+hover:ring-2 hover:ring-[#703BF7] hover:ring-offset-2 hover:ring-offset-[#141414]
+transition-all duration-300 "><img class="w-full rounded-lg object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                                   src="./images/Image-8.png" alt="Thumb 1">
                 </button>
                 <button class="md:flex-1"><img class="w-full rounded-lg object-cover"
                                                src="./images/Image-7.png" alt="Thumb 2">
@@ -611,7 +613,7 @@ active:translate-y-0 active:shadow-md active:scale-95">
                 <div class="grid grid-cols-1 gap-7 mt-10 md:grid-cols-3">
 
                     <!-- Câu hỏi 1 -->
-                    <div class="flex flex-col gap-7 p-10 border-[#262626] rounded-lg border hover:-translate-y-4 transition-all duration-500 ease-out hover:scale-105 hover:border-[#703BF7] hover:shadow-[#703BF7]/20 hover:shadow-lg">
+                    <div class="flex flex-col gap-7 p-10 border-[#262626] rounded-lg border hover:-translate-y-2 transition-all duration-400 ease-out hover:scale-105 hover:border-[#703BF7] hover:shadow-[#703BF7]/20 hover:shadow-2xl">
                         <div class="flex flex-col gap-3 h-full">
                             <h3 class="font-semibold text-xl leading-[150%]">How do I search for properties on
                                 Estatein?</h3>
@@ -623,7 +625,7 @@ active:translate-y-0 active:shadow-md active:scale-95">
                             More</a>
                     </div>
                     <!-- Câu hỏi 2 -->
-                    <div class="hidden flex-col gap-7 p-10 border-[#262626] rounded-lg border md:flex hover:-translate-y-4 transition-all duration-500 ease-out hover:scale-105 hover:border-[#703BF7] hover:shadow-[#703BF7]/20 hover:shadow-lg">
+                    <div class="hidden flex-col gap-7 p-10 border-[#262626] rounded-lg border md:flex hover:-translate-y-2 transition-all duration-400 ease-out hover:scale-105 hover:border-[#703BF7] hover:shadow-[#703BF7]/20 hover:shadow-2xl">
                         <div class="flex flex-col gap-3 h-full">
                             <h3 class="font-semibold text-xl leading-[150%]">What documents do I need to sell my
                                 property
@@ -636,7 +638,7 @@ active:translate-y-0 active:shadow-md active:scale-95">
                             More</a>
                     </div>
                     <!-- Câu hỏi 3 -->
-                    <div class="hidden flex-col gap-7 p-10 border-[#262626] rounded-lg border md:flex hover:-translate-y-4 transition-all duration-500 ease-out hover:scale-105 hover:border-[#703BF7] hover:shadow-[#703BF7]/20 hover:shadow-lg">
+                    <div class="hidden flex-col gap-7 p-10 border-[#262626] rounded-lg border md:flex hover:-translate-y-2 transition-all duration-400 ease-out hover:scale-105 hover:border-[#703BF7] hover:shadow-[#703BF7]/20 hover:shadow-2xl">
                         <div class="flex flex-col gap-3 h-full">
                             <h3 class="font-semibold text-xl leading-[150%]">How can I contact an Estatein agent?</h3>
                             <p class="font-medium text-base text-[#999] leading-[150%]">Discover the different ways you
@@ -723,14 +725,13 @@ active:translate-y-0 active:shadow-md active:scale-95">
             <!-- Cột Logo và Đăng ký Email -->
             <div class="flex flex-col gap-10">
                 <div class="flex flex-col gap-5">
-                    <div class="flex items-center gap-2 transition-all duration-300
-hover:scale-110 hover:rotate-6">
+                    <div class="flex items-center gap-2">
                         <img src="./icon/Symbol.svg" alt="">
                         <img src="./icon/Text.svg" alt="">
                     </div>
                     <!-- Form đăng ký nhận tin -->
                     <form action="">
-                        <div class="flex items-center gap-2 w-fit px-5 py-3 border-[#262626] rounded-lg border">
+                        <div class="flex items-center gap-2 w-fit px-5 py-3 border-[#262626] rounded-lg border hover:bg-[#262626] focus-within:border-[#703BF7] focus-within:shadow-[#703BF7]/20 focus-within:shadow-lg transition-all duration-300">
                             <img src="./icon/Icon-email.svg" alt="">
                             <input class="w-fit bg-transparent outline-none" type="email" id="email-input"
                                    placeholder="Enter your email">
@@ -813,19 +814,23 @@ hover:scale-110 hover:rotate-6">
             </div>
             <!-- Các liên kết Mạng xã hội -->
             <div class="flex items-center gap-5 order-1 md:order-2">
-                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7] duration-300
+hover:scale-110 hover:-rotate-90 hover:shadow-[#703BF7]/20 hover:shadow-2xl"
                    href="#">
                     <img src="./icon-internet/Icon-3.svg" alt="">
                 </a>
-                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7] duration-300
+hover:scale-110 hover:-rotate-90 hover:shadow-[#703BF7]/20 hover:shadow-2xl"
                    href="#">
                     <img src="./icon-internet/Icon-2.svg" alt="">
                 </a>
-                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7] duration-300
+hover:scale-110 hover:-rotate-90 hover:shadow-[#703BF7]/20 hover:shadow-2xl"
                    href="#">
                     <img src="./icon-internet/Icon-1.svg" alt="">
                 </a>
-                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7] duration-300
+hover:scale-110 hover:-rotate-90 hover:shadow-[#703BF7]/20 hover:shadow-2xl"
                    href="#">
                     <img src="./icon-internet/Icon.svg" alt="">
                 </a>
