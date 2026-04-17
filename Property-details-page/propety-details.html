@@ -10,74 +10,118 @@
     <title>Property Details Page</title>
 </head>
 <body class="font-[Urbanist] text-white bg-[#141414]">
-<!-- THANH ĐIỀU HƯỚNG VÀ BIỂU NGỮ ĐẦU TRANG -->
-<header class="flex flex-col border-b border-[#262626] mb-15 md:mb-20 lg:mb-30">
-    <!-- Biểu ngữ thông báo (Top Banner) - Hiển thị khuyến mãi hoặc thông tin quan trọng -->
-    <aside class="border-b border-[#262626] bg-[#1A1A1A] bg-[url('./images/Abstract-Design.svg')] bg-no-repeat bg-cover bg-center w-full">
-        <div class="relative mx-auto flex w-full max-w-400 items-center justify-center gap-2.5 px-5 py-4.5 text-xs font-medium leading-[150%] md:text-[18px]">
+
+<!-- Header: Chứa banner thông báo và thanh điều hướng -->
+<header class="flex flex-col mb-15 border-b border-[#262626] md:mb-20 lg:mb-30">
+    <input type="checkbox" id="menu-toggle-2" class="hidden peer/banner">
+
+    <!-- Banner quảng cáo trên cùng -->
+    <aside class="w-full bg-[#1A1A1A] bg-[url('./images/Abstract-Design.svg')] bg-no-repeat bg-cover bg-center border-b border-[#262626] peer-checked/banner:hidden">
+        <div class="relative flex items-center justify-center gap-2.5 w-full max-w-400 mx-auto px-5 py-4.5 font-medium text-xs leading-[150%] md:text-[18px]">
             <span>✨Discover Your Dream Property with Estatein</span>
             <a class="underline" href="">Learn More</a>
-            <!-- Nút đóng biểu ngữ -->
-            <button class="absolute top-1/2 right-1 h-6 w-6 -translate-y-1/2 rounded-[75px] bg-white/10 p-1 md:right-5 cursor-pointer hover:bg-white/20">
+            <!-- Nút đóng banner -->
+            <label for="menu-toggle-2"
+                   class="absolute top-1/2 right-1 w-6 h-6 p-1 bg-white/10 rounded-[75px] cursor-pointer -translate-y-1/2 md:right-5 hover:bg-white/20">
                 <img src="./icon/Icon.svg" alt="Close Icon">
-            </button>
+            </label>
         </div>
     </aside>
-    <!-- Menu điều hướng chính (Main Navigation) -->
+
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+    <!-- Thanh điều hướng chính (Navigation) -->
     <nav class="w-full bg-[#1A1A1A]">
-        <div class="mx-auto flex items-center justify-between self-stretch px-5 py-5 text-[18px] font-medium leading-[150%] md:max-w-400">
-            <!-- Logo thương hiệu -->
+        <div class="flex items-center justify-between self-stretch mx-auto px-5 py-5 font-medium text-[18px] leading-[150%] md:max-w-400">
+
+            <!-- Logo -->
             <div class="flex items-center justify-center gap-2">
                 <img class="w-7 md:w-12" src="./icon/Symbol.svg" alt="">
                 <img class="w-15 md:w-25" src="./icon/Text.svg" alt="">
             </div>
-            <!-- Danh sách liên kết điều hướng (Chỉ hiển thị trên Desktop) -->
-            <div class="menu hidden md:block">
+
+            <!-- Danh sách menu trên Desktop -->
+            <div class="hidden md:block">
                 <ul class="flex items-center gap-7.5">
-                    <li><a class="hover:text-[#703BF7]" href="">Home</a></li>
-                    <li><a class="hover:text-[#703BF7]" href="">About Us</a></li>
-                    <li><a class="rounded-lg border border-[#262626] bg-[#141414] px-5 py-3 hover:text-[#703BF7]"
-                           href="">Properties</a>
-                    </li>
-                    <li><a class="hover:text-[#703BF7]" href="">Services</a></li>
+                    <li><a class="transition-colors duration-200 hover:text-[#703BF7]" href="">Home</a></li>
+                    <li><a class="transition-colors duration-200 hover:text-[#703BF7]" href="">About Us</a></li>
+                    <li>
+                        <a class="px-5 py-3 bg-[#141414] border-[#262626] rounded-lg transition-all duration-200 border hover:text-[#703BF7] hover:border-[#703BF7]"
+                           href="">Properties</a></li>
+                    <li><a class="transition-colors duration-200 hover:text-[#703BF7]" href="">Services</a></li>
                 </ul>
             </div>
-            <!-- Biểu tượng Menu Burger (Chỉ hiển thị trên Mobile) -->
-            <div class="block md:hidden">
+
+            <!-- Nút Menu Hamburger cho di động -->
+            <label for="menu-toggle" class="block cursor-pointer md:hidden">
                 <img src="./icon/Icon-burger.svg" alt="Menu Icon">
-            </div>
-            <!-- Nút Liên hệ -->
+            </label>
+
+            <!-- Nút Contact Us -->
             <a href=""
-               class="hidden rounded-lg border border-[#262626] py-4 px-6 md:block hover:text-[#703BF7]">Contact
-                US
+               class="hidden px-6 py-4 border-[#262626] rounded-lg transition-all duration-200 border md:block hover:text-[#703BF7] hover:border-[#703BF7]">
+                Contact US
             </a>
         </div>
     </nav>
+
+    <!-- Menu di động khi được mở (Mobile Menu) -->
+    <div class="max-h-0 bg-[#1A1A1A] border-t border-[#262626] opacity-0 transition-all duration-500 ease-in-out overflow-hidden -translate-y-2 md:hidden max-md:peer-checked:max-h-125 max-md:peer-checked:opacity-100 max-md:peer-checked:translate-y-0">
+        <div class="flex flex-col gap-5 px-5 py-6">
+            <ul class="flex flex-col gap-1 font-medium text-[18px] leading-[150%]">
+                <li>
+                    <a class="block py-3 transition-all duration-200 hover:pl-2 hover:text-[#703BF7]" href="">Home</a>
+                </li>
+                <li>
+                    <a class="block py-3 transition-all duration-200 hover:pl-2 hover:text-[#703BF7]" href="">About
+                        Us</a>
+                </li>
+                <li>
+                    <a class="block mt-1 px-5 py-3 bg-[#141414] border-[#262626] rounded-lg transition-all duration-200 border hover:text-[#703BF7] hover:border-[#703BF7]"
+                       href="">Properties</a>
+                </li>
+                <li>
+                    <a class="block py-3 transition-all duration-200 hover:pl-2 hover:text-[#703BF7]"
+                       href="">Services</a>
+                </li>
+            </ul>
+            <a href=""
+               class="block px-6 py-4 text-center border-[#262626] rounded-lg transition-all duration-200 border hover:bg-[#703BF7]/10 hover:border-[#703BF7]">
+                Contact US
+            </a>
+        </div>
+    </div>
+
 </header>
-<!-- NỘI DUNG CHÍNH CỦA TRANG (Main Content) -->
+
+<!-- Nội dung chính của trang -->
 <main class="max-w-400 mx-auto px-5 md:px-10">
     <article class="flex flex-col gap-7.5">
-        <!-- TIÊU ĐỀ BẤT ĐỘNG SẢN VÀ GIÁ (Title & Price Section) -->
-        <header class="flex flex-row items-center md:justify-between gap-2.5 md:gap-5">
-            <div class="flex flex-col md:flex-row items-center gap-1.5">
-                <h1 class="text-xl md:text-3xl font-semibold leading-[150%]">Seaside Serenity Villa</h1>
-                <!-- Thông tin địa điểm -->
-                <div class="flex items-center gap-1 md:gap-1.5 mr-auto rounded-lg bg-[#1A1A1A] px-3 py-1 w-fit">
+
+        <!-- Tiêu đề và Thông tin giá của Bất động sản -->
+        <header class="flex flex-row items-center gap-2.5 md:justify-between md:gap-5">
+            <div class="flex flex-col items-center gap-1.5 md:flex-row">
+                <h1 class="font-semibold text-xl leading-[150%] md:text-3xl">Seaside Serenity Villa</h1>
+
+                <!-- Vị trí -->
+                <div class="flex items-center gap-1 w-fit mr-auto px-3 py-1 bg-[#1A1A1A] rounded-lg md:gap-1.5">
                     <img src="./icon/Icon location.svg" alt="Location">
                     <span class="text-sm md:text-[18px]">Malibu, California</span>
                 </div>
             </div>
-            <!-- Thông tin giá bán -->
-            <div class="flex flex-row items-center md:items-start md:flex-col gap-0.5 mt-auto md:mt-0">
-                <span class="text-sm md:text-lg text-[#999999]">Price</span>
-                <span class="text-[18px] md:text-2xl font-semibold leading-[150%]">$1,250,000</span>
+
+            <!-- Giá bán -->
+            <div class="flex flex-row items-center gap-0.5 mt-auto md:flex-col md:items-start md:mt-0">
+                <span class="text-sm text-[#999999] md:text-lg">Price</span>
+                <span class="font-semibold text-[18px] leading-[150%] md:text-2xl">$1,250,000</span>
             </div>
         </header>
 
-        <!-- BỘ SƯU TẬP HÌNH ẢNH (Image Gallery Section) -->
-        <figure class="flex flex-col items-start mb-7.5 gap-5 p-5 md:p-7.5 border border-[#262626] bg-[#1A1A1A] rounded-xl w-full">
+        <!-- Thư viện hình ảnh (Photo Gallery) -->
+        <figure class="flex flex-col items-start gap-5 w-full mb-7.5 p-5 bg-[#1A1A1A] border-[#262626] rounded-xl border md:p-7.5">
+
             <!-- Danh sách ảnh thu nhỏ (Thumbnails) -->
-            <div class="order-2 md:order-1 flex w-full gap-5 p-5 border border-[#262626] bg-[#141414] rounded-xl">
+            <div class="flex gap-5 order-2 w-full p-5 bg-[#141414] border-[#262626] rounded-xl border md:order-1">
                 <button class="md:flex-1"><img class="w-full rounded-lg object-cover"
                                                src="./images/Image-8.png" alt="Thumb 1">
                 </button>
@@ -101,20 +145,22 @@
                 <button class="hidden md:block md:flex-1"><img class="w-full rounded-lg object-cover"
                                                                src="./images/Image.png" alt="Thumb 9"></button>
             </div>
-            <!-- Ảnh hiển thị chính (Main Featured Images) -->
-            <div class="order-1 md:order-2 grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
-                <button class="w-full"><img class="w-full h-62.25 md:h-126.75 lg:h-145.75 rounded-xl object-cover"
+
+            <!-- Ảnh hiển thị chính (Main Images) -->
+            <div class="grid grid-cols-1 gap-5 order-1 w-full md:grid-cols-2 md:order-2">
+                <button class="w-full"><img class="w-full h-62.25 rounded-xl object-cover md:h-126.75 lg:h-145.75"
                                             src="./images/image2.png" alt=""></button>
-                <button class="w-full hidden md:block"><img
-                        class="w-full h-62.25 md:h-126.75 lg:h-145.75 rounded-xl object-cover"
+                <button class="hidden w-full md:block"><img
+                        class="w-full h-62.25 rounded-xl object-cover md:h-126.75 lg:h-145.75"
                         src="./images/Image3.png" alt=""></button>
             </div>
-            <!-- Điều hướng Gallery (Nút chuyển ảnh và các dấu chấm chỉ số) -->
-            <div class="order-3 flex w-full items-center justify-between md:justify-center gap-2.5">
-                <button class="p-3.5 border border-[#262626] rounded-[69px] ">
+
+            <!-- Các nút điều khiển chuyển ảnh (Navigation buttons) -->
+            <div class="flex items-center justify-between gap-2.5 order-3 w-full md:justify-center">
+                <button class="p-3.5 border-[#262626] rounded-[69px] border">
                     <img src="./icon/Iconleft.svg" alt="Previous">
                 </button>
-                <div class="flex justify-center items-center gap-1">
+                <div class="flex items-center justify-center gap-1">
                     <button class="w-5 h-1.25 bg-[#703BF7] rounded-[60px]"></button>
                     <button class="w-5 h-1.25 bg-[#4D4D4D] rounded-[60px]"></button>
                     <button class="w-5 h-1.25 bg-[#4D4D4D] rounded-[60px]"></button>
@@ -122,42 +168,47 @@
                     <button class="w-5 h-1.25 bg-[#4D4D4D] rounded-[60px]"></button>
                     <button class="w-5 h-1.25 bg-[#4D4D4D] rounded-[60px]"></button>
                 </div>
-                <button class="p-3.5 border bg-[#1A1A1A] border-[#262626] rounded-[69px] ">
+                <button class="p-3.5 bg-[#1A1A1A] border-[#262626] rounded-[69px] border">
                     <img src="./icon/Iconright.svg" alt="Next">
                 </button>
             </div>
         </figure>
 
-        <!-- PHẦN MÔ TẢ VÀ TIỆN ÍCH (Description & Amenities Section) -->
-        <section class="grid grid-cols-1 lg:grid-cols-2 gap-7.5">
-            <!-- Khối Mô tả chi tiết (Description) -->
-            <div class="flex flex-col p-5 lg:p-12.5 border border-[#262626] rounded-xl self-start">
+        <!-- Phần Mô tả và Tiện nghi (Description & Key Features) -->
+        <section class="grid grid-cols-1 gap-7.5 lg:grid-cols-2">
+
+            <!-- Khối Mô tả (Description Box) -->
+            <div class="flex flex-col self-start p-5 border-[#262626] rounded-xl border lg:p-12.5">
                 <div class="flex flex-col gap-3.5">
-                    <h2 class="text-lg lg:text-2xl font-semibold leading-[150%] mb-3.5">Description</h2>
-                    <p class="text-sm lg:text-lg text-[#999] font-medium leading-[150%]">Discover your own piece of
+                    <h2 class="mb-3.5 font-semibold text-lg leading-[150%] lg:text-2xl">Description</h2>
+                    <p class="font-medium text-sm text-[#999] leading-[150%] lg:text-lg">Discover your own piece of
                         paradise with
                         the Seaside Serenity Villa. T With an open floor plan,
                         breathtaking ocean views from every room, and direct access to a pristine sandy beach, this
                         property
                         is the epitome of coastal living.</p>
                 </div>
-                <!-- Thông số cơ bản (Phòng ngủ, Phòng tắm, Diện tích) -->
-                <div class="grid grid-cols-2 lg:flex gap-5 pt-2 lg:gap-10 lg:pt-5">
-                    <div class="flex flex-col mb-2.5 border-r border-[#262626] lg:border-r lg:border-[#262626] pr-2 lg:pr-4">
+
+                <!-- Các thông số cơ bản (Beds, Baths, Area) -->
+                <div class="grid grid-cols-2 gap-5 pt-2 lg:flex lg:gap-10 lg:pt-5">
+                    <!-- Phòng ngủ -->
+                    <div class="flex flex-col mb-2.5 pr-2 border-r border-[#262626] lg:pr-4 lg:border-r lg:border-[#262626]">
                         <div class="flex items-center gap-1.75">
                             <img src="./icon/iconbed.svg" alt="icon bed">
                             <span class="text-[#999]">Bedrooms</span>
                         </div>
                         <strong>04</strong>
                     </div>
-                    <div class="flex flex-col mb-2.5 lg:border-r lg:border-[#262626] pr-2 lg:pr-4">
+                    <!-- Phòng tắm -->
+                    <div class="flex flex-col mb-2.5 pr-2 lg:pr-4 lg:border-r lg:border-[#262626]">
                         <div class="flex items-center gap-1.75">
                             <img src="./icon/iconbath.svg" alt="icon bath">
                             <span class="text-[#999]">Bathrooms</span>
                         </div>
                         <strong>03</strong>
                     </div>
-                    <div class="col-span-2 lg:col-span-1 flex flex-col mb-2.5 border-t border-[#262626] lg:border-t-0 pt-2 lg:pt-0">
+                    <!-- Diện tích -->
+                    <div class="flex flex-col col-span-2 mb-2.5 pt-2 border-t border-[#262626] lg:col-span-1 lg:pt-0 lg:border-t-0">
                         <div class="flex items-center gap-1.75">
                             <img src="./icon/iconarea.svg" alt="icon area">
                             <span class="text-[#999]">Area</span>
@@ -166,103 +217,113 @@
                     </div>
                 </div>
             </div>
-            <!-- Khối Danh sách tiện ích chính (Key Features) -->
-            <div class="flex flex-col p-5 md:p-12.5 gap-12.5 border border-[#262626] rounded-xl">
-                <h2 class="text-2xl font-semibold leading-[150%]">Key Features and Amenities</h2>
+
+            <!-- Khối Tiện ích chính (Key Features and Amenities) -->
+            <div class="flex flex-col gap-12.5 p-5 border-[#262626] rounded-xl border md:p-12.5">
+                <h2 class="font-semibold text-2xl leading-[150%]">Key Features and Amenities</h2>
                 <ul class="flex flex-col gap-7.5">
-                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 bg-linear-to-r border-l border-[#703BF7] from-[#1A1A1A] to-[#1A1A1A]/0">
                         <img src="./icon/Iconflash.svg" alt="iconflash">
-                        <span class="text-4 font-medium leading-[150%] text-[#999]">Expansive oceanfront terrace for outdoor entertaining</span>
+                        <span class="font-medium text-4 text-[#999] leading-[150%]">Expansive oceanfront terrace for outdoor entertaining</span>
                     </li>
-                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 bg-linear-to-r border-l border-[#703BF7] from-[#1A1A1A] to-[#1A1A1A]/0">
                         <img src="./icon/Iconflash.svg" alt="iconflash">
-                        <span class="text-4 font-medium leading-[150%] text-[#999]">Gourmet kitchen with top-of-the-line appliances</span>
+                        <span class="font-medium text-4 text-[#999] leading-[150%]">Gourmet kitchen with top-of-the-line appliances</span>
                     </li>
-                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 bg-linear-to-r border-l border-[#703BF7] from-[#1A1A1A] to-[#1A1A1A]/0">
                         <img src="./icon/Iconflash.svg" alt="iconflash">
-                        <span class="text-4 font-medium leading-[150%] text-[#999]">Private beach access for morning strolls and sunset views</span>
+                        <span class="font-medium text-4 text-[#999] leading-[150%]">Private beach access for morning strolls and sunset views</span>
                     </li>
-                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 bg-linear-to-r border-l border-[#703BF7] from-[#1A1A1A] to-[#1A1A1A]/0">
                         <img src="./icon/Iconflash.svg" alt="iconflash">
-                        <span class="text-4 font-medium leading-[150%] text-[#999]">Master suite with a spa-inspired bathroom and ocean-facing balcony</span>
+                        <span class="font-medium text-4 text-[#999] leading-[150%]">Master suite with a spa-inspired bathroom and ocean-facing balcony</span>
                     </li>
-                    <li class="flex items-center gap-2.5 px-4.5 py-6 border-l border-[#703BF7] bg-linear-to-r from-[#1A1A1A] to-[#1A1A1A]/0">
+                    <li class="flex items-center gap-2.5 px-4.5 py-6 bg-linear-to-r border-l border-[#703BF7] from-[#1A1A1A] to-[#1A1A1A]/0">
                         <img src="./icon/Iconflash.svg" alt="iconflash">
-                        <span class="text-4 font-medium leading-[150%] text-[#999]">Private garage and ample storage space</span>
+                        <span class="font-medium text-4 text-[#999] leading-[150%]">Private garage and ample storage space</span>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <!-- PHẦN FORM YÊU CẦU THÔNG TIN (Inquiry Form Section) -->
-        <section class=" grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12.5">
-            <!-- Tiêu đề và nội dung giới thiệu Form -->
+        <!-- Phần Form yêu cầu thông tin (Inquiry Form Section) -->
+        <section class="grid grid-cols-1 gap-12.5 lg:grid-cols-[1fr_2fr]">
+
+            <!-- Lời dẫn Form -->
             <div>
                 <div class="flex gap-4">
                     <img src="./icon/Frame%203186.svg" alt="">
                     <img src="./icon/Frame%203187.svg" alt="">
                     <img src="./icon/Frame%203188.svg" alt="">
                 </div>
-                <h2 class="text-3xl md:text-4xl font-normal md:font-medium leading-[150%]">Inquire About Seaside
+                <h2 class="font-normal text-3xl leading-[150%] md:font-medium md:text-4xl">Inquire About Seaside
                     Serenity Villa</h2>
-                <p class="text-sm md:text-base font-normal md:font-medium leading-[150%] text-[#999]">Interested in this
+                <p class="font-normal text-sm text-[#999] leading-[150%] md:font-medium md:text-base">Interested in this
                     property? Fill out
                     the form below, and our real estate experts will get back to
                     you with more details, including scheduling a viewing and answering any questions you may have.</p>
             </div>
-            <!-- Khối Form nhập liệu -->
+
+            <!-- Form đăng ký -->
             <div>
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-7.5 p-7.5 border border-[#262626] bg-[#141414] rounded-xl w-full"
+                <form class="grid grid-cols-1 gap-7.5 w-full p-7.5 bg-[#141414] border-[#262626] rounded-xl border md:grid-cols-2"
                       action="">
+                    <!-- Họ -->
                     <div class="flex flex-col gap-2.5">
-                        <label class="text-lg font-medium leading-[150%]" for="firstname">First Name</label>
-                        <input class="w-full rounded-lg border border-[#262626] bg-[#1A1A1A] px-5 py-4 outline-none focus:border-[#703BF7]"
+                        <label class="font-medium text-lg leading-[150%]" for="firstname">First Name</label>
+                        <input class="w-full px-5 py-4 bg-[#1A1A1A] border-[#262626] rounded-lg outline-none border focus:border-[#703BF7]"
                                type="text" id="firstname" placeholder="Enter First Name">
                     </div>
+                    <!-- Tên -->
                     <div class="flex flex-col gap-2.5">
-                        <label class="text-lg font-medium leading-[150%]" for="lastname">Last Name</label>
-                        <input class="w-full rounded-lg border border-[#262626] bg-[#1A1A1A] px-5 py-4 outline-none focus:border-[#703BF7]"
+                        <label class="font-medium text-lg leading-[150%]" for="lastname">Last Name</label>
+                        <input class="w-full px-5 py-4 bg-[#1A1A1A] border-[#262626] rounded-lg outline-none border focus:border-[#703BF7]"
                                type="text" id="lastname" placeholder="Enter Last Name">
                     </div>
+                    <!-- Email -->
                     <div class="flex flex-col gap-2.5">
-                        <label class="text-lg font-medium leading-[150%]" for="email">Email</label>
-                        <input class="w-full rounded-lg border border-[#262626] bg-[#1A1A1A] px-5 py-4 outline-none focus:border-[#703BF7]"
+                        <label class="font-medium text-lg leading-[150%]" for="email">Email</label>
+                        <input class="w-full px-5 py-4 bg-[#1A1A1A] border-[#262626] rounded-lg outline-none border focus:border-[#703BF7]"
                                type="email" id="email" placeholder="Enter Your Email">
                     </div>
+                    <!-- Số điện thoại -->
                     <div class="flex flex-col gap-2.5">
-                        <label class="text-lg font-medium leading-[150%]" for="phone">Phone</label>
-                        <input class="w-full rounded-lg border border-[#262626] bg-[#1A1A1A] px-5 py-4 outline-none focus:border-[#703BF7]"
+                        <label class="font-medium text-lg leading-[150%]" for="phone">Phone</label>
+                        <input class="w-full px-5 py-4 bg-[#1A1A1A] border-[#262626] rounded-lg outline-none border focus:border-[#703BF7]"
                                type="tel" id="phone" placeholder="Enter Phone Number">
                     </div>
-                    <!-- Trường hiển thị tên bất động sản (Chỉ đọc) -->
-                    <div class="md:col-span-2 flex flex-col gap-2.5">
-                        <label class="text-lg font-medium" for="selected-property">Selected Property</label>
+
+                    <!-- Tên bất động sản đã chọn (Chỉ đọc) -->
+                    <div class="flex flex-col gap-2.5 md:col-span-2">
+                        <label class="font-medium text-lg" for="selected-property">Selected Property</label>
                         <div class="relative w-full">
-                            <input class="w-full rounded-lg border border-[#262626] bg-[#1A1A1A] px-5 py-4 pr-12 outline-none text-[#999] cursor-not-allowed"
+                            <input class="w-full px-5 py-4 pr-12 text-[#999] bg-[#1A1A1A] border-[#262626] rounded-lg outline-none cursor-not-allowed border"
                                    type="text" id="selected-property" value="Seaside Serenity Villa, Malibu, California"
                                    readonly>
                             <img src="./icon/Icon location.svg" alt="icon location"
                                  class="absolute right-5 top-1/2 -translate-y-1/2">
                         </div>
                     </div>
-                    <div class="md:col-span-2 flex flex-col gap-2.5">
-                        <label class="text-lg font-medium leading-[150%]" for="message">Message</label>
+                    <!-- Lời nhắn -->
+                    <div class="flex flex-col gap-2.5 md:col-span-2">
+                        <label class="font-medium text-lg leading-[150%]" for="message">Message</label>
                         <textarea
-                                class="w-full rounded-lg border border-[#262626] bg-[#1A1A1A] px-5 py-4 outline-none focus:border-[#703BF7]"
+                                class="w-full px-5 py-4 bg-[#1A1A1A] border-[#262626] rounded-lg outline-none border focus:border-[#703BF7]"
                                 id="message" placeholder="Enter Your Message here."></textarea>
                     </div>
+
                     <!-- Đồng ý điều khoản và Nút gửi -->
-                    <div class="flex flex-col md:justify-between md:col-span-2  md:flex-row md:items-center gap-5 pt-2">
+                    <div class="flex flex-col gap-5 pt-2 md:flex-row md:items-center md:justify-between md:col-span-2">
                         <div class="flex items-center gap-3">
                             <input type="checkbox" id="check"
-                                   class="w-6 h-6 appearance-none rounded border border-[#262626] bg-[#1A1A1A] checked:bg-[#703BF7] checked:border-[#703BF7] cursor-pointer relative after:content-['✔'] after:absolute after:text-white after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:text-xs after:opacity-0 checked:after:opacity-100">
+                                   class="relative after:absolute after:top-1/2 after:left-1/2 w-6 h-6 after:text-white after:text-xs bg-[#1A1A1A] checked:bg-[#703BF7] border-[#262626] checked:border-[#703BF7] after:opacity-0 checked:after:opacity-100 cursor-pointer appearance-none rounded border after:content-['✔'] after:-translate-x-1/2 after:-translate-y-1/2">
                             <label for="check" class="text-[#999] cursor-pointer">
                                 I agree with <a class="underline hover:text-white" href="">Terms of Use</a> and <a
                                     class="underline hover:text-white" href="">Privacy Policy</a>
                             </label>
                         </div>
                         <button type="submit"
-                                class="w-full md:w-auto bg-[#703BF7] text-white px-8 py-3.5 rounded-lg hover:bg-[#5e2ed4] font-medium transition">
+                                class="w-full px-8 py-3.5 font-medium text-white bg-[#703BF7] rounded-lg transition md:w-auto hover:bg-[#5e2ed4]">
                             Send Your Message
                         </button>
                     </div>
@@ -270,19 +331,20 @@
             </div>
         </section>
 
-        <!-- PHẦN CHI TIẾT GIÁ CẢ (Pricing Details Section) - Hiển thị Listing Price và các chi phí liên quan -->
+        <!-- Phần Chi tiết Giá cả (Comprehensive Pricing Details) -->
         <section class="flex flex-col gap-5 md:gap-6">
-            <!-- Tiêu đề và phần giới thiệu chính sách giá -->
-            <div class="flex flex-col gap-1 md:gap-2 mb-10 md:mb-20">
+
+            <!-- Tiêu đề và Mô tả phần giá -->
+            <div class="flex flex-col gap-1 mb-10 md:gap-2 md:mb-20">
                 <div class="flex gap-4">
                     <img src="./icon/Frame%203186.svg" alt="">
                     <img src="./icon/Frame%203187.svg" alt="">
                     <img src="./icon/Frame%203188.svg" alt="">
                 </div>
                 <div class="flex flex-col gap-3.5 max-w-[80%]">
-                    <h2 class="text-3xl md:text-4xl font-normal md:font-medium leading-[150%]">Comprehensive Pricing
+                    <h2 class="font-normal text-3xl leading-[150%] md:font-medium md:text-4xl">Comprehensive Pricing
                         Details</h2>
-                    <p class="text-sm md:text-base font-normal md:font-medium leading-[150%] text-[#999]">At
+                    <p class="font-normal text-sm text-[#999] leading-[150%] md:font-medium md:text-base">At
                         Estatein,
                         transparency is key. We want you to have a clear understanding of all costs associated
                         with your property investment. Below, we break down the pricing for Seaside Serenity Villa
@@ -291,193 +353,200 @@
                         you make an informed decision</p>
                 </div>
             </div>
-            <!-- Khối Ghi chú quan trọng -->
+
+            <!-- Ghi chú (Note) -->
             <div>
-                <aside class="grid grid-cols-1 md:flex md:items-center gap-5 border border-[#262626] rounded-lg px-5 py-6 bg-[#1A1A1A]">
-                    <strong class="text-lg md:text-xl font-normal md:font-medium leading-[150%] border-b md:border-b-0 md:border-r border-[#262626] pr-4">
+                <aside class="grid grid-cols-1 gap-5 px-5 py-6 bg-[#1A1A1A] border-[#262626] rounded-lg border md:flex md:items-center">
+                    <strong class="pr-4 font-normal text-lg leading-[150%] border-b border-[#262626] md:font-medium md:text-xl md:border-b-0 md:border-r">
                         Note
                     </strong>
-                    <p class="text-sm md:text-base font-normal md:font-medium leading-[150%] text-[#999]">The
+                    <p class="font-normal text-sm text-[#999] leading-[150%] md:font-medium md:text-base">The
                         figures provided above are estimates and may vary depending on the property, location,
                         and individual circumstances.</p>
                 </aside>
             </div>
-            <!-- Chi tiết Listing Price và các loại phí -->
-            <div class="grid grid-cols-1 lg:grid-cols-[1fr_5fr] gap-10 mt-10 md:mt-20">
+
+            <!-- Bảng chi tiết các loại phí -->
+            <div class="grid grid-cols-1 gap-10 mt-10 md:mt-20 lg:grid-cols-[1fr_5fr]">
+                <!-- Giá niêm yết (Listing Price) -->
                 <div class="flex flex-col gap-2">
                     <span class="text-[#999999]">Listing Price</span>
-                    <strong class="text-3xl md:text-4xl font-bold">$1,250,000</strong>
+                    <strong class="font-bold text-3xl md:text-4xl">$1,250,000</strong>
                 </div>
-                <!-- Khối nội dung chi tiết về giá và các khoản phí -->
+
+                <!-- Danh sách các phí bổ sung và chi phí hàng tháng -->
                 <div class="flex flex-col gap-10 md:gap-12">
-                    <!-- Các khoản phí bổ sung khi giao dịch (Additional Fees) -->
-                    <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
-                        <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
-                            <h2 class="text-xl md:text-2xl font-semibold">Additional Fees</h2>
-                            <a class="rounded-lg border border-[#262626] px-5 py-3 bg-[#1A1A1A] hover:bg-[#262626] cursor-pointer hover:text-[#703BF7] transition-all">Learn
+
+                    <!-- Các loại phí bổ sung (Additional Fees) -->
+                    <div class="flex flex-col p-6 bg-[#141414] border-[#262626] rounded-xl border md:p-10">
+                        <div class="flex items-center justify-between mb-8 pb-6 border-b border-[#262626]">
+                            <h2 class="font-semibold text-xl md:text-2xl">Additional Fees</h2>
+                            <a class="px-5 py-3 bg-[#1A1A1A] border-[#262626] rounded-lg transition-all cursor-pointer border hover:text-[#703BF7] hover:bg-[#262626]">Learn
                                 More</a>
                         </div>
                         <div class="flex flex-col">
-                            <!-- Phí chuyển nhượng và Phí pháp lý -->
-                            <div class="flex flex-col md:flex-row border-b border-[#262626] pb-8 mb-8 gap-8 md:gap-0">
-                                <div class="flex-1 flex flex-col gap-3 border-b pb-8 md:border-b-0 md:border-r md:pr-8 md:pb-0 border-[#262626]">
+
+                            <!-- Hàng 1: Thuế chuyển nhượng và Phí pháp lý -->
+                            <div class="flex flex-col gap-8 mb-8 pb-8 border-b border-[#262626] md:flex-row md:gap-0">
+                                <div class="flex-1 flex flex-col gap-3 pb-8 border-b border-[#262626] md:pr-8 md:pb-0 md:border-b-0 md:border-r">
                                     <span class="text-[#999999]">Property Transfer Tax</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$25,000</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$25,000</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Based on the sale price and local regulations</p>
                                     </div>
                                 </div>
                                 <div class="flex-1 flex flex-col gap-3 md:pl-8">
                                     <span class="text-[#999999]">Legal Fees</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$3,000</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$3,000</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Approximate cost for legal services, including title transfer</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Kiểm tra nhà và Bảo hiểm -->
-                            <div class="flex flex-col md:flex-row border-b border-[#262626] pb-8 mb-8 gap-8 md:gap-0">
-                                <div class="flex-1 flex flex-col gap-3 border-b pb-8 md:border-b-0 md:border-r md:pr-8 md:pb-0 border-[#262626]">
+                            <!-- ... (các phần khác tương tự) ... -->
+
+                            <div class="flex flex-col gap-8 mb-8 pb-8 border-b border-[#262626] md:flex-row md:gap-0">
+                                <div class="flex-1 flex flex-col gap-3 pb-8 border-b border-[#262626] md:pr-8 md:pb-0 md:border-b-0 md:border-r">
                                     <span class="text-[#999999]">Home Inspection</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$500</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$500</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Recommended for due diligence</p>
                                     </div>
                                 </div>
                                 <div class="flex-1 flex flex-col gap-3 md:pl-8">
                                     <span class="text-[#999999]">Property Insurance</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$1,200</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$1,200</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Annual cost for comprehensive property insurance</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Phí vay thế chấp -->
-                            <div class="flex flex-col md:flex-row gap-8 md:gap-0">
-                                <div class="flex-1 flex flex-col gap-3 ">
+
+                            <div class="flex flex-col gap-8 md:flex-row md:gap-0">
+                                <div class="flex-1 flex flex-col gap-3">
                                     <span class="text-[#999999]">Mortgage Fees</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">Varies</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">Varies</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             If applicable, consult with your lender for specific details</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Các khoản phí hàng tháng (Monthly Costs) -->
-                    <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
-                        <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
-                            <h2 class="text-xl md:text-2xl font-semibold">Monthly Costs</h2>
-                            <a class="rounded-lg border border-[#262626] px-5 py-3 bg-[#1A1A1A] hover:bg-[#262626] cursor-pointer hover:text-[#703BF7] transition-all">Learn
+
+                    <div class="flex flex-col p-6 bg-[#141414] border-[#262626] rounded-xl border md:p-10">
+                        <div class="flex items-center justify-between mb-8 pb-6 border-b border-[#262626]">
+                            <h2 class="font-semibold text-xl md:text-2xl">Monthly Costs</h2>
+                            <a class="px-5 py-3 bg-[#1A1A1A] border-[#262626] rounded-lg transition-all cursor-pointer border hover:text-[#703BF7] hover:bg-[#262626]">Learn
                                 More</a>
                         </div>
                         <div class="flex flex-col">
                             <div class="flex flex-col gap-8 md:gap-0">
-                                <div class="flex-1 flex flex-col gap-3 border-b pb-8 border-[#262626]">
+                                <div class="flex-1 flex flex-col gap-3 pb-8 border-b border-[#262626]">
                                     <span class="text-[#999999]">Property Taxes</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$1,250</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$1,250</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Approximate monthly property tax based on the sale price and local rates</p>
                                     </div>
                                 </div>
                                 <div class="flex-1 flex flex-col gap-3 pt-2 md:pt-8">
                                     <span class="text-[#999999]">Homeowners' Association Fee</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$300</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$300</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Monthly fee for common area maintenance and security</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Tổng chi phí đầu tư ban đầu (Total Initial Costs) -->
-                    <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
-                        <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
-                            <h2 class="text-xl md:text-2xl font-semibold">Total Initial Costs</h2>
-                            <a class="rounded-lg border border-[#262626] px-5 py-3 bg-[#1A1A1A] hover:bg-[#262626] cursor-pointer hover:text-[#703BF7] transition-all">Learn
+
+                    <div class="flex flex-col p-6 bg-[#141414] border-[#262626] rounded-xl border md:p-10">
+                        <div class="flex items-center justify-between mb-8 pb-6 border-b border-[#262626]">
+                            <h2 class="font-semibold text-xl md:text-2xl">Total Initial Costs</h2>
+                            <a class="px-5 py-3 bg-[#1A1A1A] border-[#262626] rounded-lg transition-all cursor-pointer border hover:text-[#703BF7] hover:bg-[#262626]">Learn
                                 More</a>
                         </div>
                         <div class="flex flex-col">
-                            <div class="flex flex-col md:flex-row border-b border-[#262626] pb-8 mb-8 gap-8 md:gap-0">
-                                <div class="flex-1 flex flex-col gap-3 border-b pb-8 md:border-b-0 md:border-r md:pr-8 md:pb-0 border-[#262626]">
+                            <div class="flex flex-col gap-8 mb-8 pb-8 border-b border-[#262626] md:flex-row md:gap-0">
+                                <div class="flex-1 flex flex-col gap-3 pb-8 border-b border-[#262626] md:pr-8 md:pb-0 md:border-b-0 md:border-r">
                                     <span class="text-[#999999]">Listing Price</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$1,250,000</strong>
+                                        <strong class="font-semibold text-xl md:text-2xl">$1,250,000</strong>
                                     </div>
                                 </div>
                                 <div class="flex-1 flex flex-col gap-3 md:pl-8">
                                     <span class="text-[#999999]">Additional Fees</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$29,700</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$29,700</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Property transfer tax, legal fees, inspection, insurance</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex flex-col md:flex-row">
-                                <div class="flex-1 flex flex-col gap-3 border-b pb-8 md:border-b-0 md:border-r md:pr-8 md:pb-0 border-[#262626]">
+                                <div class="flex-1 flex flex-col gap-3 pb-8 border-b border-[#262626] md:pr-8 md:pb-0 md:border-b-0 md:border-r">
                                     <span class="text-[#999999]">Down Payment</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$250,000</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$250,000</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             20%</p>
                                     </div>
                                 </div>
                                 <div class="flex-1 flex flex-col gap-3 md:pl-8">
                                     <span class="text-[#999999]">Mortgage Amount</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$1,000,000</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$1,000,000</strong>
+                                        <p class="w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             If applicable</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Chi tiết các khoản chi tiêu hàng tháng (Monthly Expenses) -->
-                    <div class="flex flex-col p-6 md:p-10 border border-[#262626] bg-[#141414] rounded-xl">
-                        <div class="flex justify-between items-center border-b border-[#262626] pb-6 mb-8">
-                            <h2 class="text-xl md:text-2xl font-semibold">Monthly Expenses</h2>
-                            <a class="rounded-lg border border-[#262626] px-5 py-3 bg-[#1A1A1A] hover:bg-[#262626] cursor-pointer hover:text-[#703BF7] transition-all">Learn
+
+                    <div class="flex flex-col p-6 bg-[#141414] border-[#262626] rounded-xl border md:p-10">
+                        <div class="flex items-center justify-between mb-8 pb-6 border-b border-[#262626]">
+                            <h2 class="font-semibold text-xl md:text-2xl">Monthly Expenses</h2>
+                            <a class="px-5 py-3 bg-[#1A1A1A] border-[#262626] rounded-lg transition-all cursor-pointer border hover:text-[#703BF7] hover:bg-[#262626]">Learn
                                 More</a>
                         </div>
                         <div class="flex flex-col">
-                            <div class="flex flex-col md:flex-row border-b border-[#262626] pb-8 mb-8 gap-8 md:gap-0">
-                                <div class="flex-1 flex flex-col gap-3 border-b pb-8 md:border-b-0 md:border-r md:pr-8 md:pb-0 border-[#262626]">
+                            <div class="flex flex-col gap-8 mb-8 pb-8 border-b border-[#262626] md:flex-row md:gap-0">
+                                <div class="flex-1 flex flex-col gap-3 pb-8 border-b border-[#262626] md:pr-8 md:pb-0 md:border-b-0 md:border-r">
                                     <span class="text-[#999999]">Property Taxes</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$1,250</strong>
+                                        <strong class="font-semibold text-xl md:text-2xl">$1,250</strong>
                                     </div>
                                 </div>
                                 <div class="flex-1 flex flex-col gap-3 md:pl-8">
                                     <span class="text-[#999999]">Homeowners' Association Fee</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$300</strong>
+                                        <strong class="font-semibold text-xl md:text-2xl">$300</strong>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex flex-col md:flex-row">
-                                <div class="flex-1 flex flex-col gap-3 border-b pb-8 md:border-b-0 md:border-r md:pr-8 md:pb-0 border-[#262626]">
+                                <div class="flex-1 flex flex-col gap-3 pb-8 border-b border-[#262626] md:pr-8 md:pb-0 md:border-b-0 md:border-r">
                                     <span class="text-[#999999]">Mortgage Payment</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">Varies based on terms and
+                                        <strong class="font-semibold text-xl md:text-2xl">Varies based on terms and
                                             interest rate</strong>
-                                        <p class="w-fit px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999] hidden md:block">
+                                        <p class="hidden w-fit px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:block md:rounded-full">
                                             If applicable</p>
                                     </div>
                                 </div>
                                 <div class="flex-1 flex flex-col gap-3 md:pl-8">
                                     <span class="text-[#999999]">Property Insurance</span>
                                     <div class="flex items-center gap-2">
-                                        <strong class="text-xl md:text-2xl font-semibold">$100</strong>
-                                        <p class="w-full px-3 py-1.5 border border-[#262626] bg-[#1A1A1A] rounded-lg md:rounded-full text-sm text-[#999999]">
+                                        <strong class="font-semibold text-xl md:text-2xl">$100</strong>
+                                        <p class="w-full px-3 py-1.5 text-sm text-[#999999] bg-[#1A1A1A] border-[#262626] rounded-lg border md:rounded-full">
                                             Approximate monthly cost</p>
                                     </div>
                                 </div>
@@ -488,97 +557,103 @@
             </div>
         </section>
 
-        <!-- PHẦN CÂU HỎI THƯỜNG GẶP (FAQ Section) -->
+        <!-- Phần Các câu hỏi thường gặp (FAQ Section) -->
         <section class="flex flex-col gap-5 mt-10 md:mt-20">
+            <!-- Icon trang trí -->
             <div class="flex gap-4">
                 <img src="./icon/Frame%203186.svg" alt="">
                 <img src="./icon/Frame%203187.svg" alt="">
                 <img src="./icon/Frame%203188.svg" alt="">
             </div>
-            <!-- Tiêu đề và nút xem tất cả FAQ -->
-            <div class="flex flex-col gap-5 md:flex-row md:justify-between md:items-center">
+
+            <!-- Tiêu đề FAQ -->
+            <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <div class="flex flex-col gap-3 max-w-[80%]">
-                    <h2 class="text-4xl font-semibold leading-[150%]">Frequently Asked Questions</h2>
-                    <p class="text-base font-medium leading-[150%] text-[#999]">Find answers to common questions about
+                    <h2 class="font-semibold text-4xl leading-[150%]">Frequently Asked Questions</h2>
+                    <p class="font-medium text-base text-[#999] leading-[150%]">Find answers to common questions about
                         Estatein's services, property listings, and the real estate
                         process. We're here to provide clarity and assist you every step of the way.</p>
                 </div>
-                <div class="mt-auto px-4 py-2 bg-[#1A1A1A] border border-[#262626] rounded-lg hidden md:block">
-                    <a class="text-base font-medium leading-[150%] hover:text-[#703BF7]" href="">View All FAQ’s</a>
+                <!-- Nút xem tất cả (Desktop) -->
+                <div class="hidden mt-auto px-4 py-2 bg-[#1A1A1A] border-[#262626] rounded-lg border md:block">
+                    <a class="font-medium text-base leading-[150%] hover:text-[#703BF7]" href="">View All FAQ’s</a>
                 </div>
             </div>
-            <!-- Danh sách các thẻ FAQ (Frequently Asked Questions) -->
+
+            <!-- Danh sách câu hỏi -->
             <div class="flex flex-col gap-7">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mt-10">
-                    <!-- Thẻ FAQ 1 -->
-                    <div class="flex flex-col gap-7 border border-[#262626] rounded-lg p-10">
+                <div class="grid grid-cols-1 gap-7 mt-10 md:grid-cols-3">
+
+                    <!-- Câu hỏi 1 -->
+                    <div class="flex flex-col gap-7 p-10 border-[#262626] rounded-lg border">
                         <div class="flex flex-col gap-3 h-full">
-                            <h3 class="text-xl font-semibold leading-[150%]">How do I search for properties on
+                            <h3 class="font-semibold text-xl leading-[150%]">How do I search for properties on
                                 Estatein?</h3>
-                            <p class="text-base font-medium leading-[150%] text-[#999]">Learn how to use our
+                            <p class="font-medium text-base text-[#999] leading-[150%]">Learn how to use our
                                 user-friendly
                                 search tools to find properties that match your criteria.</p>
                         </div>
-                        <a class="px-4 py-4 md:py-2 bg-[#1A1A1A] border border-[#262626] rounded-lg w-full md:w-fit cursor-pointer text-center hover:text-[#703BF7]">Read
+                        <a class="w-full px-4 py-4 text-center bg-[#1A1A1A] border-[#262626] rounded-lg cursor-pointer border md:w-fit md:py-2 hover:text-[#703BF7]">Read
                             More</a>
                     </div>
-                    <!-- Thẻ FAQ 2 (Ẩn trên Mobile) -->
-                    <div class="hidden md:flex flex-col gap-7 border border-[#262626] rounded-lg p-10">
+                    <!-- ... -->
+
+                    <div class="hidden flex-col gap-7 p-10 border-[#262626] rounded-lg border md:flex">
                         <div class="flex flex-col gap-3 h-full">
-                            <h3 class="text-xl font-semibold leading-[150%]">What documents do I need to sell my
+                            <h3 class="font-semibold text-xl leading-[150%]">What documents do I need to sell my
                                 property
                                 through Estatein?</h3>
-                            <p class="text-base font-medium leading-[150%] text-[#999]">Find out about the necessary
+                            <p class="font-medium text-base text-[#999] leading-[150%]">Find out about the necessary
                                 documentation for listing your property with us.</p>
                         </div>
-                        <a class="px-4 py-2 bg-[#1A1A1A] border border-[#262626] rounded-lg w-fit cursor-pointer hover:text-[#703BF7]"
+                        <a class="w-fit px-4 py-2 bg-[#1A1A1A] border-[#262626] rounded-lg cursor-pointer border hover:text-[#703BF7]"
                            href="">Read
                             More</a>
                     </div>
-                    <!-- Thẻ FAQ 3 (Ẩn trên Mobile) -->
-                    <div class=" hidden md:flex flex-col gap-7 border border-[#262626] rounded-lg p-10">
+
+                    <div class="hidden flex-col gap-7 p-10 border-[#262626] rounded-lg border md:flex">
                         <div class="flex flex-col gap-3 h-full">
-                            <h3 class="text-xl font-semibold leading-[150%]">How can I contact an Estatein agent?</h3>
-                            <p class="text-base font-medium leading-[150%] text-[#999]">Discover the different ways you
+                            <h3 class="font-semibold text-xl leading-[150%]">How can I contact an Estatein agent?</h3>
+                            <p class="font-medium text-base text-[#999] leading-[150%]">Discover the different ways you
                                 can
                                 get in touch with our experienced agents.</p>
                         </div>
-                        <a class="px-4 py-2 bg-[#1A1A1A] border border-[#262626] rounded-lg w-fit cursor-pointer hover:text-[#703BF7]"
+                        <a class="w-fit px-4 py-2 bg-[#1A1A1A] border-[#262626] rounded-lg cursor-pointer border hover:text-[#703BF7]"
                            href="">Read
                             More</a>
                     </div>
                 </div>
-                <!-- Phân trang và điều hướng FAQ (Giao diện Desktop) -->
-                <div class="hidden md:flex flex-col gap-5 md:flex-row md:justify-between md:items-center border-t border-[#262626] pt-5">
+
+                <div class="hidden flex-col gap-5 pt-5 border-t border-[#262626] md:flex md:flex-row md:items-center md:justify-between">
                     <div>
-                        <span class="text-lg font-medium leading-[150%]">01</span>
-                        <span class="text-lg font-medium leading-[150%] text-[#999]">of 10</span>
+                        <span class="font-medium text-lg leading-[150%]">01</span>
+                        <span class="font-medium text-lg text-[#999] leading-[150%]">of 10</span>
                     </div>
                     <div>
-                        <button class="p-1.5 border border-[#262626] rounded-[69px] hover:bg-[#262626] transition-all">
+                        <button class="p-1.5 border-[#262626] rounded-[69px] transition-all border hover:bg-[#262626]">
                             <img src="./icon/Iconleft.svg" alt="Previous">
                         </button>
-                        <button class="p-1.5 border border-[#262626] bg-[#1A1A1A] rounded-[69px] hover:bg-[#262626] transition-all">
+                        <button class="p-1.5 bg-[#1A1A1A] border-[#262626] rounded-[69px] transition-all border hover:bg-[#262626]">
                             <img src="./icon/Iconright.svg" alt="Next">
                         </button>
                     </div>
                 </div>
-                <!-- Phân trang và điều hướng FAQ (Giao diện Mobile) -->
-                <div class="md:hidden flex flex-col gap-5">
-                    <div class="flex justify-between items-center">
-                        <div class="mt-auto px-4 py-2 bg-[#1A1A1A] border border-[#262626] rounded-lg w-fit cursor-pointer">
-                            <a class="text-base font-medium leading-[150%] hover:text-[#703BF7]" href="">View All
+
+                <div class="flex flex-col gap-5 md:hidden">
+                    <div class="flex items-center justify-between">
+                        <div class="w-fit mt-auto px-4 py-2 bg-[#1A1A1A] border-[#262626] rounded-lg cursor-pointer border">
+                            <a class="font-medium text-base leading-[150%] hover:text-[#703BF7]" href="">View All
                                 FAQ’s</a>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <button class="p-1.5 border border-[#262626] rounded-[69px] hover:bg-[#262626] transition-all">
+                        <div class="flex items-center gap-2">
+                            <button class="p-1.5 border-[#262626] rounded-[69px] transition-all border hover:bg-[#262626]">
                                 <img src="./icon/Iconleft.svg" alt="Previous">
                             </button>
                             <div>
-                                <span class="text-lg font-medium leading-[150%]">01</span>
-                                <span class="text-lg font-medium leading-[150%] text-[#999]">of 10</span>
+                                <span class="font-medium text-lg leading-[150%]">01</span>
+                                <span class="font-medium text-lg text-[#999] leading-[150%]">of 10</span>
                             </div>
-                            <button class="p-1.5 border border-[#262626] rounded-[69px] hover:bg-[#262626] transition-all">
+                            <button class="p-1.5 border-[#262626] rounded-[69px] transition-all border hover:bg-[#262626]">
                                 <img src="./icon/Iconright.svg" alt="Next">
                             </button>
                         </div>
@@ -586,17 +661,18 @@
                 </div>
             </div>
         </section>
-
-        <!-- PHẦN KÊU GỌI HÀNH ĐỘNG (Call to Action Section) -->
     </article>
 </main>
+<!-- Chân trang (Footer) -->
 <footer class="w-full">
+
+    <!-- Phần kêu gọi hành động (Call to Action - CTA) -->
     <section class="mx-auto my-10 md:my-20">
-        <div class="flex flex-col xl:flex-row md:justify-between md:items-center gap-10 md:gap-30 px-5 py-10 md:px-20 md:py-18 border-b border-t border-[#262626] bg-[url('./images/abstract-design-left.svg')] bg-position-[bottom_left] xl:bg-[url('./images/abstract-design-left.svg'),url('./images/abstract-design-right.svg')] bg-no-repeat xl:bg-position-[top_left,top_right]">
+        <div class="flex flex-col gap-10 px-5 py-10 bg-[url('./images/abstract-design-left.svg')] bg-position-[bottom_left] bg-no-repeat border-b border-t border-[#262626] md:items-center md:justify-between md:gap-30 md:px-20 md:py-18 xl:flex-row xl:bg-[url('./images/abstract-design-left.svg'),url('./images/abstract-design-right.svg')] xl:bg-position-[top_left,top_right]">
             <div class="flex flex-col gap-2 max-w-full md:max-w-[70%]">
-                <h2 class="text-3xl md:text-4xl font-semibold leading-[150%]">Start Your Real Estate Journey
+                <h2 class="font-semibold text-3xl leading-[150%] md:text-4xl">Start Your Real Estate Journey
                     Today</h2>
-                <p class="text-sm md:text-base font-normal md:font-medium leading-[150%] text-[#999]">Your dream
+                <p class="font-normal text-sm text-[#999] leading-[150%] md:font-medium md:text-base">Your dream
                     property is just a click away. Whether you're looking for a new home, a strategic
                     investment, or expert real estate advice, Estatein is here to assist you every step of the way.
                     Take
@@ -604,24 +680,29 @@
                     touch
                     with our team for personalized assistance.</p>
             </div>
-            <a class="w-full md:w-fit self-center md:self-auto px-5 py-3.5 bg-[#703BF7] rounded-lg whitespace-nowrap hover:bg-[#5e2ed4] text-center transition-all"
+            <!-- Nút Khám phá bất động sản -->
+            <a class="self-center w-full px-5 py-3.5 text-center bg-[#703BF7] rounded-lg transition-all whitespace-nowrap md:self-auto md:w-fit hover:bg-[#5e2ed4]"
                href="#">
                 Explore Properties
             </a>
         </div>
     </section>
+
+    <!-- Các liên kết Footer và Form đăng ký bản tin -->
     <div class="max-w-400 mx-auto px-5 md:px-10">
-        <div class="flex flex-col md:flex-row justify-between gap-15 max-w-400 mx-auto">
+        <div class="flex flex-col justify-between gap-15 max-w-400 mx-auto md:flex-row">
+            <!-- Cột Logo và Đăng ký Email -->
             <div class="flex flex-col gap-10">
                 <div class="flex flex-col gap-5">
                     <div class="flex items-center gap-2">
                         <img src="./icon/Symbol.svg" alt="">
                         <img src="./icon/Text.svg" alt="">
                     </div>
+                    <!-- Form đăng ký nhận tin -->
                     <form action="">
-                        <div class="flex items-center gap-2 border border-[#262626] rounded-lg px-5 py-3 w-fit">
+                        <div class="flex items-center gap-2 w-fit px-5 py-3 border-[#262626] rounded-lg border">
                             <img src="./icon/Icon-email.svg" alt="">
-                            <input class="bg-transparent outline-none w-fit" type="email" id="email-input"
+                            <input class="w-fit bg-transparent outline-none" type="email" id="email-input"
                                    placeholder="Enter your email">
                             <label for="email-input"></label>
                             <button type="submit">
@@ -632,12 +713,13 @@
                 </div>
             </div>
 
-            <!-- Nav columns -->
-            <nav class="grid grid-cols-2 md:grid-cols-5 gap-5">
-                <!-- column-1 -->
-                <div class="flex flex-col gap-5 border-r border-b border-[#262626] pr-5 pb-5 md:border-b-0 md:border-r-0 md:pr-0 md:pb-0">
-                    <h3 class="text-lg font-medium leading-6 text-[#666]">Home</h3>
-                    <ul class="flex flex-col gap-5 text-base font-medium leading-6">
+            <!-- Các cột Danh mục liên kết -->
+            <nav class="grid grid-cols-2 gap-5 md:grid-cols-5">
+
+                <!-- Cột Trang chủ -->
+                <div class="flex flex-col gap-5 pr-5 pb-5 border-r border-b border-[#262626] md:pr-0 md:pb-0 md:border-b-0 md:border-r-0">
+                    <h3 class="font-medium text-lg text-[#666] leading-6">Home</h3>
+                    <ul class="flex flex-col gap-5 font-medium text-base leading-6">
                         <li><a href="#">Hero Section</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Properties</a></li>
@@ -645,10 +727,11 @@
                         <li><a href="#">FAQ's</a></li>
                     </ul>
                 </div>
-                <!-- column-2 -->
-                <div class="flex flex-col gap-5 border-b border-[#262626] pb-5 md:border-b-0 md:pb-0">
-                    <h3 class="text-lg font-medium leading-6 text-[#666]">About Us</h3>
-                    <ul class="flex flex-col gap-5 text-base font-medium leading-6">
+
+                <!-- Cột Về chúng tôi -->
+                <div class="flex flex-col gap-5 pb-5 border-b border-[#262626] md:pb-0 md:border-b-0">
+                    <h3 class="font-medium text-lg text-[#666] leading-6">About Us</h3>
+                    <ul class="flex flex-col gap-5 font-medium text-base leading-6">
                         <li><a href="#">Our Story</a></li>
                         <li><a href="#">Our Works</a></li>
                         <li><a href="#">How It Works</a></li>
@@ -656,16 +739,20 @@
                         <li><a href="#">Our Clients</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-col gap-5 border-r border-b border-[#262626] pr-5 pb-5 md:border-b-0 md:border-r-0 md:pr-0 md:pb-0">
-                    <h3 class="text-lg font-medium leading-6 text-[#666]">Properties</h3>
-                    <ul class="flex flex-col gap-5 text-base font-medium leading-6">
+
+                <!-- Cột Bất động sản -->
+                <div class="flex flex-col gap-5 pr-5 pb-5 border-r border-b border-[#262626] md:pr-0 md:pb-0 md:border-b-0 md:border-r-0">
+                    <h3 class="font-medium text-lg text-[#666] leading-6">Properties</h3>
+                    <ul class="flex flex-col gap-5 font-medium text-base leading-6">
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Categories</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-col gap-5 border-b border-[#262626] pb-5 md:border-b-0 md:pb-0">
-                    <h3 class="text-lg font-medium leading-6 text-[#666]">Services</h3>
-                    <ul class="flex flex-col gap-5 text-base font-medium leading-6">
+
+                <!-- Cột Dịch vụ -->
+                <div class="flex flex-col gap-5 pb-5 border-b border-[#262626] md:pb-0 md:border-b-0">
+                    <h3 class="font-medium text-lg text-[#666] leading-6">Services</h3>
+                    <ul class="flex flex-col gap-5 font-medium text-base leading-6">
                         <li><a href="#">Valuation Mastery</a></li>
                         <li><a href="#">Strategic Marketing</a></li>
                         <li><a href="#">Negotiation Wizardry</a></li>
@@ -673,9 +760,11 @@
                         <li><a href="#">Property Management</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-col gap-5 border-r border-b border-[#262626] pr-5 pb-5 md:border-b-0 md:border-r-0 md:pr-0 md:pb-0">
-                    <h3 class="text-lg font-medium leading-6 text-[#666]">Contact Us</h3>
-                    <ul class="flex flex-col gap-5 text-base font-medium leading-6">
+
+                <!-- Cột Liên hệ -->
+                <div class="flex flex-col gap-5 pr-5 pb-5 border-r border-b border-[#262626] md:pr-0 md:pb-0 md:border-b-0 md:border-r-0">
+                    <h3 class="font-medium text-lg text-[#666] leading-6">Contact Us</h3>
+                    <ul class="flex flex-col gap-5 font-medium text-base leading-6">
                         <li><a href="#">Contact Form</a></li>
                         <li><a href="#">Our Offices</a></li>
                     </ul>
@@ -683,27 +772,31 @@
             </nav>
         </div>
     </div>
-    <div class="bg-[#1A1A1A] border-t border-[#262626] mt-10">
-        <div class="flex flex-col md:flex-row items-center md:justify-between py-10 px-10 md:px-10 gap-8 md:gap-0">
-            <div class="flex flex-col md:flex-row items-center gap-2 md:gap-8 order-2 md:order-1">
+
+    <!-- Thông tin bản quyền và Mạng xã hội -->
+    <div class="mt-10 bg-[#1A1A1A] border-t border-[#262626]">
+        <div class="flex flex-col items-center gap-8 px-10 py-10 md:flex-row md:justify-between md:gap-0 md:px-10">
+            <!-- Bản quyền -->
+            <div class="flex flex-col items-center gap-2 order-2 md:flex-row md:gap-8 md:order-1">
                 <span>@2023 Estatein. All Rights Reserved.</span>
                 <a href="#">Terms & Conditions</a>
             </div>
+            <!-- Các liên kết Mạng xã hội -->
             <div class="flex items-center gap-5 order-1 md:order-2">
-                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
-                        href="#">
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                   href="#">
                     <img src="./icon-internet/Icon-3.svg" alt="">
                 </a>
-                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
-                        href="#">
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                   href="#">
                     <img src="./icon-internet/Icon-2.svg" alt="">
                 </a>
-                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
-                        href="#">
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                   href="#">
                     <img src="./icon-internet/Icon-1.svg" alt="">
                 </a>
-                <a      class="hover:bg-[#703BF7] transition-all rounded-full p-2.5 bg-[#1A1A1A] border border-[#262626] flex items-center justify-center"
-                        href="#">
+                <a class="flex items-center justify-center p-2.5 bg-[#1A1A1A] border-[#262626] rounded-full transition-all border hover:bg-[#703BF7]"
+                   href="#">
                     <img src="./icon-internet/Icon.svg" alt="">
                 </a>
             </div>
