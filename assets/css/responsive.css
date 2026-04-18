@@ -1,0 +1,1541 @@
+/* ============================================================
+   BREAKPOINT 1: Laptops & Desktop nhỏ — max-width: 1440px
+   ============================================================ */
+@media (max-width: 1440px) {
+
+    /* ── Container ── */
+    .container {
+        padding: 0 80px;
+    }
+
+    .footer__container {
+        padding: 0;
+    }
+
+    .journey {
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+
+    .values,
+    .achievements,
+    .experience,
+    .team,
+    .clients {
+        padding-bottom: 120px;
+    }
+
+    .cta {
+        padding: 60px 0;
+    }
+
+    /* ── Announcement ── */
+    .announcement__text {
+        font-size: 14px;
+    }
+
+    /* ── Typography ── */
+    .section-heading__title {
+        font-size: 38px;
+    }
+
+    .section-heading__description {
+        font-size: 16px;
+    }
+
+    .cta__description {
+        font-size: 16px;
+    }
+
+    .stat-card__number {
+        font-size: 30px;
+    }
+
+    .stat-card__label {
+        font-size: 16px;
+    }
+
+    /* ── Header ── */
+    .header__container {
+        min-height: 77px;
+    }
+
+
+    .header__logo-img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .header__logo-text {
+        font-size: 20px;
+    }
+
+    /* Nav */
+    .nav-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    /* Link */
+    .nav-list__link {
+        min-height: 45px;
+        padding: 0 18px;
+        font-size: 16px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    /* Button */
+    .btn {
+        min-height: 45px;
+        font-size: 16px;
+        padding: 0 20px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-heading__stars img {
+        height: 24px;
+    }
+
+    .section-heading__stars {
+        top: -25px;
+        left: -10px;
+    }
+
+
+    /* ── Journey ── */
+    .journey__container {
+        gap: 60px;
+    }
+
+    .journey__content {
+        gap: 50px;
+        margin: 55px 0;
+    }
+
+    /* ── Values ── */
+    .values__container {
+        gap: 60px;
+    }
+
+    .values__content {
+        margin: 116.5px 0;
+        gap: 60px;
+    }
+
+    .values__grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+        row-gap: 36px;
+    }
+
+    .values__grid::before {
+        top: 47%;
+        left: 40px;
+        right: 40px;
+    }
+
+    .value-card:nth-child(odd) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .value-card:nth-child(even) {
+        padding-left: 24px;
+    }
+
+    .value-card__header {
+        gap: 10px;
+    }
+
+    .value-card__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .value-card__icon img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .value-card__title {
+        font-size: 20px;
+    }
+
+    .value-card__desc {
+        font-size: 16px;
+    }
+
+    /* ── Achievements ── */
+    .achievements .section-heading {
+        margin-bottom: 60px;
+    }
+
+    .achievements__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .achievement-card {
+        padding: 40px;
+    }
+
+    .achievement-card__title {
+        font-size: 24px;
+    }
+
+    .achievement-card__desc {
+        font-size: 16px;
+    }
+
+    /* ── Experience ── */
+    .experience .section-heading {
+        margin-bottom: 60px;
+    }
+
+    .step-card {
+        padding-top: 52px;
+    }
+
+    .step-card::before {
+        height: 52px;
+    }
+
+    .experience__grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    .step-card__step {
+        left: 14px;
+        font-size: 16px;
+    }
+
+    .step-card__content {
+        padding: 40px;
+    }
+
+    .step-card__title {
+        font-size: 20px;
+    }
+
+    .step-card__desc {
+        font-size: 16px;
+    }
+
+    /* ── Team ── */
+    .team .section-heading {
+        margin-bottom: 60px;
+    }
+
+    .team__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .team-card {
+        padding: 24px;
+    }
+
+    .team-card__social {
+        width: 60px;
+        height: 40px;
+    }
+
+    .team-card__social img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .team-card__name {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .team-card__role {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .team-card__contact {
+        padding: 10px 10px 10px 20px;
+    }
+
+    .team-card__contact span {
+        font-size: 16px;
+    }
+
+    .team-card__contact-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .team-card__contact-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    /* ── Clients ── */
+    .clients .section-heading {
+        margin-bottom: 60px;
+    }
+
+    .clients__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .client-card {
+        padding: 40px;
+    }
+
+    .client-card__header {
+        padding-bottom: 30px;
+    }
+
+    .client-card__since {
+        font-size: 16px;
+    }
+
+    .client-card__title {
+        font-size: 24px;
+    }
+
+    .client-card__btn {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+
+    .client-card__details {
+        margin-bottom: 30px;
+    }
+
+    .client-card__detail-label {
+        font-size: 14px;
+    }
+
+    .client-card__detail-value {
+        font-size: 16px;
+    }
+
+    .client-card__testimonial {
+        padding: 24px;
+    }
+
+    .client-card__testimonial-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .client-card__testimonial-desc {
+        font-size: 16px;
+    }
+
+    .clients__page-info {
+        font-size: 16px;
+    }
+
+    .clients__page-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .clients__page-btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* ── CTA ── */
+    .cta__title {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .cta__description {
+        font-size: 16px;
+    }
+
+    /* ── Footer ── */
+    .footer__top {
+        padding: 80px;
+        gap: 80px;
+    }
+
+    .footer__brand {
+        gap: 24px;
+    }
+
+    .logo__icon img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .logo__text {
+        font-size: 20px;
+    }
+
+    .newsletter-form {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+
+    .newsletter-form__btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-column__title {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .footer-column__list {
+        gap: 16px;
+    }
+
+    .footer-column__list a {
+        font-size: 16px;
+    }
+
+    .footer__bottom {
+        padding: 12px 80px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+        gap: 20px;
+    }
+
+    .footer__socials {
+        gap: 8px;
+    }
+
+    .social-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-btn img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* ============================================================
+   BREAKPOINT 2: Tablet — max-width: 1024px
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    /* Layout chung */
+    .container {
+        padding: 0 40px;
+    }
+
+    .footer__container {
+        padding: 0;
+    }
+
+    /* ── Sections padding ── */
+    .journey {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .values,
+    .achievements,
+    .experience,
+    .team,
+    .clients {
+        padding-bottom: 80px;
+    }
+
+    .cta {
+        padding: 50px 0;
+    }
+
+    /* ── Typography ── */
+    .section-heading__title {
+        font-size: 32px;
+    }
+
+    .section-heading__description {
+        font-size: 15px;
+    }
+
+    .cta__title {
+        font-size: 32px;
+    }
+
+    .cta__description {
+        font-size: 15px;
+    }
+
+    .stat-card__number {
+        font-size: 26px;
+    }
+
+    .stat-card__label {
+        font-size: 15px;
+    }
+
+    .section-heading__stars {
+        top: -20px;
+        left: -10px;
+    }
+
+    /* ── Header ── */
+    .header__container {
+        gap: 20px;
+    }
+
+    .nav-list {
+        gap: 12px;
+    }
+
+    .nav-list__link {
+        padding: 0 12px;
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 0 16px;
+    }
+
+    /* ── Journey ── */
+    .journey__container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: stretch;
+    }
+
+    .journey__content {
+        margin: 0;
+        gap: 30px;
+    }
+
+    .journey__image-wrapper {
+        width: 100%;
+    }
+
+    /* ── Values ── */
+    .values__container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: stretch;
+    }
+
+    .values__content {
+        margin: 0;
+        gap: 30px;
+    }
+
+    .values__grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+        row-gap: 24px;
+    }
+
+    .values__grid::before {
+        display: none;
+    }
+
+    .value-card:nth-child(even) {
+        padding-left: 20px;
+    }
+
+    .value-card__header {
+        gap: 10px;
+    }
+
+    .value-card__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .value-card__icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .value-card__title {
+        font-size: 18px;
+    }
+
+    .value-card__desc {
+        font-size: 15px;
+    }
+
+    /* ── Achievements ── */
+    .achievements .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .achievements__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .achievement-card {
+        padding: 30px;
+    }
+
+    .achievement-card__title {
+        font-size: 20px;
+    }
+
+    .achievement-card__desc {
+        font-size: 15px;
+    }
+
+    /* ── Experience ── */
+    .experience .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .experience__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .step-card {
+        padding-top: 40px;
+        height: auto;
+    }
+
+    .step-card::before {
+        height: 40px;
+    }
+
+    .step-card__step {
+        top: 5px;
+        left: 16px;
+        font-size: 16px;
+    }
+
+    .step-card__content {
+        padding: 30px;
+    }
+
+    .step-card__title {
+        font-size: 18px;
+    }
+
+    .step-card__desc {
+        font-size: 15px;
+    }
+
+    /* ── Team ── */
+    .team .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .team-card__contact {
+        width: calc(100% - 48px);
+    }
+
+    /* ── Clients ── */
+    .clients .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .clients__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .client-card {
+        padding: 30px;
+    }
+
+    .client-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .client-card__btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .client-card__title {
+        font-size: 20px;
+    }
+
+    .clients__pagination {
+        position: relative;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .clients__page-controls .clients__page-btn:first-child {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .clients__page-controls .clients__page-btn:last-child {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* ── CTA ── */
+    .cta__container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .cta__action {
+        width: 100%;
+    }
+
+    .cta__action .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    /* ── Footer ── */
+    .footer__top {
+        padding: 50px 40px;
+        gap: 40px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer__brand {
+        gap: 20px;
+    }
+
+    .footer-column__title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .footer-column__list {
+        gap: 12px;
+    }
+
+    .footer-column__list a {
+        font-size: 14px;
+    }
+
+    .footer__bottom {
+        padding: 24px 40px;
+    }
+}
+
+
+/* ============================================================
+   BREAKPOINT 3: Mobile — max-width: 767px
+   ============================================================ */
+@media (max-width: 767px) {
+
+    /* Layout chung */
+    .container {
+        padding: 0 20px;
+    }
+
+    .footer__container {
+        padding: 0;
+    }
+
+    /* Sections padding */
+    .journey {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .values,
+    .achievements,
+    .experience,
+    .team,
+    .clients,
+    .cta {
+        padding-bottom: 80px;
+    }
+
+    /* Typography */
+    .section-heading__title {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .section-heading__description {
+        font-size: 16px;
+    }
+
+
+    /* Section heading stars */
+    .section-heading__stars {
+        top: -20px;
+        left: -8px;
+    }
+
+    /* ── Announcement bar ── */
+    .announcement__content {
+        box-sizing: border-box;
+        height: auto;
+        min-height: 56px;
+        padding: 10px 50px 10px 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .announcement__text {
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .announcement__link {
+        font-size: 14px;
+    }
+
+    .announcement__close {
+        right: 12px;
+    }
+
+    /* ── Header ── */
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header__container {
+        height: auto;
+        min-height: 72px;
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 12px;
+    }
+
+    /* Show hamburger button */
+    .header__burger {
+        display: flex;
+    }
+
+    /* ── Sidebar Menu (Menu ẩn trên điện thoại) ── */
+    .header__menu {
+        position: fixed;
+        top: 72px; /* Nằm dưới dải header bar */
+        right: -100%; /* Vị trí ban đầu bị ẩn */
+        bottom: 0;
+        max-width: 80vw;
+        background-color: var(--gray-10);
+        border-left: 1px solid var(--gray-15);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 24px 20px;
+        gap: 24px;
+        transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1001;
+        overflow-y: auto;
+    }
+
+    /* Khi checkbox */
+    .header__nav-toggle:checked ~ .header__container .header__menu {
+        right: 0;
+    }
+
+    /* ── Overlay ──  */
+    .header__overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5); /* Độ mờ 50% đen */
+        opacity: 0;
+        pointer-events: none; /* Không thể click khi đang ẩn */
+        transition: opacity 0.3s;
+        z-index: 999;
+    }
+
+    /* Khi mở menu, overlay mờ chuyển opacity: 1 và cho phép click */
+    .header__nav-toggle:checked ~ .header__overlay {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .header__burger {
+        position: relative;
+        z-index: 1002;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .nav-list__item {
+        width: 100%;
+    }
+
+    .nav-list__link {
+        width: 100%;
+        justify-content: flex-start;
+        height: 52px;
+        padding: 0 16px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    /* Nút Contact Us bên trong sidebar */
+    .header__action {
+        width: 100%;
+        display: flex;
+    }
+
+    .header__action .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Hamburger → X*/
+    .header__nav-toggle:checked ~ .header__container .header__burger .header__burger-icon-open {
+        display: none;
+    }
+
+    .header__nav-toggle:checked ~ .header__container .header__burger .header__burger-icon-close {
+        display: block;
+    }
+
+    /* ── Stat card ── */
+    .stat-card__number {
+        font-size: 28px;
+    }
+
+    /* ── Journey ── */
+    .journey__container {
+        flex-direction: column;
+        gap: 32px;
+        align-items: stretch;
+    }
+
+    .journey__content {
+        margin: 0;
+        gap: 32px;
+    }
+
+    .journey__stats {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .journey__image-wrapper {
+        width: 100%;
+    }
+
+    /* ── Values ── */
+    .values__container {
+        flex-direction: column;
+        gap: 32px;
+        align-items: stretch;
+    }
+
+    .values__content {
+        margin: 0;
+        gap: 32px;
+    }
+
+    .value-card__header {
+        margin-bottom: 10px;
+    }
+
+    .values__grid {
+        grid-template-columns: 1fr;
+        padding: 24px 20px;
+        row-gap: 20px;
+    }
+
+    .value-card:first-child {
+        border-right: none;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gray-15);
+    }
+
+    .value-card:nth-child(3) {
+        border-right: none;
+        padding-top: 24px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gray-15);
+    }
+
+    .value-card:nth-child(even) {
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gray-15);
+    }
+
+    .value-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* ── Achievements ── */
+    .achievements__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .achievement-card {
+        padding: 28px 20px;
+    }
+
+    .achievement-card__title {
+        font-size: 20px;
+    }
+
+    /* ── Experience / Step cards ── */
+    .experience__grid {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .step-card {
+        height: auto;
+    }
+
+    .step-card__content {
+        padding: 24px 20px;
+    }
+
+    .step-card__step {
+        top: 6px;
+        left: 12px;
+        font-size: 16px;
+    }
+
+    .step-card__title {
+        font-size: 20px;
+    }
+
+    /* ── Team ── */
+    .team__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ── Clients ── */
+    .clients__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .client-card {
+        padding: 24px 20px;
+    }
+
+    .client-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .client-card__btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .client-card__title {
+        font-size: 22px;
+    }
+
+    .client-card__details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-card__detail:first-child {
+        border-right: 1px solid var(--gray-15);
+        border-bottom: none;
+        padding-right: 16px;
+        padding-bottom: 0;
+    }
+
+    .clients__pagination {
+        padding-top: 16px;
+    }
+
+    /*hai icon mũi tên về hai phía */
+    .clients__page-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    /* ── CTA ── */
+    .cta__container {
+        flex-direction: column;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .cta__action {
+        width: 100%;
+    }
+
+    .cta__action .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    /* ── Footer ── */
+    .footer__top {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer__brand {
+        gap: 20px;
+    }
+
+    .footer__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-column {
+        padding: 24px 20px;
+        border: 1px solid var(--gray-15);
+    }
+
+    /*tạo đường kẻ đứt đoạn ~,~*/
+    .footer-column:nth-child(1) {
+        padding: 24px 10px;
+        margin-right: 25px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .footer-column:nth-child(2) {
+        position: relative;
+        padding: 24px 10px;
+        margin-left: 25px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .footer-column:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: var(--gray-15);
+    }
+
+    .footer-column:nth-child(3) {
+        padding: 24px 10px;
+        margin-right: 25px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .footer-column:nth-child(4) {
+        position: relative;
+        padding: 24px 10px;
+        margin-left: 25px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .footer-column:nth-child(4)::before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        top: 25px;
+        width: 1px;
+        height: 145%;
+        background-color: var(--gray-15);
+    }
+
+    .footer-column:nth-child(5) {
+        position: relative;
+        padding: 24px 10px;
+        margin-right: 25px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .footer-column__title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .footer-column__list {
+        gap: 8px;
+    }
+
+    .footer-column__list a {
+        font-size: 14px;
+    }
+
+    .footer__bottom {
+        padding: 20px;
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer__copyright {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .social-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-btn img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* ============================================================
+   BREAKPOINT 4: Mobile nhỏ — max-width: 390px
+   ============================================================ */
+@media (max-width: 390px) {
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .footer__container {
+        padding: 0;
+    }
+
+    .journey {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .values,
+    .achievements,
+    .experience,
+    .team,
+    .clients {
+        padding-bottom: 80px;
+    }
+
+    .cta {
+        padding: 50px 0;
+    }
+
+    /* ── Announcement ── */
+    .announcement__text {
+        font-size: 12px;
+    }
+
+    .announcement__link {
+        font-size: 12px;
+    }
+
+    .section-heading__description {
+        font-size: 14px;
+    }
+
+    .cta__title {
+        font-size: 28px;
+        margin-bottom: 6px;
+    }
+
+    .cta__description {
+        font-size: 14px;
+    }
+
+    /* Header  */
+    .header__container {
+        min-height: 64px;
+    }
+
+    .header__logo-img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header__logo-text {
+        font-size: 18px;
+    }
+
+    .section-heading__stars img {
+        height: 20px;
+    }
+
+    .section-heading__stars {
+        top: -15px;
+        left: -8px;
+    }
+
+
+    /* ── Journey ── */
+    .journey__container {
+        gap: 40px;
+    }
+
+    .values__content {
+        gap: 40px;
+    }
+
+    .journey__image-wrapper {
+        order: -1;
+        width: 100%;
+    }
+
+    /* ── Stats: 2 cột hàng 1, full width hàng 2 ── */
+    .journey__stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .stat-card:last-child {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    /* ── Stats typography ── */
+    .stat-card__number {
+        font-size: 24px;
+    }
+
+    .stat-card__label {
+        font-size: 14px;
+    }
+
+    /* value */
+    .values__grid {
+        padding: 24px;
+        row-gap: 0;
+    }
+
+
+    .value-card__header {
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .value-card__icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .value-card__icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .value-card__title {
+        font-size: 18px;
+    }
+
+    .value-card__desc {
+        font-size: 14px;
+    }
+
+    /* ── Achievements ── */
+    .achievement-card {
+        padding: 30px;
+    }
+
+    .achievement-card__desc {
+        font-size: 14px;
+    }
+
+    /* ── Experience ── */
+    .step-card__content {
+        padding: 20px 16px;
+    }
+
+    .step-card__step {
+        top: 7px;
+        left: 16px;
+    }
+
+    .step-card__title {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    .step-card__desc {
+        font-size: 14px;
+    }
+
+    /* ── Team ── */
+    .team-card {
+        padding: 20px;
+    }
+
+    .team-card__name {
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+
+    .team-card__role {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .team-card__contact {
+        width: calc(100% - 40px);
+        padding: 18px 8px 18px 24px;
+    }
+
+    .team-card__contact span {
+        font-size: 14px;
+    }
+
+    .team-card__contact-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* ── Clients ── */
+    .client-card:nth-child(2) {
+        display: none;
+    }
+
+    .client-card__since {
+        font-size: 14px;
+    }
+
+    .client-card__title {
+        font-size: 20px;
+    }
+
+    .client-card__btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .client-card__details {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .client-card__detail-label {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .client-card__detail:first-child {
+        border-right: 1px solid var(--gray-15);
+        border-bottom: none;
+        padding-right: 16px;
+        padding-bottom: 0;
+    }
+
+    .client-card__detail-value {
+        font-size: 14px;
+    }
+
+    .clients__page-info {
+        font-size: 14px;
+    }
+
+    .clients__pagination {
+        padding: 12px 0;
+    }
+
+    .btn {
+        height: auto;
+        min-height: 48px;
+        font-size: 14px;
+    }
+
+    .cta__action {
+        width: 100%;
+    }
+
+    .cta__action .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .cta__container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .cta::before {
+        left: 0;
+        top: -80px;
+        background-position: left top;
+    }
+
+    /* ── Footer ── */
+    .footer__top {
+        padding: 50px 16px;
+    }
+
+    .footer__bottom {
+        padding: 20px 16px;
+    }
+
+    .footer__copyright {
+        gap: 10px;
+    }
+
+    .footer-column {
+        padding: 20px 14px;
+    }
+
+    .footer-column__title {
+        margin-bottom: 12px;
+    }
+
+    .footer-column__list {
+        gap: 10px;
+    }
+
+}
