@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatein - Real Estate Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-banner">
+    <div class="container banner-content">
+        <p>✨ Discover Your Dream Property with Estatein <a href="#" class="banner-link">Learn More</a></p>
+        <button class="btn-close-banner" aria-label="Close banner">✕</button>
+    </div>
+</div>
+<header class="header">
+    <div class="container header__inner">
+        <a href="#" class="logo" aria-label="Homepage">
+            <div class="logo-icon"><img src="icons/Logo-icon.svg" alt="Estatein logo"></div>
+            <span class="logo-text">Estatein</span>
+        </a>
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" hidden>
+        <nav class="nav-menu" aria-label="Main Navigation">
+            <ul class="nav-menu__list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="btn-properties">Properties</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="btn btn--contact show-desktop">Contact Us</a>
+        <label for="mobile-menu-toggle" class="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+</header>
+<main>
+    <section class="hero-search">
+        <div class="hero-text">
+            <h1>Find Your Dream Property</h1>
+            <p class="text-muted">Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey</p>
+        </div>
+        <div class="search-container">
+            <form class="search-section" action="#">
+                <div class="search-input-group">
+                    <label for="search-input" class="sr-only">Search Property</label>
+
+                    <div class="input-wrapper">
+                        <!-- icon search -->
+                        <img src="icons/Search-Icon.svg" alt="" class="input-icon">
+
+                        <input type="text" id="search-input" placeholder="Search For A Property">
+                    </div>
+
+                    <button type="submit" class="btn btn--primary">Find Property</button>
+                </div>
+
+                <div class="filter-grid">
+                    <!-- Location -->
+                    <div class="select-wrapper">
+                        <img src="icons/Location-icon.svg" alt="" class="select-icon">
+                        <select><option>Location</option></select>
+                        <img src="icons/arrow-down.svg" alt="" class="select-arrow">
+                    </div>
+
+                    <!-- Property Type -->
+                    <div class="select-wrapper">
+                        <img src="icons/Property-Type-Icon.svg" alt="" class="select-icon">
+                        <select><option>Property Type</option></select>
+                        <img src="icons/arrow-down.svg" alt="" class="select-arrow">
+                    </div>
+
+                    <!-- Pricing -->
+                    <div class="select-wrapper">
+                        <img src="icons/Pricing-Range-Icon.svg" alt="" class="select-icon">
+                        <select><option>Pricing Range</option></select>
+                        <img src="icons/arrow-down.svg" alt="" class="select-arrow">
+                    </div>
+
+                    <!-- Size -->
+                    <div class="select-wrapper">
+                        <img src="icons/Property-Size-Icon.svg" alt="" class="select-icon">
+                        <select><option>Property Size</option></select>
+                        <img src="icons/arrow-down.svg" alt="" class="select-arrow">
+                    </div>
+
+                    <!-- Year -->
+                    <div class="select-wrapper">
+                        <img src="icons/Build-Year-Icon.svg" alt="" class="select-icon">
+                        <select><option>Build Year</option></select>
+                        <img src="icons/arrow-down.svg" alt="" class="select-arrow">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="properties">
+        <div class="section-header">
+            <div class="header-content">
+                <h2>Discover a World of Possibilities</h2>
+                <p class="text-muted">Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home.</p>
+            </div>
+        </div>
+        <div class="property-grid">
+            <article class="property-card">
+                <div class="card-image">
+                    <img src="images/Coastal-Escapes.png" alt="Seaside Serenity Villa">
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="tag">Coastal Escapes</span>
+                        <span class="tag">Where Waves Return</span>
+                    </div>
+                    <h3 class="card-title">Seaside Serenity Villa</h3>
+                    <p class="card-desc text-muted">Wake up to the soothing melody of waves. This beachfront villa offers... <a href="#" class="read-more">Read More</a></p>
+                    <div class="card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Price</span>
+                            <strong class="price-value">$1,250,000</strong>
+                        </div>
+                        <a href="#" class="btn btn--primary">View Property Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="property-card">
+                <div class="card-image">
+                    <img src="images/Urban-Oasis.png" alt="Metropolitan Haven">
+                </div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="tag">Urban Oasis</span>
+                        <span class="tag">Life in the Heart of the City</span>
+                    </div>
+                    <h3 class="card-title">Metropolitan Haven</h3>
+                    <p class="card-desc text-muted">Immerse yourself in the energy of the city. This modern apartment in the heart... <a href="#" class="read-more">Read More</a></p>
+                    <div class="card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Price</span>
+                            <strong class="price-value">$650,000</strong>
+                        </div>
+                        <a href="#" class="btn btn--primary">View Property Details</a>
+                    </div>
+                </div>
+            </article>
+            <article class="property-card">
+                <div class="card-image">
+                    <img src="images/Countryside-Charm.png" alt="Rustic Retreat Cottage">
+                </div>
+                <div class="card-body">
+                    <div class="card-tags">
+                        <span class="tag">Countryside Charm</span>
+                        <span class="tag">Escape to Nature's Embrace</span>
+                    </div>
+                    <h3 class="card-title">Rustic Retreat Cottage</h3>
+                    <p class="card-desc text-muted">Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills... <a href="#" class="read-more">Read More</a></p>
+                    <div class="card-footer">
+                        <div class="price-info">
+                            <span class="price-label">Price</span>
+                            <strong class="price-value">$350,000</strong>
+                        </div>
+                        <a href="#" class="btn btn--primary">View Property Details</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="pagination-container">
+            <span>01 of 10</span>
+            <div class="pagination-controls">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header contact-header">
+            <h2>Let's Make it Happen</h2>
+            <p class="text-muted">Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together.</p>
+        </div>
+        <form class="inquiry-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" placeholder="Enter First Name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" placeholder="Enter Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="tel" placeholder="Enter Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Preferred Location</label>
+                    <div class="select-wrapper">
+                        <select id="location"><option>Select Location</option></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="propertyType">Property Type</label>
+                    <div class="select-wrapper">
+                        <select id="propertyType"><option>Select Property Type</option></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bathrooms">No. of Bathrooms</label>
+                    <div class="select-wrapper">
+                        <select id="bathrooms"><option>Select no. of Bedrooms</option></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bedrooms">No. of Bedrooms</label>
+                    <div class="select-wrapper">
+                        <select id="bedrooms"><option>Select no. of Bedrooms</option></select>
+                    </div>
+                </div>
+
+                <div class="form-group span-2">
+                    <label for="budget">Budget</label>
+                    <div class="select-wrapper">
+                        <select id="budget"><option>Select Budget</option></select>
+                    </div>
+                </div>
+
+                <div class="form-group span-2">
+                    <label>Preferred Contact Method</label>
+                    <div class="contact-method-container">
+                        <label class="radio-card">
+                            <div class="radio-info">
+                                <span class="icon">📞</span>
+                                <span>Enter Your Number</span>
+                            </div>
+                            <input type="radio" name="contact" checked>
+                            <span class="radio-dot"></span>
+                        </label>
+                        <label class="radio-card">
+                            <div class="radio-info">
+                                <span class="icon">✉️</span>
+                                <span>Enter Your Email</span>
+                            </div>
+                            <input type="radio" name="contact">
+                            <span class="radio-dot"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group span-4">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter your Message here.." rows="4"></textarea>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    I agree with <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                </label>
+                <button type="submit" class="btn btn--submit">Send Your Message</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="footer-wrapper">
+    <div class="footer-cta">
+        <div class="cta-text">
+            <h2>Start Your Real Estate Journey Today</h2>
+            <p class="text-muted">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
+        </div>
+        <a href="#" class="btn btn--primary btn--explore">Explore Properties</a>
+    </div>
+    <div class="footer-main">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo" aria-label="Homepage">
+                    <div class="logo-icon"></div>
+                    <span>Estatein</span>
+                </a>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button aria-label="Subscribe">→</button>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#">Hero Section</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Works</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Our Clients</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Properties</h4>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Valuation Mastery</a></li>
+                        <li><a href="#">Strategic Marketing</a></li>
+                        <li><a href="#">Negotiation Wizardry</a></li>
+                        <li><a href="#">Closing Success</a></li>
+                        <li><a href="#">Property Management</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Contact Form</a></li>
+                        <li><a href="#">Our Offices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="copyright">
+            <p>@2023 Estatein. All Rights Reserved.</p>
+            <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="social-btn">f</a>
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">tw</a>
+            <a href="#" class="social-btn">yt</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
