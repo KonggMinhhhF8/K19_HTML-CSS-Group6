@@ -45,7 +45,7 @@ ul {
     display: none;
 }
 
-.announcement__toggle:checked ~ .announcement__content {
+.announcement__toggle:checked~.announcement__content {
     display: none;
 }
 
@@ -88,6 +88,7 @@ ul {
     justify-content: center;
     border-radius: 50%;
     border: 1.5px solid rgba(255, 255, 255, 0.1);
+    background-color: #FFFFFF1A;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -107,9 +108,11 @@ ul {
    ========================================================================== */
 .header {
     width: 100%;
-    position: sticky; /* Dính vào đầu trang khi scroll */
+    position: sticky;
+    /* Dính vào đầu trang khi scroll */
     top: 0;
-    z-index: 1000;    /* Đảm bảo header nổi trên mọi phần tử */
+    z-index: 1000;
+    /* Đảm bảo header nổi trên mọi phần tử */
     background-color: var(--gray-10);
     border-bottom: 1px solid var(--gray-15);
 }
@@ -216,10 +219,9 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    width: 44px;
-    height: 44px;
+    width: 28px;
+    height: 28px;
     border-radius: 8px;
-    border: 1px solid var(--gray-15);
     cursor: pointer;
     flex-shrink: 0;
     transition: background-color 0.2s ease;
@@ -230,14 +232,14 @@ ul {
 }
 
 .header__burger-icon-open {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .header__burger-icon-close {
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 14px;
     display: none;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -276,7 +278,8 @@ ul {
 
 /* Section heading dung chung cho mọi section */
 .section-heading {
-    position: relative; /* Để icon sao absolute positioning hoạt động */
+    position: relative;
+    /* Để icon sao absolute positioning hoạt động */
 }
 
 .section-heading__stars img {
@@ -586,8 +589,8 @@ ul {
     border-radius: 0 12px 12px 12px;
     flex: 1;
     background: linear-gradient(120.79deg, var(--primary-purple) -49.01%, rgba(112, 59, 247, 0) 17%) top left / 350px 250px no-repeat,
-    linear-gradient(var(--gray-08), var(--gray-08)) padding-box,
-    linear-gradient(117.89deg, var(--primary-purple) 0%, rgba(112, 59, 247, 0) 24%) border-box;
+        linear-gradient(var(--gray-08), var(--gray-08)) padding-box,
+        linear-gradient(117.89deg, var(--primary-purple) 0%, rgba(112, 59, 247, 0) 24%) border-box;
 }
 
 /* Pseudo-element bổ sung viền xám nền cho step card */
@@ -913,7 +916,8 @@ ul {
    ========================================================================== */
 .cta {
     position: relative;
-    overflow: hidden; /* Chặn SVG chạy ra ngoài */
+    overflow: hidden;
+    /* Chặn SVG chạy ra ngoài */
     padding: 100px 0;
     border-top: 1px solid var(--gray-15);
     border-bottom: 1px solid var(--gray-15);
@@ -930,7 +934,8 @@ ul {
     width: 420px;
     background-repeat: no-repeat;
     background-size: contain;
-    pointer-events: none; /* Không chặn click */
+    pointer-events: none;
+    /* Không chặn click */
     z-index: 1;
 }
 
