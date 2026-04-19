@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="home/assets/favicon/apple-icon-57x57.png">
@@ -25,629 +27,823 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="home/css/style.css">
     <title>Home</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-[var(--primary-color)] font-medium leading-[150%]">
-<!-- Header (Logo + Nav) -->
-<header class="sticky top-0 z-[1000] border-0 md:border-b border-[var(--border-grey)]">
-    <!-- Top Banner -->
-    <input type="checkbox" id="top-banner" hidden>
-    <div class="top-banner-container pt-10 pb-5 sm:py-3.5 2xl:py-4.5 px-4 sm:px-20 2xl:px-40 flex justify-start sm:justify-center relative bg-[var(--secondary-color)] border-b border-[var(--border-grey)] overflow-hidden z-[1] transition-[height,opacity,visibility,padding] duration-300">
-        <img src="home/assets/abstract-pattern-1.svg" alt="" class="absolute w-full h-full top-0 left-0 object-cover opacity-20 -z-[5]">
-        <p class="text-xs sm:text-sm 2xl:text-lg text-white max-w-[90%] md:max-w-none">✨ Discover Your Dream Property with Estatein <a href="#!" class="underline ml-1.5 xl:ml-2.5">Learn More</a>
-        </p>
-        <label for="top-banner" class="absolute top-9 sm:top-2.75 2xl:top-3.75 right-4 sm:right-8 w-6.5 2xl:w-8 h-6.5 2xl:h-8 bg-white/10 rounded-full cursor-pointer flex justify-center items-center">
-            <img src="home/assets/icon/close-icon.svg" alt="" class="w-2.25 sm:w-3 h-2.25 sm:h-3">
-        </label>
-    </div>
-    <!-- Main Menu -->
-    <div class="bg-[var(--secondary-color)] py-5 sm:py-3.5 2xl:py-5 px-4 xl:px-20 2xl:px-40.5 flex items-center justify-between border-b border-[#211E2F] md:border-0">
-        <input type="checkbox" id="menu-toggle" class="hidden">
-        <label for="menu-toggle" class="overlay opacity-0 invisible fixed inset-0 bg-black/100 transition-[opacity,visibility] duration-300 z-[100]"></label>
-        <!-- Desktop Main Menu -->
-        <a href="/">
-            <img src="home/assets/Logo.png" alt="Logo Estatein" class="h-7 xl:h-8.5 2xl:h-12">
-        </a>
-        <nav class="fixed md:static top-0 right-0 bottom-0 min-w-[60vw] md:w-auto translate-x-full md:translate-x-0 opacity-0 md:opacity-100 invisible md:visible flex flex-col md:flex-row gap-0 md:gap-2.5 md:items-center md:justify-center bg-[var(--secondary-color)] md:bg-transparent pt-20 md:pt-0 px-8 md:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm 2xl:text-lg text-white">
-            <label for="menu-toggle" class="cursor-pointer absolute top-8 right-6 md:hidden">
-                <img src="home/assets/icon/close-icon.svg" alt="" class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
-            </label>
-            <a href="#!" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
-            <a href="#!" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About Us</a>
-            <a href="#!" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
-            <a href="#!" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
-            <a href="#!" class="block md:hidden bg-[var(--accent-color)] p-4 text-center text-white text-sm rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a>
-        </nav>
-        <a href="#!" class="hidden md:block bg-[var(--primary-color)] py-3.5 2xl:py-4 px-5 2xl:px-6 min-w-auto 2xl:min-w-36 text-center text-white text-sm 2xl:text-lg rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact Us</a>
-        <!-- Mobile Menu Icon -->
-        <label for="menu-toggle" class="block md:hidden">
-            <img src="home/assets/icon/hamburger-icon.svg" alt="" class="w-6">
-        </label>
-    </div>
-</header>
-<main class="max-w-[1920px] mx-auto">
-    <!-- Hero Section -->
-    <section class="p-4 xl:p-0 flex flex-col-reverse md:flex-row md:gap-5 xl:gap-15 2xl:gap-20">
-        <!-- Hero - Left Block -->
-        <div class="pt-14 px-0 xl:pl-20 2xl:pl-40.5 xl:py-24.5 2xl:py-36 w-full md:w-3/5 xl:w-1/2">
-            <h1 class="mb-4 xl:mb-5 2xl:mb-6 text-[28px] sm:text-[36px] xl:text-[46px] 2xl:text-[60px] text-white font-semibold leading-[120%]">Discover Your Dream <br> Property with Estatein </h1>
-            <p class="text-sm md:text-base 2xl:text-lg text-[var(--text-grey)]">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
-            <div class="flex flex-col md:flex-row gap-4 xl:gap-5 my-10 xl:my-12.5 2xl:my-15 text-white text-center text-sm 2xl:text-lg">
-                <a href="#!" class="block px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Learn More</a>
-                <a href="#!" class="block px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.6)] transition-shadow duration-200">Browse Properties</a>
-            </div>
-            <div class="flex flex-wrap gap-3 xl:gap-4 2xl:gap-5 justify-between mt-10">
-                <div class="p-4 md:py-3.5 2xl:py-4 xl:px-5 2xl:px-6 bg-[var(--secondary-color)] rounded-[8px] xl:rounded-[10px] 2xl:rounded-[12px] border border-[var(--border-grey)] text-center md:text-left w-[calc(50%-6px)] md:w-auto md:flex-1">
-                    <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">200+</p>
-                    <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Happy Customer</p>
-                </div>
-                <div class="p-4 md:py-3.5 2xl:py-4 xl:px-5 2xl:px-6 bg-[var(--secondary-color)] rounded-[8px] xl:rounded-[10px] 2xl:rounded-[12px] border border-[var(--border-grey)] text-center md:text-left w-[calc(50%-6px)] md:w-auto md:flex-1">
-                    <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">10k+</p>
-                    <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Properties For Clients</p>
-                </div>
-                <div class="p-4 md:py-3.5 2xl:py-4 xl:px-5 2xl:px-6 bg-[var(--secondary-color)] rounded-[8px] xl:rounded-[10px] 2xl:rounded-[12px] border border-[var(--border-grey)] text-center md:text-left sm:w-auto flex-1">
-                    <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">16+</p>
-                    <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Years of Experience</p>
-                </div>
-            </div>
-        </div>
-        <!-- Hero - Right Block -->
-        <div class="relative w-full md:w-2/5 xl:w-1/2 rounded-xl xl:rounded-none bg-[var(--secondary-color)] bg-[linear-gradient(238.21deg,_#2A213F_8.76%,_rgba(25,25,25,0)_50.09%),url('./assets/abstract-pattern-2.svg')] bg-cover bg-center">
-            <img src="home/assets/three-buildings.png" alt="Three buildings - Estatein Property" class="max-w-full h-full object-cover xl:absolute bottom-0 left-0 xl:left-1/2 xl:-translate-x-1/2 z-[2]">
-            <a href="#!">
-                <img src="home/assets/discover-dream-btn.png" alt="Discover dream property button" class="absolute z-10 w-29.25 md:w-32.25 2xl:w-43.75 -bottom-10.5 left-4 md:-left-16 2xl:-left-24 md:top-4 xl:top-23.75 2xl:top-36 hover:rotate-12 hover:scale-105 transition-transform duration-300">
-            </a>
-        </div>
-    </section>
-    <!-- USP Cards Section -->
-    <div class="mt-10 xl:mt-0 rounded-xl xl:rounded-none p-4 xl:p-5 grid grid-cols-2 xl:grid-cols-4 gap-2.5 xl:gap-5 shadow-[0px_0px_0px_4px_#191919] xl:shadow-[0px_0px_0px_6px_#191919] 2xl:shadow-[0px_0px_0px_10px_#191919] text-center">
-        <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
-            <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-            <!-- Overlay Gradient - Hover Effect -->
-            <img src="home/assets/icon/home-icon.svg" alt="" class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
-            <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Find Your Dream Home</p>
-            <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
-        </a>
-        <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
-            <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-            <!-- Overlay Gradient - Hover Effect -->
-            <img src="home/assets/icon/money-icon.svg" alt="" class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
-            <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Unlock Property Value</p>
-            <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
-        </a>
-        <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
-            <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-            <!-- Overlay Gradient - Hover Effect -->
-            <img src="home/assets/icon/building-icon.svg" alt="" class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
-            <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Effortless Property Management</p>
-            <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
-        </a>
-        <a href="#!" class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
-            <div class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-            <!-- Overlay Gradient - Hover Effect -->
-            <img src="home/assets/icon/sunbright-icon.svg" alt="" class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
-            <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Smart Investments, Informed Decisions</p>
-            <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
-        </a>
-    </div>
-    <!-- Featured Properties Section -->
-    <section class="pt-20 xl:pt-30 2xl:pt-37.5 px-4 xl:px-20 2xl:px-40.5 m-auto">
-        <div class="relative flex justify-between items-end">
-            <img src="home/assets/abstract-star.svg" alt="" class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5 -z-[1]">
-            <div class="w-full xl:w-[70%]">
-                <h2 class="text-white leading-[150%] text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">Featured Properties</h2>
-                <p class="hidden xl:block text-[var(--text-grey)] xl:text-base 2xl:text-lg">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
-                <p class="text-[var(--text-grey)] text-sm xl:hidden">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein.</p>
-            </div>
-            <div class="hidden md:block w-[30%] relative">
-                <a href="#!" class="text-white text-sm 2xl:text-lg py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
-                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View All Properties</a>
-            </div>
-        </div>
-        <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
-            <!-- Card 1 -->
-            <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
-                <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
-                    <img src="home/assets/thumbs/Seaside%20Serenity%20Villa.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
-                </div>
-                <!-- Name + Desc -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Seaside Serenity Villa</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5"> A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#!" class="text-white underline">Read More</a>
-                </p>
-                <!-- Details -->
-                <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">4-Bedroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/bath-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">3-Bathroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/property-types-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">Villa</span>
-                    </div>
-                </div>
-                <!-- Price -->
-                <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
-                    <div class="flex flex-col gap-0.5">
-                        <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
-                        <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
-                    </div>
-                    <a href="#!" class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
-                <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
-                    <img src="home/assets/thumbs/Metropolitan%20Haven.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
-                </div>
-                <!-- Name + Desc -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Metropolitan Haven</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5"> A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="#!" class="text-white underline">Read More</a>
-                </p>
-                <!-- Details -->
-                <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">2-Bedroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/bath-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">2-Bathroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/property-types-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">Villa</span>
-                    </div>
-                </div>
-                <!-- Price -->
-                <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
-                    <div class="flex flex-col gap-0.5">
-                        <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
-                        <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
-                    </div>
-                    <a href="#!" class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
-                <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
-                    <img src="home/assets/thumbs/Rustic%20Retreat%20Cottage.png" alt="Seaside Serenity Villa" class="w-full h-full object-cover">
-                </div>
-                <!-- Name + Desc -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Rustic Retreat Cottage</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5"> An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="#!" class="text-white underline">Read More</a>
-                </p>
-                <!-- Details -->
-                <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">3-Bedroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/bath-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">3-Bathroom</span>
-                    </div>
-                    <div class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
-                        <img src="home/assets/icon/property-types-icon.svg" alt="" class="w-5 2xl:w-6">
-                        <span class="text-sm 2xl:text-lg text-white inline-block">Villa</span>
-                    </div>
-                </div>
-                <!-- Price -->
-                <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
-                    <div class="flex flex-col gap-0.5">
-                        <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
-                        <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
-                    </div>
-                    <a href="#!" class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View Property Details</a>
-                </div>
-            </div>
-        </div>
-        <!-- Pagination Desktop-->
-        <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
-            <p class="text-[var(--text-grey)] text-xl">
-                <span class="text-white">01</span> of 60
+    <!-- Header (Logo + Nav) -->
+    <header class="sticky top-0 z-[1000] border-0 md:border-b border-[var(--border-grey)]">
+        <!-- Top Banner -->
+        <input type="checkbox" id="top-banner" hidden>
+        <div
+            class="top-banner-container pt-10 pb-5 sm:py-3.5 2xl:py-4.5 px-4 sm:px-20 2xl:px-40 flex justify-start sm:justify-center relative bg-[var(--secondary-color)] border-b border-[var(--border-grey)] overflow-hidden z-[1] transition-[height,opacity,visibility,padding] duration-300">
+            <img src="home/assets/abstract-pattern-1.svg" alt=""
+                class="absolute w-full h-full top-0 left-0 object-cover opacity-20 -z-[5]">
+            <p class="text-xs sm:text-sm 2xl:text-lg text-white max-w-[90%] md:max-w-none">✨ Discover Your Dream
+                Property with Estatein <a href="#!" class="underline ml-1.5 xl:ml-2.5">Learn More</a>
             </p>
-            <div class="flex gap-2.5">
-                <button class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
-                    <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6 2xl:w-7.5">
-                </button>
-                <button class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
-                    <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6 2xl:w-7.5">
-                </button>
+            <label for="top-banner"
+                class="absolute top-9 sm:top-2.75 2xl:top-3.75 right-4 sm:right-8 w-6.5 2xl:w-8 h-6.5 2xl:h-8 bg-white/10 rounded-full cursor-pointer flex justify-center items-center">
+                <img src="home/assets/icon/close-icon.svg" alt="" class="w-2.25 sm:w-3 h-2.25 sm:h-3">
+            </label>
+        </div>
+        <!-- Main Menu -->
+        <div class="bg-[var(--secondary-color)] py-5 sm:py-3.5 2xl:py-5 px-4 xl:px-20 2xl:px-40.5">
+            <div class="max-w-[1920px] m-auto flex items-center justify-between border-b border-[#211E2F] md:border-0">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle"
+                    class="overlay opacity-0 invisible fixed inset-0 bg-black/100 transition-[opacity,visibility] duration-300 z-[100]"></label>
+                <!-- Desktop Main Menu -->
+                <a href="/">
+                    <img src="./home/assets/Logo.png" alt="Logo Estatein" class="w-40 xl:w-40 2xl:w-40">
+                </a>
+                <nav
+                    class="fixed md:static top-0 right-0 bottom-0 min-w-[60vw] md:w-auto translate-x-full md:translate-x-0 opacity-0 md:opacity-100 invisible md:visible flex flex-col md:flex-row gap-0 md:gap-2.5 md:items-center md:justify-center bg-[var(--secondary-color)] md:bg-transparent pt-20 md:pt-0 px-8 md:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm 2xl:text-lg text-white">
+                    <label for="menu-toggle" class="cursor-pointer absolute top-8 right-6 md:hidden">
+                        <img src="home/assets/icon/close-icon.svg" alt=""
+                            class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
+                    </label>
+                    <a href="#!"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
+                    <a href="#!"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About
+                        Us</a>
+                    <a href="#!"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
+                    <a href="#!"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
+                    <a href="#!"
+                        class="block md:hidden bg-[var(--accent-color)] p-4 text-center text-white text-sm rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
+                        Us</a>
+                </nav>
+                <a href="#!"
+                    class="hidden md:block bg-[var(--primary-color)] py-3.5 2xl:py-4 px-5 2xl:px-6 min-w-auto 2xl:min-w-36 text-center text-white text-sm 2xl:text-lg rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
+                    Us</a>
+                <!-- Mobile Menu Icon -->
+                <label for="menu-toggle" class="block md:hidden">
+                    <img src="home/assets/icon/hamburger-icon.svg" alt="" class="w-6">
+                </label>
             </div>
         </div>
-        <!-- Pagination Mobile -->
-        <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
-            <div class="block md:hidden">
-                <a href="#!" class="text-white text-sm py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
-                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View All Properties</a>
+    </header>
+
+    <main class="max-w-[1920px] mx-auto">
+        <!-- Hero Section -->
+        <section class="p-4 xl:p-0 flex flex-col-reverse md:flex-row md:gap-5 xl:gap-15 2xl:gap-20">
+            <!-- Hero - Left Block -->
+            <div class="pt-14 px-0 xl:pl-20 2xl:pl-40.5 xl:py-24.5 2xl:py-36 w-full md:w-3/5 xl:w-1/2">
+                <h1
+                    class="mb-4 xl:mb-5 2xl:mb-6 text-[28px] sm:text-[36px] xl:text-[46px] 2xl:text-[60px] text-white font-semibold leading-[120%]">
+                    Discover Your Dream <br> Property with Estatein </h1>
+                <p class="text-sm md:text-base 2xl:text-lg text-[var(--text-grey)]">Your journey to finding the perfect
+                    property begins here. Explore our listings to find the home that matches your dreams.</p>
+                <div
+                    class="flex flex-col md:flex-row gap-4 xl:gap-5 my-10 xl:my-12.5 2xl:my-15 text-white text-center text-sm 2xl:text-lg">
+                    <a href="#!"
+                        class="block px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Learn
+                        More</a>
+                    <a href="#!"
+                        class="block px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.6)] transition-shadow duration-200">Browse
+                        Properties</a>
+                </div>
+                <div class="flex flex-wrap gap-3 xl:gap-4 2xl:gap-5 justify-between mt-10">
+                    <div
+                        class="p-4 md:py-3.5 2xl:py-4 xl:px-5 2xl:px-6 bg-[var(--secondary-color)] rounded-[8px] xl:rounded-[10px] 2xl:rounded-[12px] border border-[var(--border-grey)] text-center md:text-left w-[calc(50%-6px)] md:w-auto md:flex-1">
+                        <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">200+</p>
+                        <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Happy Customer</p>
+                    </div>
+                    <div
+                        class="p-4 md:py-3.5 2xl:py-4 xl:px-5 2xl:px-6 bg-[var(--secondary-color)] rounded-[8px] xl:rounded-[10px] 2xl:rounded-[12px] border border-[var(--border-grey)] text-center md:text-left w-[calc(50%-6px)] md:w-auto md:flex-1">
+                        <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">10k+</p>
+                        <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Properties For Clients</p>
+                    </div>
+                    <div
+                        class="p-4 md:py-3.5 2xl:py-4 xl:px-5 2xl:px-6 bg-[var(--secondary-color)] rounded-[8px] xl:rounded-[10px] 2xl:rounded-[12px] border border-[var(--border-grey)] text-center md:text-left sm:w-auto flex-1">
+                        <p class="text-white font-bold text-2xl xl:text-[30px] 2xl:text-[40px]">16+</p>
+                        <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Years of Experience</p>
+                    </div>
+                </div>
             </div>
-            <div class="flex items-center gap-2.5">
-                <button class="p-2.5 rounded-full border border-[var(--border-grey)]">
-                    <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
-                </button>
-                <p class="text-[var(--text-grey)] text-sm">
+            <!-- Hero - Right Block -->
+            <div
+                class="relative w-full md:w-2/5 xl:w-1/2 rounded-xl xl:rounded-none bg-[var(--secondary-color)] bg-[linear-gradient(238.21deg,_#2A213F_8.76%,_rgba(25,25,25,0)_50.09%),url('./assets/abstract-pattern-2.svg')] bg-cover bg-center">
+                <img src="home/assets/three-buildings.png" alt="Three buildings - Estatein Property"
+                    class="max-w-full h-full object-cover xl:absolute bottom-0 left-0 xl:left-1/2 xl:-translate-x-1/2 z-[2]">
+                <a href="#!">
+                    <img src="home/assets/discover-dream-btn.png" alt="Discover dream property button"
+                        class="absolute z-10 w-29.25 md:w-32.25 2xl:w-43.75 -bottom-10.5 left-4 md:-left-16 2xl:-left-24 md:top-4 xl:top-23.75 2xl:top-36 hover:rotate-12 hover:scale-105 transition-transform duration-300">
+                </a>
+            </div>
+        </section>
+        <!-- USP Cards Section -->
+        <div
+            class="shadow-[0px_0px_0px_4px_#191919] xl:shadow-[0px_0px_0px_6px_#191919] 2xl:shadow-[0px_0px_0px_10px_#191919]">
+            <div
+                class="mt-10 xl:mt-0 rounded-xl xl:rounded-none p-4 xl:p-5 grid grid-cols-2 xl:grid-cols-4 gap-2.5 xl:gap-5 text-center">
+                <a href="#!"
+                    class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <!-- Overlay Gradient - Hover Effect -->
+                    <img src="home/assets/icon/home-icon.svg" alt=""
+                        class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
+                    <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Find Your Dream Home</p>
+                    <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
+                </a>
+                <a href="#!"
+                    class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <!-- Overlay Gradient - Hover Effect -->
+                    <img src="home/assets/icon/money-icon.svg" alt=""
+                        class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
+                    <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Unlock Property Value</p>
+                    <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
+                </a>
+                <a href="#!"
+                    class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <!-- Overlay Gradient - Hover Effect -->
+                    <img src="home/assets/icon/building-icon.svg" alt=""
+                        class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
+                    <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Effortless Property Management
+                    </p>
+                    <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
+                </a>
+                <a href="#!"
+                    class="relative py-5 px-3.5 xl:py-7.5 xl:px-4 2xl:py-10 2xl:px-5 bg-[var(--secondary-color)] rounded-xl border border-[var(--border-grey)] flex flex-col flex-1 items-center">
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(180deg,_#2A213F_0%,_rgba(25,25,25,0)_30%)] opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <!-- Overlay Gradient - Hover Effect -->
+                    <img src="home/assets/icon/sunbright-icon.svg" alt=""
+                        class="mb-3.5 xl:mb-4 2xl:mb-5 w-12 xl:w-15 2xl:w-20.5">
+                    <p class="text-white font-semibold text-sm xl:text-base 2xl:text-xl">Smart Investments, Informed
+                        Decisions</p>
+                    <img src="home/assets/icon/arrow-upright.svg" alt="" class="absolute top-5 right-5 w-6.5 2xl:w-8.5">
+                </a>
+            </div>
+        </div>
+        <!-- Featured Properties Section -->
+        <section class="pt-20 xl:pt-30 2xl:pt-37.5 px-4 xl:px-20 2xl:px-40.5 m-auto">
+            <div class="relative flex justify-between items-end">
+                <img src="home/assets/abstract-star.svg" alt=""
+                    class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5 -z-[1]">
+                <div class="w-full xl:w-[70%]">
+                    <h2
+                        class="text-white leading-[150%] text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">
+                        Featured Properties</h2>
+                    <p class="hidden xl:block text-[var(--text-grey)] xl:text-base 2xl:text-lg">Explore our handpicked
+                        selection of featured properties. Each listing offers a glimpse into exceptional homes and
+                        investments available through Estatein. Click "View Details" for more information.</p>
+                    <p class="text-[var(--text-grey)] text-sm xl:hidden">Explore our handpicked selection of featured
+                        properties. Each listing offers a glimpse into exceptional homes and investments available
+                        through Estatein.</p>
+                </div>
+                <div class="hidden md:block w-[30%] relative">
+                    <a href="#!"
+                        class="text-white text-sm 2xl:text-lg py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View
+                        All Properties</a>
+                </div>
+            </div>
+            <div
+                class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
+                <!-- Card 1 -->
+                <div
+                    class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
+                        <img src="home/assets/thumbs/Seaside%20Serenity%20Villa.png" alt="Seaside Serenity Villa"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <!-- Name + Desc -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Seaside Serenity Villa
+                    </h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5"> A stunning
+                        4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood... <a href="#!"
+                            class="text-white underline">Read More</a>
+                    </p>
+                    <!-- Details -->
+                    <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">4-Bedroom</span>
+                        </div>
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/bath-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">3-Bathroom</span>
+                        </div>
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/property-types-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">Villa</span>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
+                        <div class="flex flex-col gap-0.5">
+                            <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
+                            <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
+                        </div>
+                        <a href="#!"
+                            class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View
+                            Property Details</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
+                        <img src="home/assets/thumbs/Metropolitan%20Haven.png" alt="Seaside Serenity Villa"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <!-- Name + Desc -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Metropolitan Haven</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5"> A chic and
+                        fully-furnished 2-bedroom apartment with panoramic city views... <a href="#!"
+                            class="text-white underline">Read More</a>
+                    </p>
+                    <!-- Details -->
+                    <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">2-Bedroom</span>
+                        </div>
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/bath-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">2-Bathroom</span>
+                        </div>
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/property-types-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">Villa</span>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
+                        <div class="flex flex-col gap-0.5">
+                            <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
+                            <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
+                        </div>
+                        <a href="#!"
+                            class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View
+                            Property Details</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="flex flex-col min-w-full snap-center xl:min-w-0 p-6 xl:p-6.5 2xl:p-10 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <div class="h-52.5 xl:h-63.75 2xl:h-79.5 rounded-[10px] overflow-hidden mb-4 xl:mb-7.5">
+                        <img src="home/assets/thumbs/Rustic%20Retreat%20Cottage.png" alt="Seaside Serenity Villa"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <!-- Name + Desc -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-0.5">Rustic Retreat Cottage
+                    </h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-[var(--text-grey)] mb-5 xl:mb-7.5"> An elegant
+                        3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="#!"
+                            class="text-white underline">Read More</a>
+                    </p>
+                    <!-- Details -->
+                    <div class="flex flex-wrap gap-1.5 2xl:gap-2.5">
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/bed-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">3-Bedroom</span>
+                        </div>
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/bath-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">3-Bathroom</span>
+                        </div>
+                        <div
+                            class="bg-[var(--secondary-color)] border border-[var(--border-grey)] rounded-[28px] py-1.5 px-3.5 2xl:py-2 2xl:px-3.5 flex gap-1">
+                            <img src="home/assets/icon/property-types-icon.svg" alt="" class="w-5 2xl:w-6">
+                            <span class="text-sm 2xl:text-lg text-white inline-block">Villa</span>
+                        </div>
+                    </div>
+                    <!-- Price -->
+                    <div class="mt-auto pt-7.5 flex items-center justify-between gap-7.5 xl:gap-10 2xl:gap-12.5">
+                        <div class="flex flex-col gap-0.5">
+                            <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
+                            <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
+                        </div>
+                        <a href="#!"
+                            class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View
+                            Property Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination Desktop-->
+            <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
+                <p class="text-[var(--text-grey)] text-xl">
                     <span class="text-white">01</span> of 60
                 </p>
-                <button class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
-                    <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
-                </button>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonials Section -->
-    <section class="pt-20 xl:pt-30 2xl:pt-37.5 px-4 xl:px-20 2xl:px-40.5 m-auto">
-        <div class="relative flex justify-between items-end">
-            <img src="home/assets/abstract-star.svg" alt="" class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5 -z-[1]">
-            <div class="w-full xl:w-[70%]">
-                <h2 class="text-white leading-[150%] text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">What Our Clients Say</h2>
-                <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
-            </div>
-            <div class="hidden md:block w-[30%] relative">
-                <a href="#!" class="text-white text-sm 2xl:text-lg py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
-                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View All Testimonials</a>
-            </div>
-        </div>
-        <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
-            <!-- Card 1 -->
-            <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
-                <!-- Rating  -->
-                <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
-                            <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                </div>
-                <!-- Testimonial Content -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">Exceptional Service</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-white"> Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended! </p>
-                <!-- Writer -->
-                <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
-                    <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
-                        <img src="home/assets/Wade%20Warren.png" alt="Wade Warren - Customer's Testimonial" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <p class="text-white text-base xl:text-lg 2xl:text-xl">Wade Warren</p>
-                        <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, California</p>
-                    </div>
+                <div class="flex gap-2.5">
+                    <button class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6 2xl:w-7.5">
+                    </button>
+                    <button
+                        class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
+                        <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6 2xl:w-7.5">
+                    </button>
                 </div>
             </div>
-            <!-- Card 2 -->
-            <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
-                <!-- Rating  -->
-                <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
-                            <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
+            <!-- Pagination Mobile -->
+            <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
+                <div class="block md:hidden">
+                    <a href="#!"
+                        class="text-white text-sm py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View
+                        All Properties</a>
                 </div>
-                <!-- Testimonial Content -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">Efficient and Reliable</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-white"> Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.? </p>
-                <!-- Writer -->
-                <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
-                    <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
-                        <img src="home/assets/Emelie%20Thomson.png" alt="Wade Warren - Customer's Testimonial" class="w-full h-full object-cover">
+                <div class="flex items-center gap-2.5">
+                    <button class="p-2.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
+                    </button>
+                    <p class="text-[var(--text-grey)] text-sm">
+                        <span class="text-white">01</span> of 60
+                    </p>
+                    <button
+                        class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
+                        <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="pt-20 xl:pt-30 2xl:pt-37.5 px-4 xl:px-20 2xl:px-40.5 m-auto">
+            <div class="relative flex justify-between items-end">
+                <img src="home/assets/abstract-star.svg" alt=""
+                    class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5 -z-[1]">
+                <div class="w-full xl:w-[70%]">
+                    <h2
+                        class="text-white leading-[150%] text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">
+                        What Our Clients Say</h2>
+                    <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Read the success stories
+                        and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their
+                        real estate needs.</p>
+                </div>
+                <div class="hidden md:block w-[30%] relative">
+                    <a href="#!"
+                        class="text-white text-sm 2xl:text-lg py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View
+                        All Testimonials</a>
+                </div>
+            </div>
+            <div
+                class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid-cols-3 xl:gap-5 2xl:gap-7.5">
+                <!-- Card 1 -->
+                <div
+                    class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <!-- Rating  -->
+                    <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
                     </div>
-                    <div>
-                        <p class="text-white text-base xl:text-lg 2xl:text-xl">Emelie Thomson</p>
-                        <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, Florida</p>
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">
+                        Exceptional Service</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white"> Our experience with Estatein was
+                        outstanding. Their team's dedication and professionalism made finding our dream home a breeze.
+                        Highly recommended! </p>
+                    <!-- Writer -->
+                    <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
+                        <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
+                            <img src="home/assets/Wade%20Warren.png" alt="Wade Warren - Customer's Testimonial"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-white text-base xl:text-lg 2xl:text-xl">Wade Warren</p>
+                            <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, California</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <!-- Rating  -->
+                    <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                    </div>
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">
+                        Efficient and Reliable</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white"> Estatein provided us with top-notch service.
+                        They helped us sell our property quickly and at a great price. We couldn't be happier with the
+                        results.? </p>
+                    <!-- Writer -->
+                    <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
+                        <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
+                            <img src="home/assets/Emelie%20Thomson.png" alt="Wade Warren - Customer's Testimonial"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-white text-base xl:text-lg 2xl:text-xl">Emelie Thomson</p>
+                            <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, Florida</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
+                    <!-- Rating  -->
+                    <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                        <span
+                            class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
+                            <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
+                        </span>
+                    </div>
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">
+                        Trusted Advisors</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white"> The Estatein team guided us through the
+                        entire buying process. Their knowledge and commitment to our needs were impressive. Thank you
+                        for your support! </p>
+                    <!-- Writer -->
+                    <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
+                        <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
+                            <img src="home/assets/John%20Mans.png" alt="Wade Warren - Customer's Testimonial"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-white text-base xl:text-lg 2xl:text-xl">John Mans</p>
+                            <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, Nevada</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Card 3 -->
-            <div class="flex flex-col min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1">
-                <!-- Rating  -->
-                <div class="flex gap-2 2xl:gap-2.5 mb-6 xl:mb-7.5 2xl:mb-10">
-                            <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                    <span class="p-1.5 xl:p-2 2xl:p-2.5 border border-[var(--border-grey)] rounded-full bg-[var(--secondary-color)]">
-                                <img src="home/assets/icon/rating-star.svg" alt="" class="w-4.5 xl:w-5 2xl:w-6">
-                            </span>
-                </div>
-                <!-- Testimonial Content -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl mb-1.5 xl:mb-2.5 2xl:mb-3.5">Trusted Advisors</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-white"> The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support! </p>
-                <!-- Writer -->
-                <div class="mt-auto pt-6 xl:pt-7.625 2xl:pt-10 flex items-center justify-start gap-2.5 2xl:gap-3">
-                    <div class="rounded-full overflow-hidden w-12.5 h-12.5 2xl:w-15 2xl:h-15">
-                        <img src="home/assets/John%20Mans.png" alt="Wade Warren - Customer's Testimonial" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <p class="text-white text-base xl:text-lg 2xl:text-xl">John Mans</p>
-                        <p class="text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">USA, Nevada</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pagination Desktop-->
-        <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
-            <p class="text-[var(--text-grey)] text-xl">
-                <span class="text-white">01</span> of 10
-            </p>
-            <div class="flex gap-2.5">
-                <button class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
-                    <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6 2xl:w-7.5">
-                </button>
-                <button class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
-                    <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6 2xl:w-7.5">
-                </button>
-            </div>
-        </div>
-        <!-- Pagination Mobile -->
-        <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
-            <div class="block md:hidden">
-                <a href="#!" class="text-white text-sm py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
-                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View All Testimonials</a>
-            </div>
-            <div class="flex items-center gap-2.5">
-                <button class="p-2.5 rounded-full border border-[var(--border-grey)]">
-                    <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
-                </button>
-                <p class="text-[var(--text-grey)] text-sm">
+            <!-- Pagination Desktop-->
+            <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
+                <p class="text-[var(--text-grey)] text-xl">
                     <span class="text-white">01</span> of 10
                 </p>
-                <button class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
-                    <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
-                </button>
-            </div>
-        </div>
-    </section>
-    <!-- FAQ Section -->
-    <section class="pt-20 pb-24 xl:pt-30 2xl:pt-37.5 px-4 xl:px-20 2xl:px-40.5 m-auto">
-        <div class="relative flex justify-between items-end">
-            <img src="home/assets/abstract-star.svg" alt="" class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5 -z-[1]">
-            <div class="w-full xl:w-[70%]">
-                <h2 class="text-white leading-[150%] text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">Frequently Asked Questions</h2>
-                <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.</p>
-            </div>
-            <div class="hidden md:block w-[30%] relative">
-                <a href="#!" class="text-white text-sm 2xl:text-lg py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
-                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View All FAQ's</a>
-            </div>
-        </div>
-        <div class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid xl:grid-cols-3 gap-5 xl:gap-6 2xl:gap-7.5">
-            <!-- Card 1 -->
-            <div class="flex flex-col gap-5 min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
-                <!-- Testimonial Content -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">How do I search for properties on Estatein?</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-white"> Learn how to use our user-friendly search tools to find properties that match your criteria. </p>
-                <div class="mt-auto">
-                    <a href="#!" class="mt-auto w-full sm:w-auto inline-block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Read More</a>
+                <div class="flex gap-2.5">
+                    <button class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6 2xl:w-7.5">
+                    </button>
+                    <button
+                        class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
+                        <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6 2xl:w-7.5">
+                    </button>
                 </div>
             </div>
-            <!-- Card 2 -->
-            <div class="flex flex-col gap-5 min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
-                <!-- Testimonial Content -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">What documents do I need to sell my property through Estatein?</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-white"> Find out about the necessary documentation for listing your property with us. </p>
-                <div class="mt-auto">
-                    <a href="#!" class="w-full sm:w-auto inline-block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Read More</a>
+            <!-- Pagination Mobile -->
+            <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
+                <div class="block md:hidden">
+                    <a href="#!"
+                        class="text-white text-sm py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View
+                        All Testimonials</a>
+                </div>
+                <div class="flex items-center gap-2.5">
+                    <button class="p-2.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
+                    </button>
+                    <p class="text-[var(--text-grey)] text-sm">
+                        <span class="text-white">01</span> of 10
+                    </p>
+                    <button
+                        class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
+                        <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
+                    </button>
                 </div>
             </div>
-            <!-- Card 3 -->
-            <div class="flex flex-col gap-5 min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
-                <!-- Testimonial Content -->
-                <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">How can I contact an Estatein agent??</h3>
-                <p class="text-sm xl:text-base 2xl:text-lg text-white"> Discover the different ways you can get in touch with our experienced agents. </p>
-                <div class="mt-auto">
-                    <a href="#!" class="w-full sm:w-auto inline-block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Read More</a>
+        </section>
+        <!-- FAQ Section -->
+        <section class="pt-20 pb-24 xl:pt-30 2xl:pt-37.5 px-4 xl:px-20 2xl:px-40.5 m-auto">
+            <div class="relative flex justify-between items-end">
+                <img src="home/assets/abstract-star.svg" alt=""
+                    class="absolute -top-6 -left-2.5 xl:-top-8 xl:-left-4 h-5 xl:h-6 xl:h-7.5 -z-[1]">
+                <div class="w-full xl:w-[70%]">
+                    <h2
+                        class="text-white leading-[150%] text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold xl:mb-3.5">
+                        Frequently Asked Questions</h2>
+                    <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg">Find answers to common
+                        questions about Estatein's services, property listings, and the real estate process. We're here
+                        to provide clarity and assist you every step of the way.</p>
+                </div>
+                <div class="hidden md:block w-[30%] relative">
+                    <a href="#!"
+                        class="text-white text-sm 2xl:text-lg py-3.5 px-5 2xl:py-4.5 2xl:px-6 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block absolute bottom-0 right-0">View
+                        All FAQ's</a>
                 </div>
             </div>
-        </div>
-        <!-- Pagination Desktop-->
-        <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
-            <p class="text-[var(--text-grey)] text-xl">
-                <span class="text-white">01</span> of 10
-            </p>
-            <div class="flex gap-2.5">
-                <button class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
-                    <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6 2xl:w-7.5">
-                </button>
-                <button class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
-                    <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6 2xl:w-7.5">
-                </button>
+            <div
+                class="mt-10 xl:mt-20 flex overflow-x-auto gap-5 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] xl:overflow-visible xl:grid xl:grid-cols-3 gap-5 xl:gap-6 2xl:gap-7.5">
+                <!-- Card 1 -->
+                <div
+                    class="flex flex-col gap-5 min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">How do I search for properties
+                        on Estatein?</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white"> Learn how to use our user-friendly search
+                        tools to find properties that match your criteria. </p>
+                    <div class="mt-auto">
+                        <a href="#!"
+                            class="mt-auto w-full sm:w-auto inline-block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Read
+                            More</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="flex flex-col gap-5 min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">What documents do I need to
+                        sell my property through Estatein?</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white"> Find out about the necessary documentation
+                        for listing your property with us. </p>
+                    <div class="mt-auto">
+                        <a href="#!"
+                            class="w-full sm:w-auto inline-block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Read
+                            More</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="flex flex-col gap-5 min-w-full snap-center xl:min-w-0 p-7.5 xl:p-10 2xl:p-12.5 border border-[var(--border-grey)] rounded-xl flex-1 xl:grid xl:grid-rows-[subgrid] xl:row-span-3">
+                    <!-- Testimonial Content -->
+                    <h3 class="font-semibold text-white text-lg xl:text-xl 2xl:text-2xl">How can I contact an Estatein
+                        agent??</h3>
+                    <p class="text-sm xl:text-base 2xl:text-lg text-white"> Discover the different ways you can get in
+                        touch with our experienced agents. </p>
+                    <div class="mt-auto">
+                        <a href="#!"
+                            class="w-full sm:w-auto inline-block bg-[var(--secondary-color)] text-white text-sm 2xl:text-lg rounded-lg py-3.5 2xl:py-4.5 px-5 2xl:px-6 border border-[var(--border-grey)] xl:rounded-[10px] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200">Read
+                            More</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Pagination Mobile -->
-        <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
-            <div class="block md:hidden">
-                <a href="#!" class="text-white text-sm py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
-                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View All FAQ's</a>
-            </div>
-            <div class="flex items-center gap-2.5">
-                <button class="p-2.5 rounded-full border border-[var(--border-grey)]">
-                    <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
-                </button>
-                <p class="text-[var(--text-grey)] text-sm">
+            <!-- Pagination Desktop-->
+            <div class="hidden md:flex justify-between mt-7.5 pt-5 w-full border-t border-[var(--border-grey)]">
+                <p class="text-[var(--text-grey)] text-xl">
                     <span class="text-white">01</span> of 10
                 </p>
-                <button class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
-                    <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
-                </button>
+                <div class="flex gap-2.5">
+                    <button class="p-2.5 2xl:p-3.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6 2xl:w-7.5">
+                    </button>
+                    <button
+                        class="p-2.5 2xl:p-3.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
+                        <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6 2xl:w-7.5">
+                    </button>
+                </div>
+            </div>
+            <!-- Pagination Mobile -->
+            <div class="flex justify-between mt-7.5 pt-4 w-full border-t border-[var(--border-grey)] md:hidden">
+                <div class="block md:hidden">
+                    <a href="#!"
+                        class="text-white text-sm py-3.5 px-5 bg-[var(--secondary-color)] rounded-[10px]
+                border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300 inline-block">View
+                        All FAQ's</a>
+                </div>
+                <div class="flex items-center gap-2.5">
+                    <button class="p-2.5 rounded-full border border-[var(--border-grey)]">
+                        <img src="home/assets/icon/arrow-left.svg" alt="" class="inline-block w-6">
+                    </button>
+                    <p class="text-[var(--text-grey)] text-sm">
+                        <span class="text-white">01</span> of 10
+                    </p>
+                    <button
+                        class="p-2.5 bg-[var(--secondary-color)] rounded-full border border-[var(--border-grey)] hover:shadow-[1px_1px_16px_rgba(255,255,255,0.06)] hover:border-[var(--text-grey)] transition-[shadow,border] duration-200 cursor-pointer">
+                        <img src="home/assets/icon/arrow-right.svg" alt="" class="inline-block w-6">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Explore Properties Section -->
+        <section
+            class="py-12.5 xl:pt-15 2xl:py-25 px-4 xl:px-20 2xl:px-40.5 m-auto bg-[url('./assets/abstract-pattern-3.svg')] bg-cover border-t border-[var(--border-grey)] flex flex-wrap justify-between items-center">
+            <div class="max-w-full md:max-w-[70%]">
+                <h2
+                    class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold leading-[150%] mb-1.5 xl:mb-3.5">
+                    Start Your Real Estate Journey Today</h2>
+                <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg"> Your dream property is just a
+                    click away. Whether you're looking for a new home, a strategic investment, or expert real estate
+                    advice, Estatein is here to assist you every step of the way. Take the first step towards your real
+                    estate goals and explore our available properties or get in touch with our team for personalized
+                    assistance. </p>
+            </div>
+            <a href="#!"
+                class="text-white text-center block w-full md:w-auto mt-7.5 px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.6)] transition-shadow duration-200">Explore
+                Properties</a>
+        </section>
+    </main>
+    <footer class="border-t border-[var(--border-grey)]">
+        <div class="max-w-[1920px] mx-auto py-12.5 xl:pt-15 2xl:py-25 px-4 md:px-10 xl:px-20 2xl:px-40.5 m-auto flex flex-col xl:flex-row gap-12.5 xl:gap-20">
+            <div class="w-full xl:w-81.5 2xl:w-134.5 flex flex-col gap-5 xl:gap-7.5">
+                <a href="/">
+                    <img src="home/assets/Logo.png" alt="Logo Estatein" class="w-33.5 2xl:w-40">
+                </a>
+                <div class="relative w-full h-15 md:h-auto md:w-76.25 2xl:w-105.75">
+                    <label for="email">
+                        <img src="home/assets/icon/email-icon.svg" alt=""
+                            class="w-6 absolute left-5 2xl:left-6 top-4.5">
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email"
+                        class="w-full md:w-76.25 2xl:w-105.75 border border-[var(--border-grey)] rounded-xl py-4.5 pr-6 pl-14 text-white">
+                    <button type="submit" class="cursor-pointer">
+                        <img src="home/assets/icon/send-icon.svg" alt="" class="w-7.5 absolute right-6 top-4.5">
+                    </button>
+                </div>
+            </div>
+            <!-- 5 cols footer menu -->
+            <div class="columns-2 [column-rule:1px_solid_#262626] flex-1 md:flex md:flex-nowrap justify-between gap-10">
+                <div
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-1">
+                    <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
+                        <a href="#!">Home</a>
+                    </h3>
+                    <ul>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Hero Section</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Features</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Properties</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Testimonials</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-3">
+                    <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
+                        <a href="#!">Properties</a>
+                    </h3>
+                    <ul>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Portfolio</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Categories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-5">
+                    <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
+                        <a href="#!">Contact Us</a>
+                    </h3>
+                    <ul>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Contact Form</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Our Offices</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-2">
+                    <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
+                        <a href="#!">About</a>
+                    </h3>
+                    <ul>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Our Story</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Our Works</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">How It Works</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Our Team</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Our Clients</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-4">
+                    <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
+                        <a href="#!">Services</a>
+                    </h3>
+                    <ul>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Valuation Mastery</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Strategic Marketing</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Negotiation Wizardry</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Closing Success</a>
+                        </li>
+                        <li class="mb-2 xl:mb-4 2xl:mb-5">
+                            <a href="#!" class="hover:underline">Property Management</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- CTA Explore Properties Section -->
-    <section class="py-12.5 xl:pt-15 2xl:py-25 px-4 xl:px-20 2xl:px-40.5 m-auto bg-[url('./assets/abstract-pattern-3.svg')] bg-cover border-t border-b border-[var(--border-grey)] flex flex-wrap justify-between items-center">
-        <div class="max-w-full md:max-w-[70%]">
-            <h2 class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold leading-[150%] mb-1.5 xl:mb-3.5">Start Your Real Estate Journey Today</h2>
-            <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg"> Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance. </p>
-        </div>
-        <a href="#!" class="text-white text-center block w-full md:w-auto mt-7.5 px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.6)] transition-shadow duration-200">Explore Properties</a>
-    </section>
-</main>
-<footer>
-    <div class="py-12.5 xl:pt-15 2xl:py-25 px-4 md:px-10 xl:px-20 2xl:px-40.5 m-auto flex flex-col xl:flex-row gap-12.5 xl:gap-20">
-        <div class="w-full xl:w-81.5 2xl:w-134.5 flex flex-col gap-5 xl:gap-7.5">
-            <a href="/">
-                <img src="home/assets/Logo.png" alt="Logo Estatein" class="w-33.5 2xl:w-40">
-            </a>
-            <div class="relative w-full h-15 md:h-auto md:w-76.25 2xl:w-105.75">
-                <label for="email">
-                    <img src="home/assets/icon/email-icon.svg" alt="" class="w-6 absolute left-5 2xl:left-6 top-4.5">
-                </label>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email" class="w-full md:w-76.25 2xl:w-105.75 border border-[var(--border-grey)] rounded-xl py-4.5 pr-6 pl-14 text-white">
-                <button type="submit" class="cursor-pointer">
-                    <img src="home/assets/icon/send-icon.svg" alt="" class="w-7.5 absolute right-6 top-4.5">
-                </button>
+        <!-- Copyright and Social Links -->
+        <div class="bg-[var(--secondary-color)]">
+            <div class="max-w-[1920px] mx-auto py-5 xl:py-3 2xl:py-4 px-4 md:px-10 xl:px-20 2xl:px-40.5 m-auto flex flex-col-reverse sm:flex-row gap-5 sm:justify-between">
+
+                <div
+                        class="text-white text-sm xl:text-lg tracking-[-0.006em] flex flex-col sm:flex-row items-center gap-2.5 sm:gap-9.5">
+                    <p>@2023 Estatein. All Rights Reserved.</p>
+                    <p>Terms & Conditions</p>
+                </div>
+                <div class="flex gap-2.5 justify-center">
+                    <a href="#!"
+                       class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
+                        <img src="home/assets/icon/fb-icon.svg" alt="Estatein Fanpage" class="block w-6">
+                    </a>
+                    <a href="#!"
+                       class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
+                        <img src="home/assets/icon/linkedin-icon.svg" alt="Estatein Linkedin" class="block w-6">
+                    </a>
+                    <a href="#!"
+                       class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
+                        <img src="home/assets/icon/twitter-icon.svg" alt="Estatein X (Twitter)" class="block w-6">
+                    </a>
+                    <a href="#!"
+                       class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
+                        <img src="home/assets/icon/youtube-icon.svg" alt="Estatein Youtube" class="block w-6">
+                    </a>
+                </div>
             </div>
         </div>
-        <!-- 5 cols footer menu -->
-        <div class="columns-2 [column-rule:1px_solid_#262626] flex-1 md:flex md:flex-nowrap justify-between gap-10">
-            <div class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-1">
-                <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
-                    <a href="#!">Home</a>
-                </h3>
-                <ul>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Hero Section</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Features</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Properties</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Testimonials</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">FAQ's</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-3">
-                <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
-                    <a href="#!">Properties</a>
-                </h3>
-                <ul>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Portfolio</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Categories</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-5">
-                <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
-                    <a href="#!">Contact Us</a>
-                </h3>
-                <ul>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Contact Form</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Our Offices</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-2">
-                <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
-                    <a href="#!">About</a>
-                </h3>
-                <ul>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Our Story</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Our Works</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">How It Works</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Our Team</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Our Clients</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-4">
-                <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
-                    <a href="#!">Services</a>
-                </h3>
-                <ul>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Valuation Mastery</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Strategic Marketing</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Negotiation Wizardry</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Closing Success</a>
-                    </li>
-                    <li class="mb-2 xl:mb-4 2xl:mb-5">
-                        <a href="#!" class="hover:underline">Property Management</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright and Social Links -->
-    <div class="py-5 xl:py-3 2xl:py-4 px-4 md:px-10 xl:px-20 2xl:px-40.5 m-auto flex flex-col-reverse sm:flex-row gap-5 sm:justify-between bg-[var(--secondary-color)]">
-        <div class="text-white text-sm xl:text-lg tracking-[-0.006em] flex flex-col sm:flex-row items-center gap-2.5 sm:gap-9.5">
-            <p>@2023 Estatein. All Rights Reserved.</p>
-            <p>Terms & Conditions</p>
-        </div>
-        <div class="flex gap-2.5 justify-center">
-            <a href="#!" class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                <img src="home/assets/icon/fb-icon.svg" alt="Estatein Fanpage" class="block w-6">
-            </a>
-            <a href="#!" class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                <img src="home/assets/icon/linkedin-icon.svg" alt="Estatein Linkedin" class="block w-6">
-            </a>
-            <a href="#!" class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                <img src="home/assets/icon/twitter-icon.svg" alt="Estatein X (Twitter)" class="block w-6">
-            </a>
-            <a href="#!" class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                <img src="home/assets/icon/youtube-icon.svg" alt="Estatein Youtube" class="block w-6">
-            </a>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>
