@@ -17,7 +17,7 @@
     <!-- Top Banner -->
     <input type="checkbox" id="top-banner" hidden>
     <div class="top-banner-container pt-10 pb-5 sm:py-3.5 2xl:py-4.5 px-4 sm:px-20 2xl:px-40 flex justify-start sm:justify-center relative bg-(--secondary-color) border-b border-(--border-grey) overflow-hidden z-1 transition-[height,opacity,visibility,padding] duration-300">
-        <img src="./images/Abstract-Design.svg" alt="" class="absolute w-full h-full top-0 left-0 object-cover opacity-20 -z-5">
+        <img src="../home/assets/abstract-pattern-1.svg" alt="" class="absolute w-full h-full top-0 left-0 object-cover opacity-20 -z-5">
         <p class="text-xs sm:text-sm 2xl:text-lg text-white max-w-[90%] md:max-w-none">✨ Discover Your Dream Property with Estatein <a href="#" class="underline ml-1.5 xl:ml-2.5">Learn More</a>
         </p>
         <label for="top-banner" class="absolute top-9 sm:top-2.75 2xl:top-3.75 right-4 sm:right-8 w-6.5 2xl:w-8 h-6.5 2xl:h-8 bg-white/10 rounded-full cursor-pointer flex justify-center items-center">
@@ -25,7 +25,8 @@
         </label>
     </div>
     <!-- Main Menu -->
-    <div class="bg-(--secondary-color) py-5 sm:py-3.5 2xl:py-5 px-4 xl:px-20 2xl:px-40.5 flex items-center justify-between border-b border-[#211E2F] md:border-0">
+    <div class="bg-[var(--secondary-color)] py-5 sm:py-3.5 2xl:py-5 px-4 xl:px-20 2xl:px-40.5">
+        <div class="max-w-[1920px] mx-auto flex items-center justify-between border-b border-[#211E2F] md:border-0">
         <input type="checkbox" id="menu-toggle" class="hidden">
         <label for="menu-toggle" class="overlay opacity-0 invisible fixed inset-0 bg-black transition-[opacity,visibility] duration-300 z-100"></label>
         <!-- Desktop Main Menu -->
@@ -36,10 +37,10 @@
             <label for="menu-toggle" class="cursor-pointer absolute top-8 right-6 md:hidden">
                 <img src="./icon/Icon.svg" alt="" class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
             </label>
-            <a href="#" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-(--primary-color) border-b border-(--border-grey) md:border md:border-transparent hover:border hover:border-(--border-grey) transition-colors duration-300">Home</a>
-            <a href="#" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-(--primary-color) border-b border-(--border-grey) md:border md:border-transparent hover:border hover:border-(--border-grey) transition-colors duration-300">About Us</a>
-            <a href="#" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-(--primary-color) border-b border-(--border-grey) md:border md:border-transparent hover:border hover:border-(--border-grey) transition-colors duration-300">Properties</a>
-            <a href="#" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-(--primary-color) border-b border-(--border-grey) md:border md:border-transparent hover:border hover:border-(--border-grey) transition-colors duration-300">Service</a>
+            <a href="../index.html" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-(--primary-color) border-b border-(--border-grey) md:border md:border-transparent hover:border hover:border-(--border-grey) transition-colors duration-300">Home</a>
+            <a href="../about/about.html" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-(--primary-color) border-b border-(--border-grey) md:border md:border-transparent hover:border hover:border-(--border-grey) transition-colors duration-300">About Us</a>
+            <a href="#" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] bg-(--primary-color) border border-(--border-grey) transition-colors duration-300">Properties</a>
+            <a href="../services/services.html" class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-(--primary-color) border-b border-(--border-grey) md:border md:border-transparent hover:border hover:border-(--border-grey) transition-colors duration-300">Service</a>
             <a href="#" class="block md:hidden bg-(--accent-color) p-4 text-center text-white text-sm rounded-[10px] border border-(--border-grey) hover:bg-(--accent-color) hover:border-(--accent-color) transition-colors duration-300">Contact Us</a>
         </nav>
         <a href="#" class="hidden md:block bg-(--primary-color) py-3.5 2xl:py-4 px-5 2xl:px-6 min-w-auto 2xl:min-w-36 text-center text-white text-sm 2xl:text-lg rounded-[10px] border border-(--border-grey) hover:bg-(--accent-color) hover:border-(--accent-color) transition-colors duration-300">Contact Us</a>
@@ -48,11 +49,12 @@
             <img src="./icon/Icon-burger.svg" alt="" class="w-6">
         </label>
     </div>
+    </div>
 </header>
 
 
 <!-- Nội dung chính của trang -->
-<main class="max-w-400 mx-auto px-5 md:px-10">
+<main class="max-w-480 mx-auto px-5 md:px-10">
     <article class="flex flex-col gap-7.5">
 
         <!-- Tiêu đề và Thông tin giá của Bất động sản -->
@@ -678,8 +680,8 @@ active:translate-y-0 active:shadow-md active:scale-95">
     </section>
 
     <!-- Các liên kết Footer và Form đăng ký bản tin -->
-    <div class="max-w-400 mx-auto px-5 md:px-10">
-        <div class="flex flex-col justify-between gap-15 max-w-400 mx-auto md:flex-row">
+    <div class="max-w-480 mx-auto px-5 md:px-10">
+        <div class="flex flex-col justify-between gap-15 max-w-480 mx-auto md:flex-row">
             <!-- Cột Logo và Đăng ký Email -->
             <div class="flex flex-col gap-10">
                 <div class="flex flex-col gap-5">
