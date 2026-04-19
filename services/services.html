@@ -16,48 +16,63 @@
 
 <body class="bg-[var(--primary-color)] font-[Urbanist,sans-serif] leading-relaxed select-none">
 
-    <!-- ------------Top banner------------ -->
-    <div
-        class="select-none relative py-[18px] text-center text-white font-medium bg-[url(./access/images/banner.svg)] text-[12px] lg:text-sm xl:text-lg">
-        ✨Discover
-        Your Dream Property with Estatein
-        <a href="#!" class="underline">Learn More</a>
-    </div>
-
-    <!-- ----------------Header--------------- -->
-    <header
-        class="flex justify-between relative text-white items-center py-[20px] lg:py-[14px] xl:py-[20px] border-t border-[var(--border-color)] px-4 lg:px-6 xl:px-16 ">
-        <a href="#!" class="flex items-center z-2">
-            <img src="access/images/logo.svg" alt="Estatein logo" class="size-[28px] lg:size-[34px] xl:size-[48px]">
-            <span class="ml-2 font-semibold text-base lg:text-lg xl:text-xl">Estatein</span>
-        </a>
-        <label class="peer hidden">
-            <input type="checkbox" id="menu-toggle">
-        </label>
-        <ul
-            class="absolute z-2 top-full right-[32px] w-[300px] lg:w-fit py-4 lg:py-0 lg:p-0 opacity-0 pointer-events-none peer-has-checked:pointer-events-auto peer-has-checked:opacity-100 lg:opacity-100 lg:pointer-events-auto transition-opacity duration-300 shadow-2xl shadow-[#262626] lg:shadow-none rounded-bl-2xl bg-[var(--primary-color)] border-l border-b border-[var(--border-color)] lg:border-none text-center lg:static lg:flex items-center font-medium lg:gap-x-[24px] xl:gap-x-[30px] lg:text-sm xl:text-lg">
-            <li class="p-4 lg:p-0"><a href="#!">Home</a></li>
-            <li class="p-4 lg:p-0"><a href="#!">About Us</a></li>
-            <li class="p-4 lg:p-0"><a href="#!">Properties</a></li>
-            <li class="p-4 lg:p-0">
+    <header class="sticky top-0 z-[1000] border-0 md:border-b border-[var(--border-color)]">
+        <!-- Top Banner -->
+        <input type="checkbox" id="top-banner" hidden>
+        <div
+            class="top-banner-container pt-10 pb-5 sm:py-3.5 xl:py-4.5 px-4 sm:px-20 xl:px-40 flex justify-start sm:justify-center relative bg-[var(--second-color)] border-b border-[var(--border-color)] overflow-hidden z-[1] transition-[height,opacity,visibility,padding] duration-300">
+            <img src="../home/assets/abstract-pattern-1.svg" alt=""
+                class="absolute w-full h-full top-0 left-0 object-cover opacity-20 -z-[5]">
+            <p class="text-xs sm:text-sm xl:text-lg text-white max-w-[90%] md:max-w-none">✨ Discover Your Dream
+                Property with Estatein <a href="#!" class="underline ml-1.5 lg:ml-2.5">Learn More</a>
+            </p>
+            <label for="top-banner"
+                class="absolute top-9 sm:top-2.75 xl:top-3.75 right-4 sm:right-8 w-6.5 xl:w-8 h-6.5 xl:h-8 bg-white/10 rounded-full cursor-pointer flex justify-center items-center">
+                <img src="../home/assets/icon/close-icon.svg" alt="" class="w-2.25 sm:w-3 h-2.25 sm:h-3">
+            </label>
+        </div>
+        <!-- Main Menu -->
+        <div
+            class="bg-[var(--second-color)] py-5 sm:py-3.5 xl:py-5 px-4 lg:px-20 xl:px-40.5 flex items-center justify-between border-b border-[#211E2F] md:border-0">
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle"
+                class="overlay opacity-0 invisible fixed inset-0 bg-black/100 transition-[opacity,visibility] duration-300 z-[100]"></label>
+            <!-- Desktop Main Menu -->
+            <a href="/">
+                <img src="../home/assets/Logo.png" alt="Logo Estatein" class="h-7 lg:h-8.5 xl:h-12 min-w-fit">
+            </a>
+            <nav
+                class="fixed md:static top-0 right-0 bottom-0 min-w-[60vw] md:w-auto translate-x-full md:translate-x-0 opacity-0 md:opacity-100 invisible md:visible flex flex-col md:flex-row gap-0 md:gap-2.5 md:items-center md:justify-center bg-[var(--second-color)] md:bg-transparent pt-20 md:pt-0 px-8 md:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm xl:text-lg text-white">
+                <label for="menu-toggle" class="cursor-pointer absolute top-8 right-6 md:hidden">
+                    <img src="../home/assets/icon/close-icon.svg" alt=""
+                        class="bg-white/10 inline-block rounded-full p-1.5 xl:p-2.5">
+                </label>
                 <a href="#!"
-                    class="lg:py-[12px] lg:px-[20px] xl:py-[14px] xl:px-[24px] lg:bg-[var(--primary-color)] lg:border border-[var(--border-color)] rounded-lg">Service</a>
-            </li>
-        </ul>
-        <a href="#!"
-            class=" lg:py-[14px] lg:px-[20px] xl:py-[16px] xl:px-[24px] bg-[var(--primary-color)] border border-[var(--border-color)] rounded-lg hidden lg:block">
-            Contact Us</a>
-        <label for="menu-toggle" class="peer block lg:hidden relative z-2">
-            <img src="access/icons/menu-icon.svg" alt="menu-icon" class="py-[7px] px-[3.5px] size-[28px] mr-[16px] ">
-        </label>
-        <label for="menu-toggle"
-            class="peer fixed inset-0 z-1 bg-black/60 opacity-0 pointer-events-none peer-has-checked:pointer-events-auto peer-has-checked:opacity-100 transition-opacity duration-300"></label>
+                    class="py-5 md:py-3 md:px-5 xl:py-3.5 xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] md:border md:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">Home</a>
+                <a href="#!"
+                    class="py-5 md:py-3 md:px-5 xl:py-3.5 xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] md:border md:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">About
+                    Us</a>
+                <a href="#!"
+                    class="py-5 md:py-3 md:px-5 xl:py-3.5 xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] md:border md:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">Properties</a>
+                <a href="#!"
+                    class="py-5 md:py-3 md:px-5 xl:py-3.5 xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] md:border md:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">Service</a>
+                <a href="#!"
+                    class="block md:hidden bg-[var(--accent-color)] p-4 text-center text-white text-sm rounded-[10px] border border-[var(--border-color)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
+                    Us</a>
+            </nav>
+            <a href="#!"
+                class="hidden md:block bg-[var(--primary-color)] py-3.5 xl:py-4 px-5 xl:px-6 min-w-auto xl:min-w-36 text-center text-white text-sm xl:text-lg rounded-[10px] border border-[var(--border-color)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
+                Us</a>
+            <!-- Mobile Menu Icon -->
+            <label for="menu-toggle" class="block md:hidden">
+                <img src="../home/assets/icon/hamburger-icon.svg" alt="" class="w-6">
+            </label>
+        </div>
     </header>
-
     <main>
         <!-- ------------Hero banner------------ -->
         <section
-            class="flex flex-col justify-center space-y-4 lg:space-y-6 bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] px-4 lg:px-6 xl:px-16 h-[278px] lg:h-[315px] xl:h-[390px] border border-[var(--border-color)]">
+            class="flex flex-col justify-center space-y-4 lg:space-y-6 bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] px-4 lg:px-20 xl:px-40 h-[278px] lg:h-[315px] xl:h-[390px] border border-[var(--border-color)]">
             <h1 class="text-3xl lg:text-4xl xl:text-5xl text-white font-semibold">Elevate Your Real Estate
                 Experience</h1>
             <p class="text-sm lg:text-base xl:text-lg font-medium text-[var(--text-color)] lg:max-w-5xl xl:max-w-7xl">
@@ -76,7 +91,7 @@
                 <h3 class="text-white mt-[20px] text-sm lg:text-base xl:text-xl">Find Your Dream Home</h3>
                 <a href="#!">
                     <img src="access/icons/arrow-icon.svg" alt="detail"
-                         class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
+                        class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
                 </a>
             </article>
 
@@ -87,7 +102,7 @@
                 <h3 class="text-white mt-[20px] text-sm lg:text-base xl:text-xl">Unlock Property Value</h3>
                 <a href="#!">
                     <img src="access/icons/arrow-icon.svg" alt="detail"
-                         class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
+                        class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
                 </a>
             </article>
 
@@ -95,12 +110,12 @@
             <article
                 class="flex flex-col items-center border border-[var(--border-color)] rounded-lg py-[40px] relative bg-[var(--second-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                 <img src="access/icons/town-icon.svg" alt="management"
-                     class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                    class="size-[48px] lg:size-[60px] xl:size-[82px]">
                 <h3 class="text-white mt-[20px] text-sm lg:text-base xl:text-xl text-center">Effortless Property
                     Management</h3>
                 <a href="#!">
                     <img src="access/icons/arrow-icon.svg" alt="detail"
-                         class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
+                        class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
                 </a>
             </article>
 
@@ -112,13 +127,13 @@
                     Informed&nbsp;Decisions</h3>
                 <a href="#!">
                     <img src="access/icons/arrow-icon.svg" alt="detail"
-                         class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
+                        class="absolute right-[20px] top-[20px] size-[16.25px] xl:size-[21.25px] box-content p-[5px] xl:p-[6.38px] hover:scale-105">
                 </a>
             </article>
         </section>
 
         <!-- ------------Content---------------- -->
-        <div class="px-4 lg:px-6 xl:px-16 ">
+        <div class="px-4 lg:px-20 xl:px-40 ">
 
             <!-- ------------Content 1------------ -->
             <section class="pt-[80px] lg:pt-[120px] xl:pt-[150px]">
@@ -131,7 +146,7 @@
                         Selling
                         your property should be a rewarding experience, and at Estatein, we make sure it is.</p>
                     <img src="access/icons/star-icon.svg" alt="star"
-                         class="absolute left-[-15px] top-[-35px] xl:w-[68px] xl:h-[30px]">
+                        class="absolute left-[-15px] top-[-35px] xl:w-[68px] xl:h-[30px]">
                 </div>
 
                 <!-- ------------Card content------------ -->
@@ -142,7 +157,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/valuation-icon.svg" alt="valuation"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Valuation Mastery</h3>
                         </div>
                         <p class="text-[var(--text-color)] font-medium text-sm lg:text-base xl:text-lg">Discover the
@@ -154,7 +169,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/chart-icon.svg" alt="chart"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Strategic
                                 Marketing</h3>
                         </div>
@@ -166,7 +181,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/coin-icon.svg" alt="coin"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Negotiation
                                 Wizardry</h3>
                         </div>
@@ -179,7 +194,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg  hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/closing-icon.svg" alt="closing"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Closing Success</h3>
                         </div>
                         <p class="text-[var(--text-color)] font-medium text-sm lg:text-base xl:text-lg">A successful
@@ -218,7 +233,7 @@
                         out of property ownership, offering comprehensive solutions tailored to your needs. Explore the
                         categories below to see how we can make property management effortless for you</p>
                     <img src="access/icons/star-icon.svg" alt="star"
-                         class="absolute left-[-15px] top-[-35px] xl:w-[68px] xl:h-[30px]">
+                        class="absolute left-[-15px] top-[-35px] xl:w-[68px] xl:h-[30px]">
                 </div>
                 <!-- ------------Card Content------------ -->
                 <div
@@ -228,7 +243,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/tenant-icon.svg" alt="tenant"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Tenant Harmony</h3>
                         </div>
                         <p class="text-[var(--text-color)] font-medium text-sm lg:text-base xl:text-lg">Our Tenant
@@ -239,7 +254,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/maintenance.svg" alt="maintenance"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Maintenance Ease</h3>
                         </div>
                         <p class="text-[var(--text-color)] font-medium text-sm lg:text-base xl:text-lg">Say goodbye to
@@ -250,7 +265,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/financial-icon.svg" alt="financial"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Financial Peace of
                                 Mind</h3>
                         </div>
@@ -264,7 +279,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/sun-icon.svg" alt="sun"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Legal Guardian</h3>
                         </div>
                         <p class="text-[var(--text-color)] font-medium text-sm lg:text-base xl:text-lg">Stay compliant
@@ -303,7 +318,7 @@
                             Service
                             empowers you to make smart investments and informed decisions.</p>
                         <img src="access/icons/star-icon.svg" alt="star"
-                             class="absolute left-[-15px] top-[-35px] xl:w-[68px] xl:h-[30px]">
+                            class="absolute left-[-15px] top-[-35px] xl:w-[68px] xl:h-[30px]">
                     </div>
                     <article
                         class="bg-[var(--second-color)] bg-[url(./access/images/background-card.svg)] p-[50px] rounded-lg ">
@@ -330,7 +345,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/valuation-icon.svg" alt="valuation"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Market Insight</h3>
                         </div>
                         <p class="text-[var(--text-color)] font-medium text-sm lg:text-base xl:text-lg">Stay ahead of
@@ -343,7 +358,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/roi-icon.svg" alt="roi"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">ROI Assessment</h3>
                         </div>
                         <p class="text-[var(--text-color)] font-medium text-sm lg:text-base xl:text-lg">Make investment
@@ -356,7 +371,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/custom-icon.svg" alt="custom"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Customized
                                 Strategies</h3>
                         </div>
@@ -372,7 +387,7 @@
                         class="border border-[var(--border-color)] p-[24px] lg:p-[40px] xl:p-[50px] rounded-lg bg-[var(--primary-color)] hover:scale-105 hover:shadow-lg shadow-[#262626] transition">
                         <div class="flex gap-x-[20px] items-center mb-[16px] lg:mb-[20px] xl:mb-[30px]">
                             <img src="access/icons/sun-icon.svg" alt="sun"
-                                 class="size-[48px] lg:size-[60px] xl:size-[82px]">
+                                class="size-[48px] lg:size-[60px] xl:size-[82px]">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-semibold text-white">Diversification
                                 Mastery</h3>
                         </div>
@@ -385,7 +400,7 @@
             </section>
         </div>
         <!-- Banner CTA-->
-        <section class="flex flex-col lg:flex-row justify-center lg:justify-between lg:items-center px-4 lg:px-6 xl:px-16  mt-20 lg:mt-32 xl:mt-36 border-y border-[var(--border-color)] py-6 lg:py-[60px] xl:py-[100px]
+        <section class="flex flex-col lg:flex-row justify-center lg:justify-between lg:items-center px-4 lg:px-20 xl:px-40  mt-20 lg:mt-32 xl:mt-36 border-y border-[var(--border-color)] py-6 lg:py-[60px] xl:py-[100px]
     bg-[url('./access/images/left.svg'),url('./access/images/right.svg')]
     bg-no-repeat
     bg-[position:left,right]
@@ -416,12 +431,12 @@
 
     <!-- -----------footer----------- -->
     <footer>
-        <div class="flex flex-col lg:flex-row px-4 lg:px-6 xl:px-16 py-12 lg:py-20 xl:py-24">
+        <div class="flex flex-col lg:flex-row px-4 lg:px-20 xl:px-40 py-12 lg:py-20 xl:py-24">
             <!-- left -->
             <div class="flex flex-col gap-y-5 lg:gap-y-6 xl:gap-y-7">
                 <a href="#!" class="flex items-center">
                     <img src="access/images/logo.svg" alt="Estatein logo"
-                         class="size-[28px] lg:size-[34px] xl:size-[48px]">
+                        class="size-[28px] lg:size-[34px] xl:size-[48px]">
                     <span class="ml-2 font-semibold text-base lg:text-lg xl:text-xl text-white">Estatein</span>
                 </a>
                 <label for="email"
@@ -429,10 +444,10 @@
                     <input type="email" id="email" placeholder="Enter Your Email"
                         class="text-white text-sm xl:text-lg font-medium border-none outline-none">
                     <img src="access/icons/email-icon.svg" alt="email"
-                         class="size-4 absolute top-1/2 -translate-y-1/2 left-4">
+                        class="size-4 absolute top-1/2 -translate-y-1/2 left-4">
                     <button type="submit" class="cursor-pointer">
                         <img src="access/icons/send-icon.svg" alt="send email"
-                             class="size-6 absolute top-1/2 -translate-y-1/2 right-4 transition-transform duration-300 hover:scale-110">
+                            class="size-6 absolute top-1/2 -translate-y-1/2 right-4 transition-transform duration-300 hover:scale-110">
                     </button>
 
                 </label>
@@ -485,7 +500,7 @@
         </div>
         <!-- Copyright Bar -->
         <div
-            class="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-6 xl:px-16 py-6 lg:py-4 bg-[var(--second-color)]">
+            class="flex flex-col lg:flex-row items-center justify-between px-4 lg:px-20 xl:px-40 py-6 lg:py-4 bg-[var(--second-color)]">
             <div
                 class="flex  flex-col lg:flex-row gap-x-9 items-center text-sm xl:text-lg text-white order-2 lg:order-1">
                 <span class="mb-2 lg:mb-0">@2023 Estatein. All Rights Reserved.</span>

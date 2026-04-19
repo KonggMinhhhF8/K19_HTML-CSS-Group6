@@ -3,4 +3,27 @@
     --second-color:#1A1A1A;
     --text-color:#999999;
     --border-color:#262626;
+    --accent-color: #703BF7;
+}
+
+/* Top Banner Closing */
+#top-banner:checked ~ .top-banner-container {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Mobile Menu Toggle */
+@media screen and (max-width: 1280px) {
+    #menu-toggle:checked ~ nav {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-60vw);
+    }
+    #menu-toggle:checked ~ .overlay {
+        opacity: 0.8;
+        visibility: visible;
+    }
 }
