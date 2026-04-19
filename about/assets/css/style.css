@@ -34,11 +34,35 @@ ul {
    Announcement
    ========================================================================== */
 .announcement {
+    position: relative;
     background-color: var(--gray-10);
+    border-bottom: 1px solid var(--gray-15);
+    overflow: hidden;
+}
+
+/* pattern phía sau */
+.announcement::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image: url('../images/background/bg-header-desktop.svg');
     background-position: top;
     background-repeat: no-repeat;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* đảm bảo content nằm trên */
+.announcement__content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 63px;
 }
 
 .announcement__toggle {
@@ -47,15 +71,6 @@ ul {
 
 .announcement__toggle:checked~.announcement__content {
     display: none;
-}
-
-.announcement__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 63px;
 }
 
 .announcement__text {
@@ -212,6 +227,10 @@ ul {
     display: none;
 }
 
+.header__menu-close {
+    display: none;
+}
+
 /* Hamburger button — ẩn trên desktop */
 .header__burger {
     display: none;
@@ -361,18 +380,34 @@ ul {
 }
 
 .journey__image-wrapper {
+    position: relative;
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-color: var(--gray-10);
     border: 1px solid var(--gray-15);
     border-radius: 12px;
+    overflow: hidden;
+    background-color: #141414;
+}
+
+/* layer ảnh */
+.journey__image-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image: url('../images/background/abstract-lines-placeholder.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+/* content nằm trên cùng */
+.journey__image-wrapper>* {
+    position: relative;
+    z-index: 2;
 }
 
 .journey__image {
@@ -383,7 +418,7 @@ ul {
 }
 
 /* ==========================================================================
-   6. Section: Our Values — Giá trị cốt lõi
+   6. Section: Our Values
    ========================================================================== */
 .values {
     padding-bottom: 150px;
