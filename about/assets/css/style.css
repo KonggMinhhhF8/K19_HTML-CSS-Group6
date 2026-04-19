@@ -34,11 +34,35 @@ ul {
    Announcement
    ========================================================================== */
 .announcement {
+    position: relative;
     background-color: var(--gray-10);
+    border-bottom: 1px solid var(--gray-15);
+    overflow: hidden;
+}
+
+/* pattern phía sau */
+.announcement::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image: url('../images/background/bg-header-desktop.svg');
     background-position: top;
     background-repeat: no-repeat;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* đảm bảo content nằm trên */
+.announcement__content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 63px;
 }
 
 .announcement__toggle {
@@ -47,15 +71,6 @@ ul {
 
 .announcement__toggle:checked~.announcement__content {
     display: none;
-}
-
-.announcement__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 63px;
 }
 
 .announcement__text {
