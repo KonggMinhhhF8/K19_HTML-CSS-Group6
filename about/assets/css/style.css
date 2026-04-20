@@ -121,12 +121,15 @@ ul {
 /* ==========================================================================
    3. Header — Thanh điều hướng cố định trên cùng (sticky)
    ========================================================================== */
-.header {
-    width: 100%;
+.header-wrapper {
     position: sticky;
-    /* Dính vào đầu trang khi scroll */
     top: 0;
     z-index: 1000;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
     /* Đảm bảo header nổi trên mọi phần tử */
     background-color: var(--gray-10);
     border-bottom: 1px solid var(--gray-15);
@@ -209,10 +212,7 @@ ul {
     transition: all 0.3s ease;
 }
 
-.nav-list__link:hover {
-    opacity: 0.85;
-}
-
+.nav-list__link:hover,
 .nav-list__link--active {
     background-color: var(--gray-08);
     border-color: var(--gray-15);
