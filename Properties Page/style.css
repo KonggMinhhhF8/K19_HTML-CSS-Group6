@@ -513,11 +513,12 @@ img {
     align-items: center;
     justify-content: space-between;
     height: 52px;
-    padding: 12px 16px;
     background: var(--color-bg-dark);
     border: 1px solid var(--color-border);
     border-radius: 8px;
     cursor: pointer;
+    position: relative;
+    padding-right: 50px;
     transition: 0.3s;
     gap: 12px;
 }
@@ -553,12 +554,16 @@ img {
     color: var(--color-primary);
 }
 
-.custom-radio:checked + .radio-info {
+.custom-radio:checked ~ .radio-info {
     color: var(--color-primary);
 }
 
 .custom-radio {
-    flex-shrink: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
     appearance: none;
     width: 20px;
     height: 20px;
@@ -569,7 +574,6 @@ img {
     place-content: center;
     cursor: pointer;
     transition: 0.25s ease;
-    margin-left: auto;
 }
 
 .custom-radio::before {
@@ -582,7 +586,6 @@ img {
     transition: 0.25s ease;
 }
 
-/* Hiệu ứng khi Radio được chọn */
 .custom-radio:checked {
     border-color: var(--color-primary);
 }
@@ -606,6 +609,98 @@ img {
     font-size: 14px;
 }
 
+/* Preferred Contact Method - New Design */
+.preferred-contact {
+    display: flex;
+    gap: 12px;
+    background: var(--color-surface);
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+}
+
+.contact-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-bg-dark);
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contact-option:hover {
+    border-color: #444;
+}
+
+.contact-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.option-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.option-inner img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0.8);
+    transition: all 0.3s ease;
+}
+
+.option-inner span {
+    font-size: 14px;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.selector-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #555;
+    transition: all 0.3s ease;
+}
+
+/* Selected state */
+.contact-option:has(input[type="radio"]:checked) {
+    border-color: var(--color-primary);
+    background: rgba(112, 59, 247, 0.08);
+}
+
+.contact-option:has(input[type="radio"]:checked) .option-inner img {
+    filter: brightness(1);
+    color: var(--color-primary);
+}
+
+.contact-option:has(input[type="radio"]:checked) .selector-dot {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(112, 59, 247, 0.2);
+}
+
+/* Email dot is lighter when not selected */
+.contact-option[data-type="email"] .selector-dot {
+    border-color: #666;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .preferred-contact {
+        flex-direction: column;
+    }
+}
 
 /* 7. FOOTER */
 .footer-cta {

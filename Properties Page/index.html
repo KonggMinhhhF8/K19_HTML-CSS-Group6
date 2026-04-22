@@ -245,21 +245,23 @@
 
                 <div class="form-group span-2">
                     <label>Preferred Contact Method</label>
-                    <div class="radio-group">
-                        <label class="radio-card">
-                            <div class="radio-info">
-                                <img src="icons/Phone-Icon.svg" alt="">
+                    <div class="preferred-contact">
+                        <label class="contact-option" data-type="phone">
+                            <input type="radio" name="contact_method" value="phone" checked>
+                            <div class="option-inner">
+                                <img src="icons/Phone-Icon.svg" alt="Phone">
                                 <span>Enter Your Number</span>
                             </div>
-                            <input type="radio" name="contact_method" class="custom-radio" checked>
+                            <div class="selector-dot"></div>
                         </label>
 
-                        <label class="radio-card">
-                            <div class="radio-info">
-                                <img src="icons/Mail-Icon.svg" alt="">
+                        <label class="contact-option" data-type="email">
+                            <input type="radio" name="contact_method" value="email">
+                            <div class="option-inner">
+                                <img src="icons/Mail-Icon.svg" alt="Email">
                                 <span>Enter Your Email</span>
                             </div>
-                            <input type="radio" name="contact_method" class="custom-radio">
+                            <div class="selector-dot"></div>
                         </label>
                     </div>
                 </div>
