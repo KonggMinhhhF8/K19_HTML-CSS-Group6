@@ -4,6 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../home/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../home/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../home/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../home/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../home/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../home/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../home/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../home/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../home/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../home/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../home/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../home/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../home/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../home/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,65 +33,68 @@
 
 </head>
 
-<body class="bg-[var(--primary-color)] font-[Urbanist,sans-serif] leading-relaxed select-none">
+<body class="bg-[var(--primary-color)] font-medium font-[Urbanist,sans-serif] leading-relaxed select-none">
 
-    <header class="sticky top-0 z-[1000] border-0 lg:border-b border-[var(--border-color)]">
+    <header class="sticky top-0 z-[1000] border-0 md:border-b border-[var(--border-color)]">
         <!-- Top Banner -->
         <input type="checkbox" id="top-banner" hidden>
         <div
-            class="top-banner-container pt-10 pb-5 sm:py-3.5 xl:py-4.5 px-4 sm:px-20 xl:px-40 flex justify-start sm:justify-center relative bg-[var(--second-color)] border-b border-[var(--border-color)] overflow-hidden z-[1] transition-[height,opacity,visibility,padding] duration-300">
+            class="top-banner-container pt-10 pb-5 sm:py-3.5 2xl:py-4.5 px-4 sm:px-20 2xl:px-40 flex justify-start sm:justify-center relative bg-[var(--second-color)] border-b border-[var(--border-color)] overflow-hidden z-[1] transition-[height,opacity,visibility,padding] duration-300">
             <img src="../home/assets/abstract-pattern-1.svg" alt=""
                 class="absolute w-full h-full top-0 left-0 object-cover opacity-20 -z-[5]">
-            <p class="text-xs sm:text-sm xl:text-lg text-white max-w-[90%] lg:max-w-none">✨ Discover Your Dream
-                Property with Estatein <a href="#!" class="underline ml-1.5 lg:ml-2.5">Learn More</a>
+            <p class="text-xs sm:text-sm 2xl:text-lg text-white max-w-[90%] md:max-w-none">✨ Discover Your Dream
+                Property with Estatein <a href="#!" class="underline ml-1.5 xl:ml-2.5">Learn More</a>
             </p>
             <label for="top-banner"
-                class="absolute top-9 sm:top-2.75 xl:top-3.75 right-4 sm:right-8 w-6.5 xl:w-8 h-6.5 xl:h-8 bg-white/10 rounded-full cursor-pointer flex justify-center items-center">
+                class="absolute top-9 sm:top-2.75 2xl:top-3.75 right-4 sm:right-8 w-6.5 2xl:w-8 h-6.5 2xl:h-8 bg-white/10 rounded-full cursor-pointer flex justify-center items-center">
                 <img src="../home/assets/icon/close-icon.svg" alt="" class="w-2.25 sm:w-3 h-2.25 sm:h-3">
             </label>
         </div>
         <!-- Main Menu -->
         <div
-            class="bg-[var(--second-color)] py-5 sm:py-3.5 xl:py-5 px-4 md:px-10 lg:px-20 2xl:px-40 flex items-center justify-between border-b border-[#211E2F] lg:border-0">
-            <input type="checkbox" id="menu-toggle" class="hidden">
-            <label for="menu-toggle"
-                class="overlay opacity-0 invisible fixed inset-0 bg-black/100 transition-[opacity,visibility] duration-300 z-[100]"></label>
-            <!-- Desktop Main Menu -->
-            <a href="../index.html">
-                <img src="../home/assets/Logo.png" alt="Logo Estatein" class="h-7 lg:h-8.5 xl:h-12 min-w-fit">
-            </a>
-            <nav
-                class="fixed lg:static top-0 right-0 bottom-0 min-w-[60vw] lg:w-auto translate-x-full lg:translate-x-0 opacity-0 lg:opacity-100 invisible lg:visible flex flex-col lg:flex-row gap-0 lg:gap-2.5 lg:items-center lg:justify-center bg-[var(--second-color)] lg:bg-transparent pt-20 lg:pt-0 px-8 lg:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm xl:text-lg text-white">
-                <label for="menu-toggle" class="cursor-pointer absolute top-8 right-6 lg:hidden">
-                    <img src="../home/assets/icon/close-icon.svg" alt=""
-                        class="bg-white/10 inline-block rounded-full p-1.5 xl:p-2.5">
-                </label>
-                <a href="../index.html"
-                    class="py-5 lg:py-3 lg:px-5 xl:py-3.5 xl:px-6 rounded-none lg:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] lg:border lg:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">Home</a>
-                <a href="../about/about.html"
-                    class="py-5 lg:py-3 lg:px-5 xl:py-3.5 xl:px-6 rounded-none lg:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] lg:border lg:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">About
-                    Us</a>
-                <a href="../properties/propety-details.html"
-                    class="py-5 lg:py-3 lg:px-5 xl:py-3.5 xl:px-6 rounded-none lg:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] lg:border lg:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">Properties</a>
-                <a href="../services/services.html"
-                    class="py-5 lg:py-3 lg:px-5 xl:py-3.5 xl:px-6 rounded-none lg:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] lg:border lg:border-transparent hover:border hover:border-[var(--border-color)] transition-colors duration-300">Service</a>
+            class="bg-[var(--second-color)] py-5 sm:py-3.5 2xl:py-5 px-4 xl:px-20 2xl:px-40.5 border-b border-[#211E2F] md:border-0">
+            <div class="max-w-[1920px] m-auto flex items-center justify-between">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle"
+                    class="overlay opacity-0 invisible fixed inset-0 bg-black/100 transition-[opacity,visibility] duration-300 z-[100]"></label>
+                <!-- Desktop Main Menu -->
+                <a href="/">
+                    <img src="../home/assets/Logo.png" alt="Logo Estatein" class="h-7 xl:h-8.5 2xl:h-12">
+                </a>
+                <nav
+                    class="fixed md:static top-0 right-0 bottom-0 min-w-[60vw] md:min-w-auto translate-x-full md:translate-x-0 opacity-0 md:opacity-100 invisible md:visible flex flex-col md:flex-row gap-0 md:gap-2.5 md:items-center md:justify-center bg-[var(--second-color)] md:bg-transparent pt-20 md:pt-0 px-8 md:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm 2xl:text-lg text-white text-center">
+                    <label for="menu-toggle" class="cursor-pointer absolute top-8 right-6 md:hidden">
+                        <img src="../home/assets/icon/close-icon.svg" alt=""
+                            class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
+                    </label>
+                    <a href="#"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] md:border md:border-transparent hover:border-[var(--border-color)] transition-colors duration-300">Home</a>
+                    <a href="./about/about.html"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] md:border md:border-transparent hover:border-[var(--border-color)] transition-colors duration-300">About
+                        Us</a>
+                    <a href="#"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-color)] md:border md:border-transparent hover:border-[var(--border-color)] transition-colors duration-300">Properties</a>
+                    <a href="./services/services.html"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] bg-[var(--primary-color)] border-0 md:border border-[var(--border-color)] transition-colors duration-300">Service</a>
+                    <a href="#!"
+                        class="block md:hidden bg-[var(--accent-color)] mt-8 p-4 text-center text-white text-sm rounded-[10px] border border-[var(--border-color)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
+                        Us</a>
+                </nav>
                 <a href="#!"
-                    class="block lg:hidden bg-[var(--accent-color)] p-4 text-center text-white text-sm rounded-[10px] border border-[var(--border-color)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
+                    class="hidden md:block bg-[var(--primary-color)] py-3.5 2xl:py-4 px-5 2xl:px-6 min-w-auto 2xl:min-w-36 text-center text-white text-sm 2xl:text-lg rounded-[10px] border border-[var(--border-color)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
                     Us</a>
-            </nav>
-            <a href="#!"
-                class="hidden lg:block bg-[var(--primary-color)] py-3.5 xl:py-4 px-5 xl:px-6 min-w-auto xl:min-w-36 text-center text-white text-sm xl:text-lg rounded-[10px] border border-[var(--border-color)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
-                Us</a>
-            <!-- Mobile Menu Icon -->
-            <label for="menu-toggle" class="block lg:hidden">
-                <img src="../home/assets/icon/hamburger-icon.svg" alt="" class="w-6">
-            </label>
+                <!-- Mobile Menu Icon -->
+                <label for="menu-toggle" class="block md:hidden">
+                    <img src="../home/assets/icon/hamburger-icon.svg" alt="" class="w-6">
+                </label>
+            </div>
         </div>
     </header>
+
     <main class="max-w-[1920px] mx-auto">
         <!-- ------------Hero banner------------ -->
         <section
-            class="flex flex-col justify-center space-y-4 lg:space-y-6 bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] px-4 md:px-10 lg:px-20 2xl:px-40 h-[278px] lg:h-[315px] xl:h-[390px] border border-[var(--border-color)]">
+            class="flex flex-col justify-center space-y-4 lg:space-y-6 bg-[linear-gradient(95.93deg,#262626_-26.82%,rgba(38,38,38,0)_40.46%)] px-4 md:px-10 xl:px-20 2xl:px-40 h-[278px] lg:h-[315px] xl:h-[390px] border border-[var(--border-color)]">
             <h1 class="text-3xl lg:text-4xl xl:text-5xl text-white font-semibold">Elevate Your Real Estate
                 Experience</h1>
             <p class="text-sm lg:text-base xl:text-lg font-medium text-[var(--text-color)] lg:max-w-5xl xl:max-w-7xl">
@@ -133,7 +155,7 @@
         </section>
 
         <!-- ------------Content---------------- -->
-        <div class="px-4 md:px-10 lg:px-20 2xl:px-40 ">
+        <div class="px-4 md:px-10 xl:px-20 2xl:px-40 ">
 
             <!-- ------------Content 1------------ -->
             <section class="pt-[80px] lg:pt-[120px] xl:pt-[150px]">
@@ -400,7 +422,7 @@
             </section>
         </div>
         <!-- Banner CTA-->
-        <section class="flex flex-col lg:flex-row justify-center lg:justify-between lg:items-center px-4 md:px-10 lg:px-20 2xl:px-40  mt-20 lg:mt-32 xl:mt-36 border-y border-[var(--border-color)] py-6 lg:py-[60px] xl:py-[100px]
+        <section class="flex flex-col lg:flex-row justify-center lg:justify-between lg:items-center px-4 md:px-10 xl:px-20 2xl:px-40  mt-20 lg:mt-32 xl:mt-36 border-y border-[var(--border-color)] py-6 lg:py-[60px] xl:py-[100px]
     bg-[url('./access/images/left.svg'),url('./access/images/right.svg')]
     bg-no-repeat
     bg-[position:left,right]
@@ -430,154 +452,95 @@
     </main>
 
     <!-- -----------footer----------- -->
-    <footer class="border-t border-[var(--border-color)]">
-        <div
-            class="max-w-[1920px] mx-auto py-12.5 xl:pt-15 2xl:py-25 px-4 md:px-10 lg:px-20 2xl:px-40 m-auto flex flex-col xl:flex-row gap-12.5 xl:gap-20">
-            <div class="w-full xl:w-81.5 2xl:w-134.5 flex flex-col gap-5 xl:gap-7.5">
-                <a href="/">
-                    <img src="../home/assets/Logo.png" alt="Logo Estatein" class="w-33.5 2xl:w-40">
+    <footer>
+        <div class="flex flex-col lg:flex-row px-4 md:px-10 xl:px-20 2xl:px-40 py-12 lg:py-20 xl:py-24">
+            <!-- left -->
+            <div class="flex flex-col gap-y-5 lg:gap-y-6 xl:gap-y-7">
+                <a href="#!" class="flex items-center">
+                    <img src="access/images/logo.svg" alt="Estatein logo"
+                        class="size-[28px] lg:size-[34px] xl:size-[48px]">
+                    <span class="ml-2 font-semibold text-base lg:text-lg xl:text-xl text-white">Estatein</span>
                 </a>
-                <div class="relative w-full h-15 md:h-auto md:w-76.25 2xl:w-105.75">
-                    <label for="email">
-                        <img src="../home/assets/icon/email-icon.svg" alt=""
-                            class="w-6 absolute left-5 2xl:left-6 top-4.5">
-                    </label>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email"
-                        class="w-full md:w-76.25 2xl:w-105.75 border border-[var(--border-color)] rounded-xl py-4.5 pr-6 pl-14 text-white">
+                <label for="email"
+                    class="flex border w-full border-[var(--border-color)] items-center px-12 py-4 lg:w-fit relative rounded-lg">
+                    <input type="email" id="email" placeholder="Enter Your Email"
+                        class="text-white text-sm xl:text-lg font-medium border-none outline-none">
+                    <img src="access/icons/email-icon.svg" alt="email"
+                        class="size-4 absolute top-1/2 -translate-y-1/2 left-4">
                     <button type="submit" class="cursor-pointer">
-                        <img src="../home/assets/icon/send-icon.svg" alt="" class="w-7.5 absolute right-6 top-4.5">
+                        <img src="access/icons/send-icon.svg" alt="send email"
+                            class="size-6 absolute top-1/2 -translate-y-1/2 right-4 transition-transform duration-300 hover:scale-110">
                     </button>
-                </div>
-            </div>
-            <!-- 5 cols footer menu -->
-            <div class="columns-2 [column-rule:1px_solid_#262626] flex-1 md:flex md:flex-nowrap justify-between gap-10">
-                <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-color)] md:order-1">
-                    <h3 class="text-[var(--text-color)] mb-4 xl:mb-6 2xl:mb-7.5">
-                        <a href="#!">Home</a>
-                    </h3>
-                    <ul>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Hero Section</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Features</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Properties</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Testimonials</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">FAQ's</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-color)] md:order-3">
-                    <h3 class="text-[var(--text-color)] mb-4 xl:mb-6 2xl:mb-7.5">
-                        <a href="#!">Properties</a>
-                    </h3>
-                    <ul>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Portfolio</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Categories</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-color)] md:order-5">
-                    <h3 class="text-[var(--text-color)] mb-4 xl:mb-6 2xl:mb-7.5">
-                        <a href="#!">Contact Us</a>
-                    </h3>
-                    <ul>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Contact Form</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Offices</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-color)] md:order-2">
-                    <h3 class="text-[var(--text-color)] mb-4 xl:mb-6 2xl:mb-7.5">
-                        <a href="#!">About</a>
-                    </h3>
-                    <ul>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Story</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Works</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">How It Works</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Team</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Clients</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-color)] md:order-4">
-                    <h3 class="text-[var(--text-color)] mb-4 xl:mb-6 2xl:mb-7.5">
-                        <a href="#!">Services</a>
-                    </h3>
-                    <ul>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Valuation Mastery</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Strategic Marketing</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Negotiation Wizardry</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Closing Success</a>
-                        </li>
-                        <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Property Management</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright and Social Links -->
-        <div class="bg-[var(--second-color)]">
-            <div
-                class="max-w-[1920px] mx-auto py-5 xl:py-3 2xl:py-4 px-4 md:px-10 lg:px-20 2xl:px-40.5 m-auto flex flex-col-reverse sm:flex-row gap-5 sm:justify-between">
 
-                <div
-                    class="text-white text-sm xl:text-lg tracking-[-0.006em] flex flex-col sm:flex-row items-center gap-2.5 sm:gap-9.5">
-                    <p>@2023 Estatein. All Rights Reserved.</p>
-                    <p>Terms & Conditions</p>
-                </div>
-                <div class="flex gap-2.5 justify-center">
-                    <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="../home/assets/icon/fb-icon.svg" alt="Estatein Fanpage" class="block w-6">
-                    </a>
-                    <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="../home/assets/icon/linkedin-icon.svg" alt="Estatein Linkedin" class="block w-6">
-                    </a>
-                    <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="../home/assets/icon/twitter-icon.svg" alt="Estatein X (Twitter)" class="block w-6">
-                    </a>
-                    <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="../home/assets/icon/youtube-icon.svg" alt="Estatein Youtube" class="block w-6">
-                    </a>
-                </div>
+                </label>
+
+            </div>
+            <!-- right -->
+            <div
+                class="grid grid-cols-2 lg:grid-cols-5 lg:ml-32 gap-y-12 gap-x-10 lg:gap-x-12 text-white text-sm lg:text-base xl:text-lg mt-12 lg:mt-0">
+                <ul class="space-y-2 p-5 lg:p-0 border-b lg:border-none border-[var(--border-color)]">
+                    <li class="text-[var(--text-color)] text-base lg:text-lg xl:text-xl">Home</li>
+                    <li><a href="#!">Hero Section</a></li>
+                    <li><a href="#!">Features</a></li>
+                    <li><a href="#!">Properties</a></li>
+                    <li><a href="#!">Testimonials</a></li>
+                    <li><a href="#!">FAQ’s</a></li>
+                </ul>
+
+                <ul class="space-y-2 p-5 lg:p-0 border-l border-b lg:border-none border-[var(--border-color)]">
+                    <li class="text-[var(--text-color)]">About Us</li>
+                    <li><a href="#!">Our Story</a></li>
+                    <li><a href="#!">Our Works</a></li>
+                    <li><a href="#!">How It Works</a></li>
+                    <li><a href="#!">Our Team</a></li>
+                    <li><a href="#!">Our Clients</a></li>
+                </ul>
+
+                <ul class="space-y-2 p-5 lg:p-0 border-b lg:border-none border-[var(--border-color)]">
+                    <li class="text-[var(--text-color)]">Properties</li>
+                    <li><a href="#!">Portfolio</a></li>
+                    <li><a href="#!">Categories</a></li>
+                </ul>
+
+                <ul
+                    class="space-y-2 row-span-2 border-l border-b lg:border-none border-[var(--border-color)] p-5 lg:p-0">
+                    <li class="text-[var(--text-color)]">Services</li>
+                    <li><a href="#!">Valuation Mastery</a></li>
+                    <li><a href="#!">Strategic Marketing</a></li>
+                    <li><a href="#!">Negotiation Wizardry</a></li>
+                    <li><a href="#!">Closing Success</a></li>
+                    <li><a href="#!">Property Management</a></li>
+                </ul>
+
+                <ul class="space-y-2 p-5 lg:p-0 border-b lg:border-none border-[var(--border-color)]">
+                    <li class="text-[var(--text-color)]">Contact Us</li>
+                    <li><a href="#!">Contact Form</a></li>
+                    <li><a href="#!">Our Offices</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Copyright Bar -->
+        <div
+            class="flex flex-col lg:flex-row items-center justify-between px-4 md:px-10 xl:px-20 2xl:px-40 py-6 lg:py-4 bg-[var(--second-color)]">
+            <div
+                class="flex  flex-col lg:flex-row gap-x-9 items-center text-sm xl:text-lg text-white order-2 lg:order-1">
+                <span class="mb-2 lg:mb-0">@2023 Estatein. All Rights Reserved.</span>
+                <span>Terms & Conditions</span>
+            </div>
+            <div class="flex gap-x-3 order-1 lg:order-2 mb-5 lg:mb-0">
+                <a href="#!">
+                    <img src="access/icons/facebook-icon.svg" alt="facebook" class="size-14 lg:size-10 xl:size-12">
+                </a>
+                <a href="#!">
+                    <img src="access/icons/in-icon.svg" alt="in" class="size-14 lg:size-10 xl:size-12">
+                </a>
+                <a href="#!">
+                    <img src="access/icons/twitter-icon.svg" alt="twitter" class="size-14 lg:size-10 xl:size-12">
+                </a>
+                <a href="#!">
+                    <img src="access/icons/youtube-icon.svg" alt="youtube" class="size-14 lg:size-10 xl:size-12">
+                </a>
             </div>
         </div>
     </footer>

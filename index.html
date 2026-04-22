@@ -52,32 +52,33 @@
             </label>
         </div>
         <!-- Main Menu -->
-        <div class="bg-[var(--secondary-color)] py-5 sm:py-3.5 2xl:py-5 px-4 xl:px-20 2xl:px-40.5">
-            <div class="max-w-[1920px] m-auto flex items-center justify-between border-b border-[#211E2F] md:border-0">
+        <div
+            class="bg-[var(--secondary-color)] py-5 sm:py-3.5 2xl:py-5 px-4 xl:px-20 2xl:px-40.5 border-b border-[#211E2F] md:border-0">
+            <div class="max-w-[1920px] m-auto flex items-center justify-between">
                 <input type="checkbox" id="menu-toggle" class="hidden">
                 <label for="menu-toggle"
                     class="overlay opacity-0 invisible fixed inset-0 bg-black/100 transition-[opacity,visibility] duration-300 z-[100]"></label>
                 <!-- Desktop Main Menu -->
                 <a href="/">
-                    <img src="./home/assets/Logo.png" alt="Logo Estatein" class="w-40 xl:w-40 2xl:w-40">
+                    <img src="./home/assets/Logo.png" alt="Logo Estatein" class="h-7 xl:h-8.5 2xl:h-12">
                 </a>
                 <nav
-                    class="fixed md:static top-0 right-0 bottom-0 min-w-[60vw] md:w-auto translate-x-full md:translate-x-0 opacity-0 md:opacity-100 invisible md:visible flex flex-col md:flex-row gap-0 md:gap-2.5 md:items-center md:justify-center bg-[var(--secondary-color)] md:bg-transparent pt-20 md:pt-0 px-8 md:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm 2xl:text-lg text-white">
+                    class="fixed md:static top-0 right-0 bottom-0 min-w-[60vw] md:min-w-auto translate-x-full md:translate-x-0 opacity-0 md:opacity-100 invisible md:visible flex flex-col md:flex-row gap-0 md:gap-2.5 md:items-center md:justify-center bg-[var(--secondary-color)] md:bg-transparent pt-20 md:pt-0 px-8 md:px-0 transition-[transform,opacity,visibility] duration-300 z-[500] text-sm 2xl:text-lg text-white text-center">
                     <label for="menu-toggle" class="cursor-pointer absolute top-8 right-6 md:hidden">
                         <img src="home/assets/icon/close-icon.svg" alt=""
                             class="bg-white/10 inline-block rounded-full p-1.5 2xl:p-2.5">
                     </label>
-                    <a href="#!"
-                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Home</a>
-                    <a href="#!"
-                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">About
+                    <a href="#"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] bg-[var(--primary-color)] border-0 md:border border-[var(--border-grey)] transition-colors duration-300">Home</a>
+                    <a href="./about/about.html"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border-[var(--border-grey)] transition-colors duration-300">About
                         Us</a>
+                    <a href="#"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
+                    <a href="./services/services.html"
+                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
                     <a href="#!"
-                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Properties</a>
-                    <a href="#!"
-                        class="py-5 md:py-3 md:px-5 2xl:py-3.5 2xl:px-6 rounded-none md:rounded-[10px] hover:bg-[var(--primary-color)] border-b border-[var(--border-grey)] md:border md:border-transparent hover:border hover:border-[var(--border-grey)] transition-colors duration-300">Service</a>
-                    <a href="#!"
-                        class="block md:hidden bg-[var(--accent-color)] p-4 text-center text-white text-sm rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
+                        class="block md:hidden bg-[var(--accent-color)] mt-8 p-4 text-center text-white text-sm rounded-[10px] border border-[var(--border-grey)] hover:bg-[var(--accent-color)] hover:border-[var(--accent-color)] transition-colors duration-300">Contact
                         Us</a>
                 </nav>
                 <a href="#!"
@@ -255,7 +256,7 @@
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
                         </div>
-                        <a href="#!"
+                        <a href="./property-details/index.html"
                             class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View
                             Property Details</a>
                     </div>
@@ -297,7 +298,7 @@
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
                         </div>
-                        <a href="#!"
+                        <a href="./property-details/index.html"
                             class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View
                             Property Details</a>
                     </div>
@@ -340,7 +341,7 @@
                             <p class="text-sm 2xl:text-lg text-[var(--text-grey)]">Price</p>
                             <p class="text-lg xl:text-xl 2xl:text-2xl text-white font-semibold">$550,000</p>
                         </div>
-                        <a href="#!"
+                        <a href="./property-details/index.html"
                             class="flex-1 block max-w-69.75 py-3.5 xl:py-[18px] px-5 xl:px-4 bg-[var(--accent-color)] text-center text-white text-sm 2xl:text-lg rounded-[10px] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.5)] transition-shadow duration-200">View
                             Property Details</a>
                     </div>
@@ -677,139 +678,177 @@
                 </div>
             </div>
         </section>
-        <!-- CTA Explore Properties Section -->
-        <section
-            class="py-12.5 xl:pt-15 2xl:py-25 px-4 xl:px-20 2xl:px-40.5 m-auto bg-[url('./assets/abstract-pattern-3.svg')] bg-cover border-t border-[var(--border-grey)] flex flex-wrap justify-between items-center">
-            <div class="max-w-full md:max-w-[70%]">
-                <h2
-                    class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold leading-[150%] mb-1.5 xl:mb-3.5">
-                    Start Your Real Estate Journey Today</h2>
-                <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg"> Your dream property is just a
-                    click away. Whether you're looking for a new home, a strategic investment, or expert real estate
-                    advice, Estatein is here to assist you every step of the way. Take the first step towards your real
-                    estate goals and explore our available properties or get in touch with our team for personalized
-                    assistance. </p>
-            </div>
-            <a href="#!"
-                class="text-white text-center block w-full md:w-auto mt-7.5 px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.6)] transition-shadow duration-200">Explore
-                Properties</a>
-        </section>
+
     </main>
     <footer class="border-t border-[var(--border-grey)]">
+        <!-- CTA Explore Properties Section -->
+        <div class="border-b border-[var(--border-grey)] bg-[url('./home/assets/abstract-pattern-3.svg')] bg-cover">
+            <div
+                class="max-w-[1920px] mx-auto py-12.5 xl:pt-15 2xl:py-25 px-4 xl:px-20 2xl:px-40.5 m-auto flex flex-wrap justify-between items-center">
+                <div class="max-w-full md:max-w-[70%]">
+                    <h2
+                        class="text-white text-[28px] xl:text-[38px] 2xl:text-[48px] font-semibold leading-[150%] mb-1.5 xl:mb-3.5">
+                        Start Your Real Estate Journey Today</h2>
+                    <p class="block text-[var(--text-grey)] text-sm xl:text-base 2xl:text-lg"> Your dream property is
+                        just a click away. Whether you're looking for a new home, a strategic investment, or expert real
+                        estate advice, Estatein is here to assist you every step of the way. Take the first step towards
+                        your real estate goals and explore our available properties or get in touch with our team for
+                        personalized assistance. </p>
+                </div>
+                <a href="#!"
+                    class="text-white text-center block w-full md:w-auto mt-7.5 px-5 2xl:px-6 py-3.5 2xl:py-4.5 border border-[var(--border-grey)] rounded-lg xl:rounded-[10px] bg-[var(--accent-color)] hover:shadow-[1px_1px_16px_rgba(110,68,240,0.6)] transition-shadow duration-200">Explore
+                    Properties</a>
+            </div>
+        </div>
+
+        <!-- Footer links -->
         <div
             class="max-w-[1920px] mx-auto py-12.5 xl:pt-15 2xl:py-25 px-4 md:px-10 xl:px-20 2xl:px-40.5 m-auto flex flex-col xl:flex-row gap-12.5 xl:gap-20">
             <div class="w-full xl:w-81.5 2xl:w-134.5 flex flex-col gap-5 xl:gap-7.5">
                 <a href="/">
-                    <img src="home/assets/Logo.png" alt="Logo Estatein" class="w-33.5 2xl:w-40">
+                    <img src="home/assets/Logo.png" alt="Logo Estatein" class="w-28.5 2xl:w-40">
                 </a>
-                <div class="relative w-full h-15 md:h-auto md:w-76.25 2xl:w-105.75">
+                <form class="relative w-full h-15 md:h-auto md:w-76.25 2xl:w-105.75">
                     <label for="email">
                         <img src="home/assets/icon/email-icon.svg" alt=""
-                            class="w-6 absolute left-5 2xl:left-6 top-4.5">
+                            class="w-5 2xl:w-6 absolute left-5 2xl:left-6 top-4 2xl:top-4.5">
                     </label>
                     <input type="email" name="email" id="email" placeholder="Enter Your Email"
-                        class="w-full md:w-76.25 2xl:w-105.75 border border-[var(--border-grey)] rounded-xl py-4.5 pr-6 pl-14 text-white">
+                        class="w-full md:w-76.25 2xl:w-105.75 border border-[var(--border-grey)] focus:border-[var(--accent-color)] outline-none rounded-xl py-3.5 2xl:py-4.5 pr-5 2xl:pr-6 pl-12 2xl:pl-14 text-white placeholder:text-sm 2xl:placeholder:text-lg">
                     <button type="submit" class="cursor-pointer">
-                        <img src="home/assets/icon/send-icon.svg" alt="" class="w-7.5 absolute right-6 top-4.5">
+                        <img src="home/assets/icon/send-icon.svg" alt=""
+                            class="w-6 2xl:w-7.5 absolute right-5 2xl:right-6 top-4 2xl:top-4.5">
                     </button>
-                </div>
+                </form>
             </div>
             <!-- 5 cols footer menu -->
             <div class="columns-2 [column-rule:1px_solid_#262626] flex-1 md:flex md:flex-nowrap justify-between gap-10">
                 <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-1">
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 sm:mb-0 sm:pb-0 border-b md:border-none border-[var(--border-grey)] md:order-1">
                     <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
                         <a href="#!">Home</a>
                     </h3>
                     <ul>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Hero Section</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Hero
+                                Section</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Features</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Features</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Properties</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Properties</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Testimonials</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Testimonials</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">FAQ's</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">FAQ's</a>
                         </li>
                     </ul>
                 </div>
                 <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-3">
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 sm:mb-0 sm:pb-0 border-b md:border-none border-[var(--border-grey)] md:order-3">
                     <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
                         <a href="#!">Properties</a>
                     </h3>
                     <ul>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Portfolio</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Portfolio</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Categories</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Categories</a>
                         </li>
                     </ul>
                 </div>
                 <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-5">
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 sm:mb-0 sm:pb-0 border-b md:border-none border-[var(--border-grey)] md:order-5">
                     <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
                         <a href="#!">Contact Us</a>
                     </h3>
                     <ul>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Contact Form</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Contact
+                                Form</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Offices</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Our
+                                Offices</a>
                         </li>
                     </ul>
                 </div>
                 <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-2">
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 sm:mb-0 sm:pb-0 border-b md:border-none border-[var(--border-grey)] md:order-2">
                     <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
                         <a href="#!">About</a>
                     </h3>
                     <ul>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Story</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Our
+                                Story</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Works</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Our
+                                Works</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">How It Works</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">How
+                                It Works</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Team</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Our
+                                Team</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Our Clients</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Our
+                                Clients</a>
                         </li>
                     </ul>
                 </div>
                 <div
-                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 border-b md:border-none border-[var(--border-grey)] md:order-4">
+                    class="text-white text-sm xl:text-base 2xl:text-lg leading-6 tracking-[-0.006em] break-inside-avoid mb-5 pb-5 sm:mb-0 sm:pb-0 border-b md:border-none border-[var(--border-grey)] md:order-4">
                     <h3 class="text-[var(--text-grey)] mb-4 xl:mb-6 2xl:mb-7.5">
                         <a href="#!">Services</a>
                     </h3>
                     <ul>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Valuation Mastery</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Valuation
+                                Mastery</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Strategic Marketing</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Strategic
+                                Marketing</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Negotiation Wizardry</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Negotiation
+                                Wizardry</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Closing Success</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Closing
+                                Success</a>
                         </li>
                         <li class="mb-2 xl:mb-4 2xl:mb-5">
-                            <a href="#!" class="hover:underline">Property Management</a>
+                            <a href="#!"
+                                class="hover:underline underline-offset-4 decoration-2 decoration-[var(--accent-color)]">Property
+                                Management</a>
                         </li>
                     </ul>
                 </div>
@@ -819,28 +858,31 @@
         <div class="bg-[var(--secondary-color)]">
             <div
                 class="max-w-[1920px] mx-auto py-5 xl:py-3 2xl:py-4 px-4 md:px-10 xl:px-20 2xl:px-40.5 m-auto flex flex-col-reverse sm:flex-row gap-5 sm:justify-between">
-
                 <div
                     class="text-white text-sm xl:text-lg tracking-[-0.006em] flex flex-col sm:flex-row items-center gap-2.5 sm:gap-9.5">
                     <p>@2023 Estatein. All Rights Reserved.</p>
                     <p>Terms & Conditions</p>
                 </div>
-                <div class="flex gap-2.5 justify-center">
+                <div class="flex gap-2 2xl:gap-2.5 justify-center">
                     <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="home/assets/icon/fb-icon.svg" alt="Estatein Fanpage" class="block w-6">
+                        class="block w-15 h-15 xl:w-10 xl:h-10 2xl:w-13 2xl:h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200 group">
+                        <img src="home/assets/icon/fb-icon.svg" alt="Estatein Fanpage"
+                            class="block w-5 2xl:w-6 transition-transform duration-300 group-hover:scale-120">
                     </a>
                     <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="home/assets/icon/linkedin-icon.svg" alt="Estatein Linkedin" class="block w-6">
+                        class="block w-15 h-15 xl:w-10 xl:h-10 2xl:w-13 2xl:h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200 group">
+                        <img src="home/assets/icon/linkedin-icon.svg" alt="Estatein Linkedin"
+                            class="block w-5 2xl:w-6 transition-transform duration-300 group-hover:scale-120">
                     </a>
                     <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="home/assets/icon/twitter-icon.svg" alt="Estatein X (Twitter)" class="block w-6">
+                        class="block w-15 h-15 xl:w-10 xl:h-10 2xl:w-13 2xl:h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200 group">
+                        <img src="home/assets/icon/twitter-icon.svg" alt="Estatein X (Twitter)"
+                            class="block w-5 2xl:w-6 transition-transform duration-300 group-hover:scale-120">
                     </a>
                     <a href="#!"
-                        class="block w-13 h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200">
-                        <img src="home/assets/icon/youtube-icon.svg" alt="Estatein Youtube" class="block w-6">
+                        class="block w-15 h-15 xl:w-10 xl:h-10 2xl:w-13 2xl:h-13 rounded-full flex justify-center items-center bg-[var(--primary-color)] hover:bg-[var(--accent-color)] transition-colors duration-200 group">
+                        <img src="home/assets/icon/youtube-icon.svg" alt="Estatein Youtube"
+                            class="block w-5 2xl:w-6 transition-transform duration-300 group-hover:scale-120">
                     </a>
                 </div>
             </div>

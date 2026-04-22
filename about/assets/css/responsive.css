@@ -817,6 +817,10 @@
 
     .announcement__close {
         right: 12px;
+        width: 26px;
+        height: 26px;
+        background-color: #FFFFFF1A;
+        border-radius: 50%;
     }
 
     /* ── Header ── */
@@ -842,25 +846,43 @@
     /* ── Sidebar Menu (Menu ẩn trên điện thoại) ── */
     .header__menu {
         position: fixed;
-        top: 72px; /* Nằm dưới dải header bar */
-        right: -100%; /* Vị trí ban đầu bị ẩn */
+        top: 0;
+        right: -100%;
         bottom: 0;
-        max-width: 80vw;
+        width: 45vw;
+        min-width: 170px;
         background-color: var(--gray-10);
-        border-left: 1px solid var(--gray-15);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        padding: 24px 20px;
-        gap: 24px;
-        transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 80px 32px 0 32px;
+        transition: right 0.35s ease;
         z-index: 1001;
         overflow-y: auto;
     }
 
+    .header__menu-close {
+        cursor: pointer;
+        position: absolute;
+        top: 31px;
+        right: 24px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__menu-close-icon {
+        width: 19px;
+        height: 19px;
+    }
+
     /* Khi checkbox */
-    .header__nav-toggle:checked ~ .header__container .header__menu {
+    .header__nav-toggle:checked~.header__container .header__menu {
         right: 0;
     }
 
@@ -868,34 +890,45 @@
     .header__overlay {
         position: fixed;
         inset: 0;
-        background: rgba(0, 0, 0, 0.5); /* Độ mờ 50% đen */
+        background: rgba(0, 0, 0, 0.85);
+        /* Overlay đen trong suốt */
         opacity: 0;
-        pointer-events: none; /* Không thể click khi đang ẩn */
-        transition: opacity 0.3s;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
         z-index: 999;
     }
 
     /* Khi mở menu, overlay mờ chuyển opacity: 1 và cho phép click */
-    .header__nav-toggle:checked ~ .header__overlay {
+    .header__nav-toggle:checked~.header__overlay {
         opacity: 1;
+        visibility: visible;
         pointer-events: auto;
     }
 
     .header__burger {
         position: relative;
-        z-index: 1002;
+        z-index: 1000;
+    }
+
+    /* Ẩn hoàn toàn nút hamburger cũ khi menu đã mở để tránh bị ô vuông xám nổi lên */
+    .header__nav-toggle:checked~.header__container .header__burger {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
     }
 
     .header__nav {
         display: flex;
         flex-direction: column;
         width: 100%;
-        flex: 1;
+        flex: none;
+        justify-content: flex-start;
     }
 
     .nav-list {
         flex-direction: column;
-        gap: 6px;
+        gap: 0;
         width: 100%;
     }
 
@@ -906,29 +939,53 @@
     .nav-list__link {
         width: 100%;
         justify-content: flex-start;
-        height: 52px;
-        padding: 0 16px;
-        font-size: 17px;
-        border-radius: 10px;
+        height: auto;
+        padding: 7px 0;
+        font-size: 14px;
+        border-radius: 0;
+        border-bottom: 1px solid var(--gray-15);
+        transition: background-color 0.3s, color 0.3s;
+        color: var(--white);
+    }
+
+    .nav-list__item:last-child .nav-list__link {
+        border-bottom: none;
+    }
+
+    .nav-list__link:hover {
+        background-color: var(--gray-08);
     }
 
     /* Nút Contact Us bên trong sidebar */
     .header__action {
         width: 100%;
         display: flex;
+        margin-top: 0;
     }
 
     .header__action .btn {
         width: 100%;
         justify-content: center;
+        background-color: #703BF7;
+        height: auto;
+        padding: 2px;
+        border-radius: 10px;
+        border: 1px solid var(--gray-15);
+        color: var(--white);
+        font-size: 14px;
+    }
+
+    .header__action .btn:hover {
+        background-color: #703BF7;
+        border-color: #703BF7;
     }
 
     /* Hamburger → X*/
-    .header__nav-toggle:checked ~ .header__container .header__burger .header__burger-icon-open {
+    .header__nav-toggle:checked~.header__container .header__burger .header__burger-icon-open {
         display: none;
     }
 
-    .header__nav-toggle:checked ~ .header__container .header__burger .header__burger-icon-close {
+    .header__nav-toggle:checked~.header__container .header__burger .header__burger-icon-close {
         display: block;
     }
 
