@@ -704,52 +704,193 @@ img {
 
 /* 7. FOOTER */
 .footer-cta {
+    background: #141414;
+    padding: 80px 0 60px;
+    position: relative;
+}
+
+.footer-cta-content {
     display: flex;
-    flex-direction: column;
-    padding-block: 60px;
-    gap: 24px;
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.footer-cta-text h2 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-    margin-bottom: 12px;
+.cta-text {
+    max-width: 680px;
 }
 
-.footer-cta-text p { color: var(--color-text-muted); }
+.cta-text h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.cta-text p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    max-width: 620px;
+}
+
+.btn-explore {
+    background: var(--color-primary);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn-explore:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-3px);
+}
 
 .footer-main {
+    background: #0A0A0A;
+    padding: 80px 0 60px;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding-block: 60px;
+    grid-template-columns: 280px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+}
+
+.subscribe-box {
+    display: flex;
+    background: #1A1A1A;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 320px;
+}
+
+.subscribe-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 16px 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+.subscribe-box button {
+    background: var(--color-primary);
+    border: none;
+    padding: 0 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 40px 60px;
+}
+
+.link-column h4 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.link-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-column a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link-column a:hover {
+    color: white;
 }
 
 .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding-block: 24px;
-    background: var(--color-surface);
+    background: #0A0A0A;
+    padding: 24px 0;
     border-top: 1px solid var(--color-border);
-    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.95rem;
     color: var(--color-text-muted);
 }
 
-.social-links {
+.social-icons {
     display: flex;
     gap: 12px;
 }
 
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #1A1A1A;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
 /* RESPONSIVE */
+@media (min-width: 640px) {
+    .footer-cta-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .btn-explore {
+        margin-top: 30px;
+    }
+}
+
 @media (min-width: 768px) {
     .show-desktop { display: block; }
     .hamburger { display: none; }
@@ -837,5 +978,9 @@ img {
 
     .footer-links {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 }
