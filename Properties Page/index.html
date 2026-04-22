@@ -71,66 +71,43 @@
     <section class="hero">
         <div class="container">
             <h1>Find Your Dream Property</h1>
-            <p>Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey </p>
-        </div>
+            <p>Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey</p>
 
-        <!-- SEARCH -->
-        <div class="search">
-            <div class="container">
+            <!-- SEARCH -->
+            <div class="search">
                 <form class="search-form">
-
-                    <div class="search-row">
-                        <div class="search-combined">
-
-                            <div class="search-input">
-                                <input id="search" type="text" placeholder="Search For A Property" autocomplete="off">
-                            </div>
-
-                            <button type="submit" class="btn btn--primary search-btn">
-                                <img src="icons/Search-Icon.svg" alt="Search" width="20" height="20">
-                                Find Property
-                            </button>
-
+                    <div class="search-combined">
+                        <div class="search-input">
+                            <input id="search" type="text" placeholder="Search For A Property" autocomplete="off">
                         </div>
+                        <button type="submit" class="btn btn--primary search-btn">
+                            <img src="icons/Search-Icon.svg" alt="Search" width="20" height="20">
+                            Find Property
+                        </button>
                     </div>
 
                     <div class="filters">
                         <div class="select">
                             <img src="icons/Location-icon.svg" class="select-icon" alt="">
-                            <select>
-                                <option>Location</option>
-                            </select>
+                            <select><option>Location</option></select>
                         </div>
-
                         <div class="select">
                             <img src="icons/Property-Type-Icon.svg" class="select-icon" alt="">
-                            <select>
-                                <option>Type</option>
-                            </select>
+                            <select><option>Type</option></select>
                         </div>
-
                         <div class="select">
                             <img src="icons/Pricing-Range-Icon.svg" class="select-icon" alt="">
-                            <select>
-                                <option>Price</option>
-                            </select>
+                            <select><option>Price</option></select>
                         </div>
-
                         <div class="select">
                             <img src="icons/Property-Size-Icon.svg" class="select-icon" alt="">
-                            <select>
-                                <option>Size</option>
-                            </select>
+                            <select><option>Size</option></select>
                         </div>
-
                         <div class="select">
                             <img src="icons/Build-Year-Icon.svg" class="select-icon" alt="">
-                            <select>
-                                <option>Year</option>
-                            </select>
+                            <select><option>Year</option></select>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>
@@ -228,117 +205,77 @@
         <form class="inquiry-form">
             <div class="form-grid">
                 <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input id="firstName" type="text" placeholder="Enter First Name">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter First Name">
                 </div>
                 <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input id="lastName" type="text" placeholder="Enter Last Name">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter Last Name">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="Enter your Email">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your Email">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input id="phone" type="tel" placeholder="Enter Phone Number">
+                    <label>Phone</label>
+                    <input type="text" placeholder="Enter Phone Number">
                 </div>
 
                 <div class="form-group">
-                    <label for="location">Preferred Location</label>
-                    <div class="select-wrapper">
-                        <select id="location"><option>Select Location</option></select>
-                    </div>
+                    <label>Preferred Location</label>
+                    <select><option>Select Location</option></select>
                 </div>
                 <div class="form-group">
-                    <label for="propertyType">Property Type</label>
-                    <div class="select-wrapper">
-                        <select id="propertyType"><option>Select Property Type</option></select>
-                    </div>
+                    <label>Property Type</label>
+                    <select><option>Select Property Type</option></select>
                 </div>
                 <div class="form-group">
-                    <label for="bathrooms">No. of Bathrooms</label>
-                    <div class="select-wrapper">
-                        <select id="bathrooms"><option>Select no. of Bedrooms</option></select>
-                    </div>
+                    <label>No. of Bathrooms</label>
+                    <select><option>Select no. of Bathrooms</option></select>
                 </div>
                 <div class="form-group">
-                    <label for="bedrooms">No. of Bedrooms</label>
-                    <div class="select-wrapper">
-                        <select id="bedrooms"><option>Select no. of Bedrooms</option></select>
-                    </div>
+                    <label>No. of Bedrooms</label>
+                    <select><option>Select no. of Bedrooms</option></select>
                 </div>
 
                 <div class="form-group span-2">
-                    <label for="budget">Budget</label>
-                    <div class="select-wrapper">
-                        <select id="budget"><option>Select Budget</option></select>
-                    </div>
+                    <label>Budget</label>
+                    <select><option>Select Budget</option></select>
                 </div>
 
                 <div class="form-group span-2">
                     <label>Preferred Contact Method</label>
-
-                    <div class="contact-method-container">
-
-                        <!-- PHONE -->
-                        <label for="contact-phone" class="radio-card">
+                    <div class="radio-group">
+                        <label class="radio-card">
                             <div class="radio-info">
-                                <img src="icons/Phone-Icon.svg" alt="Phone" class="icon">
+                                <img src="icons/Phone-Icon.svg" alt="">
                                 <span>Enter Your Number</span>
                             </div>
-
-                            <input
-                                    type="radio"
-                                    id="contact-phone"
-                                    name="contact"
-                                    value="phone"
-                                    checked
-                            >
-
-                            <span class="radio-dot"></span>
+                            <input type="radio" name="contact_method" class="custom-radio" checked>
                         </label>
 
-                        <!-- EMAIL -->
-                        <label for="contact-email" class="radio-card">
+                        <label class="radio-card">
                             <div class="radio-info">
-                                <img src="icons/Mail-Icon.svg" alt="Email" class="icon">
+                                <img src="icons/Mail-Icon.svg" alt="">
                                 <span>Enter Your Email</span>
                             </div>
-
-                            <input
-                                    type="radio"
-                                    id="contact-email"
-                                    name="contact"
-                                    value="email"
-                            >
-
-                            <span class="radio-dot"></span>
+                            <input type="radio" name="contact_method" class="custom-radio">
                         </label>
-
                     </div>
                 </div>
 
                 <div class="form-group span-4">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Enter your Message here.." rows="4"></textarea>
+                    <label>Message</label>
+                    <textarea placeholder="Enter your Message here.."></textarea>
                 </div>
             </div>
 
-            <div class="form-footer">
-                <label class="checkbox-container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    I agree with <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                </label>
-                <button type="submit" class="btn btn--submit">Send Your Message</button>
-            </div>
         </form>
     </section>
 </main>
 
 <footer class="footer-wrapper">
-    <div class="footer-cta">
+    <div class="footer-cta-text">
         <div class="cta-text">
             <h2>Start Your Real Estate Journey Today</h2>
             <p class="text-muted">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
