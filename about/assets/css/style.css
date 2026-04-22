@@ -33,234 +33,255 @@ ul {
 /* ==========================================================================
    Announcement
    ========================================================================== */
-.announcement {
-    position: relative;
-    background-color: var(--gray-10);
-    border-bottom: 1px solid var(--gray-15);
-    overflow: hidden;
+/*.announcement {*/
+/*    position: relative;*/
+/*    background-color: var(--gray-10);*/
+/*    border-bottom: 1px solid var(--gray-15);*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*!* pattern phía sau *!*/
+/*.announcement::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    inset: 0;*/
+/*    background-image: url('../images/background/bg-header-desktop.svg');*/
+/*    background-position: top;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    opacity: 0.1;*/
+/*    z-index: 0;*/
+/*}*/
+
+/*!* đảm bảo content nằm trên *!*/
+/*.announcement__content {*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+/*    height: 63px;*/
+/*}*/
+
+/*.announcement__toggle {*/
+/*    display: none;*/
+/*}*/
+
+/*.announcement__toggle:checked~.announcement__content {*/
+/*    display: none;*/
+/*}*/
+
+/*.announcement__text {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 6px;*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*    line-height: 150%;*/
+/*    color: var(--white);*/
+/*}*/
+
+/*.announcement__link {*/
+/*    font-size: 18px;*/
+/*    line-height: 150%;*/
+/*    white-space: nowrap;*/
+/*    text-decoration: underline;*/
+/*    color: var(--white);*/
+/*}*/
+
+/*.announcement__close {*/
+/*    position: absolute;*/
+/*    right: 32px;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    width: 32px;*/
+/*    height: 32px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border-radius: 50%;*/
+/*    border: 1.5px solid rgba(255, 255, 255, 0.1);*/
+/*    background-color: #FFFFFF1A;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.2s ease;*/
+/*}*/
+
+/*.announcement__close:hover {*/
+/*    background-color: rgba(255, 255, 255, 0.05);*/
+/*}*/
+
+/*.announcement__close-icon {*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    opacity: 0.8;*/
+/*}*/
+
+/*!* ==========================================================================*/
+/*   3. Header — Thanh điều hướng cố định trên cùng (sticky)*/
+/*   ========================================================================== *!*/
+/*.header-wrapper {*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    z-index: 1000;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.header {*/
+/*    width: 100%;*/
+/*    !* Đảm bảo header nổi trên mọi phần tử *!*/
+/*    background-color: var(--gray-10);*/
+/*    border-bottom: 1px solid var(--gray-15);*/
+/*}*/
+
+/*.header__container {*/
+/*    height: 99px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    gap: 40px;*/
+/*}*/
+
+/*.header__logo {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+/*    flex-shrink: 0;*/
+/*}*/
+
+/*.header__logo-link {*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.header__logo-img {*/
+/*    width: 48px;*/
+/*    height: 48px;*/
+/*}*/
+
+/*.header__logo-text {*/
+/*    margin: 0;*/
+/*    font-size: 24px;*/
+/*    font-weight: 600;*/
+/*    line-height: 150%;*/
+/*    color: #ffffff;*/
+/*}*/
+
+/*.header__menu {*/
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.header__nav {*/
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.nav-list {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 30px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*}*/
+
+/*.nav-list__item {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.nav-list__link {*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 55px;*/
+/*    padding: 0 24px;*/
+/*    border-radius: 10px;*/
+/*    border: 1px solid transparent;*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*    line-height: 150%;*/
+/*    color: #ffffff;*/
+/*    text-decoration: none;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*.nav-list__link:hover,*/
+/*.nav-list__link--active {*/
+/*    background-color: var(--gray-08);*/
+/*    border-color: var(--gray-15);*/
+/*}*/
+
+/*.header__action {*/
+/*    flex-shrink: 0;*/
+/*}*/
+
+/*!* Checkbox ẩn  *!*/
+/*.header__nav-toggle {*/
+/*    display: none;*/
+/*}*/
+
+/*.header__menu-close {*/
+/*    display: none;*/
+/*}*/
+
+/*!* Hamburger button — ẩn trên desktop *!*/
+/*.header__burger {*/
+/*    display: none;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 5px;*/
+/*    width: 28px;*/
+/*    height: 28px;*/
+/*    border-radius: 8px;*/
+/*    cursor: pointer;*/
+/*    flex-shrink: 0;*/
+/*    transition: background-color 0.2s ease;*/
+/*}*/
+
+/*.header__burger:hover {*/
+/*    background-color: var(--gray-15);*/
+/*}*/
+
+/*.header__burger-icon-open {*/
+/*    width: 28px;*/
+/*    height: 28px;*/
+/*    transition: transform 0.3s ease, opacity 0.3s ease;*/
+/*}*/
+
+/*.header__burger-icon-close {*/
+/*    width: 21px;*/
+/*    height: 14px;*/
+/*    display: none;*/
+/*    transition: transform 0.3s ease, opacity 0.3s ease;*/
+/*}*/
+/* Top Banner Closing */
+#top-banner:checked ~ .top-banner-container {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
-/* pattern phía sau */
-.announcement::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url('../images/background/bg-header-desktop.svg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    z-index: 0;
-}
-
-/* đảm bảo content nằm trên */
-.announcement__content {
-    position: relative;
-    z-index: 2;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 63px;
-}
-
-.announcement__toggle {
-    display: none;
-}
-
-.announcement__toggle:checked~.announcement__content {
-    display: none;
-}
-
-.announcement__text {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 150%;
-    color: var(--white);
-}
-
-.announcement__link {
-    font-size: 18px;
-    line-height: 150%;
-    white-space: nowrap;
-    text-decoration: underline;
-    color: var(--white);
-}
-
-.announcement__close {
-    position: absolute;
-    right: 32px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1.5px solid rgba(255, 255, 255, 0.1);
-    background-color: #FFFFFF1A;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.announcement__close:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.announcement__close-icon {
-    width: 12px;
-    height: 12px;
-    opacity: 0.8;
-}
-
-/* ==========================================================================
-   3. Header — Thanh điều hướng cố định trên cùng (sticky)
-   ========================================================================== */
-.header-wrapper {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-
-.header {
-    width: 100%;
-    /* Đảm bảo header nổi trên mọi phần tử */
-    background-color: var(--gray-10);
-    border-bottom: 1px solid var(--gray-15);
-}
-
-.header__container {
-    height: 99px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.header__logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-.header__logo-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__logo-img {
-    width: 48px;
-    height: 48px;
-}
-
-.header__logo-text {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 150%;
-    color: #ffffff;
-}
-
-.header__menu {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__nav {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.nav-list__item {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 55px;
-    padding: 0 24px;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 150%;
-    color: #ffffff;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.nav-list__link:hover,
-.nav-list__link--active {
-    background-color: var(--gray-08);
-    border-color: var(--gray-15);
-}
-
-.header__action {
-    flex-shrink: 0;
-}
-
-/* Checkbox ẩn  */
-.header__nav-toggle {
-    display: none;
-}
-
-.header__menu-close {
-    display: none;
-}
-
-/* Hamburger button — ẩn trên desktop */
-.header__burger {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 28px;
-    height: 28px;
-    border-radius: 8px;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background-color 0.2s ease;
-}
-
-.header__burger:hover {
-    background-color: var(--gray-15);
-}
-
-.header__burger-icon-open {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.header__burger-icon-close {
-    width: 21px;
-    height: 14px;
-    display: none;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+/* Mobile Menu Toggle */
+@media screen and (max-width: 1280px) {
+    #menu-toggle:checked ~ nav {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-60vw);
+    }
+    #menu-toggle:checked ~ .overlay {
+        opacity: 0.8;
+        visibility: visible;
+    }
 }
 
 .btn {
@@ -283,10 +304,10 @@ ul {
     opacity: 0.85;
 }
 
-.btn--outline {
-    background-color: var(--gray-08);
-    border: 1px solid var(--gray-15);
-}
+/*.btn--outline {*/
+/*    background-color: var(--gray-08);*/
+/*    border: 1px solid var(--gray-15);*/
+/*}*/
 
 /* ==========================================================================
    4. Main Content — Khu vực nội dung chính
